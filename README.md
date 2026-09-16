@@ -3,7 +3,7 @@
 It retains the original directory convention:
 
 ```text
-td320_ocr/
+ocr_td320/
 ├── figs/                 # input scans and optional blank template
 ├── preprocessed/         # aligned crops and independent image views
 ├── output/               # final JSON/TXT, raw responses and audits
