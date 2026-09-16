@@ -1,0 +1,27 @@
+{
+  "name_english": "",
+  "name_chinese": "",
+  "identity_document_number": "",
+  "residential_address": {
+    "flat": "",
+    "floor": "",
+    "block": "",
+    "building": "",
+    "street": "",
+    "district": "",
+    "region": ""
+  },
+  "correspondence_address": {
+    "flat": "",
+    "floor": "",
+    "block": "",
+    "building": "",
+    "street": "",
+    "district": "",
+    "region": ""
+  },
+  "telephone": "",
+  "agent_name": "",
+  "agent_identity_document_number": "",
+  "date": ""
+}

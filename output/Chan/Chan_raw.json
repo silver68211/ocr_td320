@@ -1,0 +1,442 @@
+{
+  "identity": {
+    "original": {
+      "crop": "preprocessed/Chan/identity/original.png",
+      "response": "{\n  \"name_english\": {\n    \"value\": \"CHAN TAI MAN\",\n    \"state\": \"filled\"\n  },\n  \"name_chinese\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"identity_document_number\": {\n    \"value\": \"TEST001\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "name_english": {
+          "value": "CHAN TAI MAN",
+          "state": "filled"
+        },
+        "name_chinese": {
+          "value": "",
+          "state": "blank"
+        },
+        "identity_document_number": {
+          "value": "TEST001",
+          "state": "filled"
+        }
+      }
+    },
+    "clahe": {
+      "crop": "preprocessed/Chan/identity/clahe.png",
+      "response": "{\n  \"name_english\": {\n    \"value\": \"CHAN TAI MAN\",\n    \"state\": \"filled\"\n  },\n  \"name_chinese\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"identity_document_number\": {\n    \"value\": \"TEST001\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "name_english": {
+          "value": "CHAN TAI MAN",
+          "state": "filled"
+        },
+        "name_chinese": {
+          "value": "",
+          "state": "blank"
+        },
+        "identity_document_number": {
+          "value": "TEST001",
+          "state": "filled"
+        }
+      }
+    },
+    "otsu": {
+      "crop": "preprocessed/Chan/identity/otsu.png",
+      "response": "{\n  \"name_english\": {\n    \"value\": \"CHAN TAI MAN\",\n    \"state\": \"filled\"\n  },\n  \"name_chinese\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"identity_document_number\": {\n    \"value\": \"TEST001\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "name_english": {
+          "value": "CHAN TAI MAN",
+          "state": "filled"
+        },
+        "name_chinese": {
+          "value": "",
+          "state": "blank"
+        },
+        "identity_document_number": {
+          "value": "TEST001",
+          "state": "filled"
+        }
+      }
+    },
+    "adaptive": {
+      "crop": "preprocessed/Chan/identity/adaptive.png",
+      "response": "{\n  \"name_english\": {\n    \"value\": \"CHAN TAI MAN\",\n    \"state\": \"filled\"\n  },\n  \"name_chinese\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"identity_document_number\": {\n    \"value\": \"TEST001\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "name_english": {
+          "value": "CHAN TAI MAN",
+          "state": "filled"
+        },
+        "name_chinese": {
+          "value": "",
+          "state": "blank"
+        },
+        "identity_document_number": {
+          "value": "TEST001",
+          "state": "filled"
+        }
+      }
+    }
+  },
+  "residential": {
+    "original": {
+      "crop": "preprocessed/Chan/residential/original.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"12 B\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"12\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"A\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"HARBOUR GARDEN\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"18 SAMPLE ROAD\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"SHA TIN\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"New Territories\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "12 B",
+          "state": "filled"
+        },
+        "floor": {
+          "value": "12",
+          "state": "filled"
+        },
+        "block": {
+          "value": "A",
+          "state": "filled"
+        },
+        "building": {
+          "value": "HARBOUR GARDEN",
+          "state": "filled"
+        },
+        "street": {
+          "value": "18 SAMPLE ROAD",
+          "state": "filled"
+        },
+        "district": {
+          "value": "SHA TIN",
+          "state": "filled"
+        },
+        "region": {
+          "value": "New Territories",
+          "state": "filled"
+        }
+      }
+    },
+    "clahe": {
+      "crop": "preprocessed/Chan/residential/clahe.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"12B\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"12\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"A\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"HARBOUR GARDEN\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"18 SAMPLE ROAD\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"SHA TIN\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"New Territories\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "12B",
+          "state": "filled"
+        },
+        "floor": {
+          "value": "12",
+          "state": "filled"
+        },
+        "block": {
+          "value": "A",
+          "state": "filled"
+        },
+        "building": {
+          "value": "HARBOUR GARDEN",
+          "state": "filled"
+        },
+        "street": {
+          "value": "18 SAMPLE ROAD",
+          "state": "filled"
+        },
+        "district": {
+          "value": "SHA TIN",
+          "state": "filled"
+        },
+        "region": {
+          "value": "New Territories",
+          "state": "filled"
+        }
+      }
+    },
+    "otsu": {
+      "crop": "preprocessed/Chan/residential/otsu.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"12B\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"12\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"A\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"HARBOUR GARDEN\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"18 SAMPLE ROAD\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"SHATIN\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"New Territories\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "12B",
+          "state": "filled"
+        },
+        "floor": {
+          "value": "12",
+          "state": "filled"
+        },
+        "block": {
+          "value": "A",
+          "state": "filled"
+        },
+        "building": {
+          "value": "HARBOUR GARDEN",
+          "state": "filled"
+        },
+        "street": {
+          "value": "18 SAMPLE ROAD",
+          "state": "filled"
+        },
+        "district": {
+          "value": "SHATIN",
+          "state": "filled"
+        },
+        "region": {
+          "value": "New Territories",
+          "state": "filled"
+        }
+      }
+    },
+    "adaptive": {
+      "crop": "preprocessed/Chan/residential/adaptive.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"floor\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"HARBOUR GARDEN\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"18 SAMPLE ROAD\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"SHA TIN\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"New Territories\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "",
+          "state": "blank"
+        },
+        "floor": {
+          "value": "",
+          "state": "blank"
+        },
+        "block": {
+          "value": "",
+          "state": "blank"
+        },
+        "building": {
+          "value": "HARBOUR GARDEN",
+          "state": "filled"
+        },
+        "street": {
+          "value": "18 SAMPLE ROAD",
+          "state": "filled"
+        },
+        "district": {
+          "value": "SHA TIN",
+          "state": "filled"
+        },
+        "region": {
+          "value": "New Territories",
+          "state": "filled"
+        }
+      }
+    }
+  },
+  "correspondence": {
+    "original": {
+      "crop": "preprocessed/Chan/correspondence/original.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"floor\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"telephone\": {\n    \"value\": \"00001001\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "",
+          "state": "blank"
+        },
+        "floor": {
+          "value": "",
+          "state": "blank"
+        },
+        "block": {
+          "value": "",
+          "state": "blank"
+        },
+        "building": {
+          "value": "",
+          "state": "blank"
+        },
+        "street": {
+          "value": "",
+          "state": "blank"
+        },
+        "district": {
+          "value": "",
+          "state": "blank"
+        },
+        "region": {
+          "value": "",
+          "state": "blank"
+        },
+        "telephone": {
+          "value": "00001001",
+          "state": "filled"
+        }
+      }
+    },
+    "clahe": {
+      "crop": "preprocessed/Chan/correspondence/clahe.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"floor\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"telephone\": {\n    \"value\": \"00001001\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "",
+          "state": "blank"
+        },
+        "floor": {
+          "value": "",
+          "state": "blank"
+        },
+        "block": {
+          "value": "",
+          "state": "blank"
+        },
+        "building": {
+          "value": "",
+          "state": "blank"
+        },
+        "street": {
+          "value": "",
+          "state": "blank"
+        },
+        "district": {
+          "value": "",
+          "state": "blank"
+        },
+        "region": {
+          "value": "",
+          "state": "blank"
+        },
+        "telephone": {
+          "value": "00001001",
+          "state": "filled"
+        }
+      }
+    },
+    "otsu": {
+      "crop": "preprocessed/Chan/correspondence/otsu.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"floor\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"telephone\": {\n    \"value\": \"00001001\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "",
+          "state": "blank"
+        },
+        "floor": {
+          "value": "",
+          "state": "blank"
+        },
+        "block": {
+          "value": "",
+          "state": "blank"
+        },
+        "building": {
+          "value": "",
+          "state": "blank"
+        },
+        "street": {
+          "value": "",
+          "state": "blank"
+        },
+        "district": {
+          "value": "",
+          "state": "blank"
+        },
+        "region": {
+          "value": "",
+          "state": "blank"
+        },
+        "telephone": {
+          "value": "00001001",
+          "state": "filled"
+        }
+      }
+    },
+    "adaptive": {
+      "crop": "preprocessed/Chan/correspondence/adaptive.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"floor\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"telephone\": {\n    \"value\": \"00001001\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "",
+          "state": "blank"
+        },
+        "floor": {
+          "value": "",
+          "state": "blank"
+        },
+        "block": {
+          "value": "",
+          "state": "blank"
+        },
+        "building": {
+          "value": "",
+          "state": "blank"
+        },
+        "street": {
+          "value": "",
+          "state": "blank"
+        },
+        "district": {
+          "value": "",
+          "state": "blank"
+        },
+        "region": {
+          "value": "",
+          "state": "blank"
+        },
+        "telephone": {
+          "value": "00001001",
+          "state": "filled"
+        }
+      }
+    }
+  },
+  "declaration": {
+    "original": {
+      "crop": "preprocessed/Chan/declaration/original.png",
+      "response": "{\n  \"agent_name\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"agent_identity_document_number\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"date\": {\n    \"value\": \"14/09/2026\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "agent_name": {
+          "value": "",
+          "state": "blank"
+        },
+        "agent_identity_document_number": {
+          "value": "",
+          "state": "blank"
+        },
+        "date": {
+          "value": "14/09/2026",
+          "state": "filled"
+        }
+      }
+    },
+    "clahe": {
+      "crop": "preprocessed/Chan/declaration/clahe.png",
+      "response": "{\n  \"agent_name\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"agent_identity_document_number\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"date\": {\n    \"value\": \"14/09/2026\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "agent_name": {
+          "value": "",
+          "state": "blank"
+        },
+        "agent_identity_document_number": {
+          "value": "",
+          "state": "blank"
+        },
+        "date": {
+          "value": "14/09/2026",
+          "state": "filled"
+        }
+      }
+    },
+    "otsu": {
+      "crop": "preprocessed/Chan/declaration/otsu.png",
+      "response": "{\n  \"agent_name\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"agent_identity_document_number\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"date\": {\n    \"value\": \"14/09/2026\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "agent_name": {
+          "value": "",
+          "state": "blank"
+        },
+        "agent_identity_document_number": {
+          "value": "",
+          "state": "blank"
+        },
+        "date": {
+          "value": "14/09/2026",
+          "state": "filled"
+        }
+      }
+    },
+    "adaptive": {
+      "crop": "preprocessed/Chan/declaration/adaptive.png",
+      "response": "{\n  \"agent_name\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"agent_identity_document_number\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"date\": {\n    \"value\": \"14/09/2026\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "agent_name": {
+          "value": "",
+          "state": "blank"
+        },
+        "agent_identity_document_number": {
+          "value": "",
+          "state": "blank"
+        },
+        "date": {
+          "value": "14/09/2026",
+          "state": "filled"
+        }
+      }
+    }
+  }
+}

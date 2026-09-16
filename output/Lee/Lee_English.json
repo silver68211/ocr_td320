@@ -1,0 +1,27 @@
+{
+  "name_english": "LEE KAYAN",
+  "name_chinese": "",
+  "identity_document_number": "TEST003",
+  "residential_address": {
+    "flat": "5",
+    "floor": "5",
+    "block": "",
+    "building": "SUNNY COURT",
+    "street": "36 EXAMPLE LANE",
+    "district": "NORTH POINT",
+    "region": "Hong Kong"
+  },
+  "correspondence_address": {
+    "flat": "",
+    "floor": "",
+    "block": "",
+    "building": "",
+    "street": "",
+    "district": "",
+    "region": ""
+  },
+  "telephone": "00001003",
+  "agent_name": "",
+  "agent_identity_document_number": "",
+  "date": "16/09/2026"
+}

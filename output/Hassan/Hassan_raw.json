@@ -1,0 +1,442 @@
+{
+  "identity": {
+    "original": {
+      "crop": "preprocessed/Hassan/identity/original.png",
+      "response": "{\n  \"name_english\": {\n    \"value\": \"Hassan NOGHEREI\",\n    \"state\": \"filled\"\n  },\n  \"name_chinese\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"identity_document_number\": {\n    \"value\": \"TH003345\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "name_english": {
+          "value": "Hassan NOGHEREI",
+          "state": "filled"
+        },
+        "name_chinese": {
+          "value": "",
+          "state": "blank"
+        },
+        "identity_document_number": {
+          "value": "TH003345",
+          "state": "filled"
+        }
+      }
+    },
+    "clahe": {
+      "crop": "preprocessed/Hassan/identity/clahe.png",
+      "response": "{\n  \"name_english\": {\n    \"value\": \"Hassan NOGHEREI\",\n    \"state\": \"filled\"\n  },\n  \"name_chinese\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"identity_document_number\": {\n    \"value\": \"TH003345\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "name_english": {
+          "value": "Hassan NOGHEREI",
+          "state": "filled"
+        },
+        "name_chinese": {
+          "value": "",
+          "state": "blank"
+        },
+        "identity_document_number": {
+          "value": "TH003345",
+          "state": "filled"
+        }
+      }
+    },
+    "otsu": {
+      "crop": "preprocessed/Hassan/identity/otsu.png",
+      "response": "{\n  \"name_english\": {\n    \"value\": \"Hassan NOGHEREI\",\n    \"state\": \"filled\"\n  },\n  \"name_chinese\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"identity_document_number\": {\n    \"value\": \"TH003345\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "name_english": {
+          "value": "Hassan NOGHEREI",
+          "state": "filled"
+        },
+        "name_chinese": {
+          "value": "",
+          "state": "blank"
+        },
+        "identity_document_number": {
+          "value": "TH003345",
+          "state": "filled"
+        }
+      }
+    },
+    "adaptive": {
+      "crop": "preprocessed/Hassan/identity/adaptive.png",
+      "response": "{\n  \"name_english\": {\n    \"value\": \"Hassan NOGHEREI\",\n    \"state\": \"filled\"\n  },\n  \"name_chinese\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"identity_document_number\": {\n    \"value\": \"TH003345\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "name_english": {
+          "value": "Hassan NOGHEREI",
+          "state": "filled"
+        },
+        "name_chinese": {
+          "value": "",
+          "state": "blank"
+        },
+        "identity_document_number": {
+          "value": "TH003345",
+          "state": "filled"
+        }
+      }
+    }
+  },
+  "residential": {
+    "original": {
+      "crop": "preprocessed/Hassan/residential/original.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"01\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"2\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"A\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"a s a s d a s\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"a s a s d a s\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"s a\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"Hong Kong\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "01",
+          "state": "filled"
+        },
+        "floor": {
+          "value": "2",
+          "state": "filled"
+        },
+        "block": {
+          "value": "A",
+          "state": "filled"
+        },
+        "building": {
+          "value": "a s a s d a s",
+          "state": "filled"
+        },
+        "street": {
+          "value": "a s a s d a s",
+          "state": "filled"
+        },
+        "district": {
+          "value": "s a",
+          "state": "filled"
+        },
+        "region": {
+          "value": "Hong Kong",
+          "state": "filled"
+        }
+      }
+    },
+    "clahe": {
+      "crop": "preprocessed/Hassan/residential/clahe.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"01\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"2\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"A\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"assadas\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"Hong Kong\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "01",
+          "state": "filled"
+        },
+        "floor": {
+          "value": "2",
+          "state": "filled"
+        },
+        "block": {
+          "value": "A",
+          "state": "filled"
+        },
+        "building": {
+          "value": "assadas",
+          "state": "filled"
+        },
+        "street": {
+          "value": "",
+          "state": "blank"
+        },
+        "district": {
+          "value": "",
+          "state": "blank"
+        },
+        "region": {
+          "value": "Hong Kong",
+          "state": "filled"
+        }
+      }
+    },
+    "otsu": {
+      "crop": "preprocessed/Hassan/residential/otsu.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"01\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"2\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"A\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"asdasdasdasdas\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"asasdas\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"Hong Kong\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "01",
+          "state": "filled"
+        },
+        "floor": {
+          "value": "2",
+          "state": "filled"
+        },
+        "block": {
+          "value": "A",
+          "state": "filled"
+        },
+        "building": {
+          "value": "asdasdasdasdas",
+          "state": "filled"
+        },
+        "street": {
+          "value": "asasdas",
+          "state": "filled"
+        },
+        "district": {
+          "value": "",
+          "state": "blank"
+        },
+        "region": {
+          "value": "Hong Kong",
+          "state": "filled"
+        }
+      }
+    },
+    "adaptive": {
+      "crop": "preprocessed/Hassan/residential/adaptive.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"01\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"2\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"A\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"a s a s d a s\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"a s a s d a s\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"香港\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "01",
+          "state": "filled"
+        },
+        "floor": {
+          "value": "2",
+          "state": "filled"
+        },
+        "block": {
+          "value": "A",
+          "state": "filled"
+        },
+        "building": {
+          "value": "a s a s d a s",
+          "state": "filled"
+        },
+        "street": {
+          "value": "a s a s d a s",
+          "state": "filled"
+        },
+        "district": {
+          "value": "",
+          "state": "blank"
+        },
+        "region": {
+          "value": "香港",
+          "state": "filled"
+        }
+      }
+    }
+  },
+  "correspondence": {
+    "original": {
+      "crop": "preprocessed/Hassan/correspondence/original.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"floor\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"新界\",\n    \"state\": \"filled\"\n  },\n  \"telephone\": {\n    \"value\": \"6458255132\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "",
+          "state": "blank"
+        },
+        "floor": {
+          "value": "",
+          "state": "blank"
+        },
+        "block": {
+          "value": "",
+          "state": "blank"
+        },
+        "building": {
+          "value": "",
+          "state": "blank"
+        },
+        "street": {
+          "value": "",
+          "state": "blank"
+        },
+        "district": {
+          "value": "",
+          "state": "blank"
+        },
+        "region": {
+          "value": "新界",
+          "state": "filled"
+        },
+        "telephone": {
+          "value": "6458255132",
+          "state": "filled"
+        }
+      }
+    },
+    "clahe": {
+      "crop": "preprocessed/Hassan/correspondence/clahe.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"a\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"s\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"s\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"a\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"新界 New Territories\",\n    \"state\": \"filled\"\n  },\n  \"telephone\": {\n    \"value\": \"6458255132\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "a",
+          "state": "filled"
+        },
+        "floor": {
+          "value": "s",
+          "state": "filled"
+        },
+        "block": {
+          "value": "s",
+          "state": "filled"
+        },
+        "building": {
+          "value": "a",
+          "state": "filled"
+        },
+        "street": {
+          "value": "",
+          "state": "blank"
+        },
+        "district": {
+          "value": "",
+          "state": "blank"
+        },
+        "region": {
+          "value": "新界 New Territories",
+          "state": "filled"
+        },
+        "telephone": {
+          "value": "6458255132",
+          "state": "filled"
+        }
+      }
+    },
+    "otsu": {
+      "crop": "preprocessed/Hassan/correspondence/otsu.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"floor\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"New Territories\",\n    \"state\": \"filled\"\n  },\n  \"telephone\": {\n    \"value\": \"6458255132\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "",
+          "state": "blank"
+        },
+        "floor": {
+          "value": "",
+          "state": "blank"
+        },
+        "block": {
+          "value": "",
+          "state": "blank"
+        },
+        "building": {
+          "value": "",
+          "state": "blank"
+        },
+        "street": {
+          "value": "",
+          "state": "blank"
+        },
+        "district": {
+          "value": "",
+          "state": "blank"
+        },
+        "region": {
+          "value": "New Territories",
+          "state": "filled"
+        },
+        "telephone": {
+          "value": "6458255132",
+          "state": "filled"
+        }
+      }
+    },
+    "adaptive": {
+      "crop": "preprocessed/Hassan/correspondence/adaptive.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"a s d s d a s d\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"a s d s d a s d\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"a s d s d a s d\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"a s d a s d s d a s\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"新界 New Territories\",\n    \"state\": \"filled\"\n  },\n  \"telephone\": {\n    \"value\": \"6458255132\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "a s d s d a s d",
+          "state": "filled"
+        },
+        "floor": {
+          "value": "a s d s d a s d",
+          "state": "filled"
+        },
+        "block": {
+          "value": "a s d s d a s d",
+          "state": "filled"
+        },
+        "building": {
+          "value": "a s d a s d s d a s",
+          "state": "filled"
+        },
+        "street": {
+          "value": "",
+          "state": "blank"
+        },
+        "district": {
+          "value": "",
+          "state": "blank"
+        },
+        "region": {
+          "value": "新界 New Territories",
+          "state": "filled"
+        },
+        "telephone": {
+          "value": "6458255132",
+          "state": "filled"
+        }
+      }
+    }
+  },
+  "declaration": {
+    "original": {
+      "crop": "preprocessed/Hassan/declaration/original.png",
+      "response": "{\n  \"agent_name\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"agent_identity_document_number\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"date\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
+      "parsed": {
+        "agent_name": {
+          "value": "",
+          "state": "blank"
+        },
+        "agent_identity_document_number": {
+          "value": "",
+          "state": "blank"
+        },
+        "date": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    },
+    "clahe": {
+      "crop": "preprocessed/Hassan/declaration/clahe.png",
+      "response": "{\n  \"agent_name\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"agent_identity_document_number\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"date\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
+      "parsed": {
+        "agent_name": {
+          "value": "",
+          "state": "blank"
+        },
+        "agent_identity_document_number": {
+          "value": "",
+          "state": "blank"
+        },
+        "date": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    },
+    "otsu": {
+      "crop": "preprocessed/Hassan/declaration/otsu.png",
+      "response": "{\n  \"agent_name\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"agent_identity_document_number\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"date\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
+      "parsed": {
+        "agent_name": {
+          "value": "",
+          "state": "blank"
+        },
+        "agent_identity_document_number": {
+          "value": "",
+          "state": "blank"
+        },
+        "date": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    },
+    "adaptive": {
+      "crop": "preprocessed/Hassan/declaration/adaptive.png",
+      "response": "{\n  \"agent_name\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"agent_identity_document_number\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"date\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
+      "parsed": {
+        "agent_name": {
+          "value": "",
+          "state": "blank"
+        },
+        "agent_identity_document_number": {
+          "value": "",
+          "state": "blank"
+        },
+        "date": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    }
+  }
+}

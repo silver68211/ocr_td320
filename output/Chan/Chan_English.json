@@ -1,0 +1,27 @@
+{
+  "name_english": "CHAN TAI MAN",
+  "name_chinese": "",
+  "identity_document_number": "TEST001",
+  "residential_address": {
+    "flat": "12B",
+    "floor": "12",
+    "block": "A",
+    "building": "HARBOUR GARDEN",
+    "street": "18 SAMPLE ROAD",
+    "district": "SHA TIN",
+    "region": "New Territories"
+  },
+  "correspondence_address": {
+    "flat": "",
+    "floor": "",
+    "block": "",
+    "building": "",
+    "street": "",
+    "district": "",
+    "region": ""
+  },
+  "telephone": "00001001",
+  "agent_name": "",
+  "agent_identity_document_number": "",
+  "date": "14/09/2026"
+}

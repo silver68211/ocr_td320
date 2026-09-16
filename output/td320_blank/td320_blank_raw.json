@@ -1,0 +1,334 @@
+{
+  "identity": {
+    "original": {
+      "crop": "preprocessed/td320_blank/identity/original.png",
+      "response": "```json\n{\n  \"name_english\": {\n    \"value\": \"Shroff\",\n    \"state\": \"filled\"\n  },\n  \"name_chinese\": {\n    \"value\": \"Shroff\",\n    \"state\": \"filled\"\n  },\n  \"identity_document_number\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}\n```",
+      "parsed": {
+        "name_english": {
+          "value": "Shroff",
+          "state": "filled"
+        },
+        "name_chinese": {
+          "value": "Shroff",
+          "state": "filled"
+        },
+        "identity_document_number": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    },
+    "clahe": {
+      "crop": "preprocessed/td320_blank/identity/clahe.png",
+      "response": "```json\n{\n  \"name_english\": {\n    \"value\": \"Shroff\",\n    \"state\": \"filled\"\n  },\n  \"name_chinese\": {\n    \"value\": \"Shroff\",\n    \"state\": \"filled\"\n  },\n  \"identity_document_number\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}\n```",
+      "parsed": {
+        "name_english": {
+          "value": "Shroff",
+          "state": "filled"
+        },
+        "name_chinese": {
+          "value": "Shroff",
+          "state": "filled"
+        },
+        "identity_document_number": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    },
+    "otsu": {
+      "crop": "preprocessed/td320_blank/identity/otsu.png",
+      "response": "```json\n{\n  \"name_english\": {\n    \"value\": \"Shroff\",\n    \"state\": \"filled\"\n  },\n  \"name_chinese\": {\n    \"value\": \"Shroff\",\n    \"state\": \"filled\"\n  },\n  \"identity_document_number\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}\n```",
+      "parsed": {
+        "name_english": {
+          "value": "Shroff",
+          "state": "filled"
+        },
+        "name_chinese": {
+          "value": "Shroff",
+          "state": "filled"
+        },
+        "identity_document_number": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    }
+  },
+  "residential": {
+    "original": {
+      "crop": "preprocessed/td320_blank/residential/original.png",
+      "response": "```json\n{\n  \"flat\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"floor\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"Hong Kong\",\n    \"state\": \"filled\"\n  }\n}\n```",
+      "parsed": {
+        "flat": {
+          "value": "",
+          "state": "blank"
+        },
+        "floor": {
+          "value": "",
+          "state": "blank"
+        },
+        "block": {
+          "value": "",
+          "state": "blank"
+        },
+        "building": {
+          "value": "",
+          "state": "blank"
+        },
+        "street": {
+          "value": "",
+          "state": "blank"
+        },
+        "district": {
+          "value": "",
+          "state": "blank"
+        },
+        "region": {
+          "value": "Hong Kong",
+          "state": "filled"
+        }
+      }
+    },
+    "clahe": {
+      "crop": "preprocessed/td320_blank/residential/clahe.png",
+      "response": "```json\n{\n  \"flat\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"floor\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"Hong Kong\",\n    \"state\": \"filled\"\n  }\n}\n```",
+      "parsed": {
+        "flat": {
+          "value": "",
+          "state": "blank"
+        },
+        "floor": {
+          "value": "",
+          "state": "blank"
+        },
+        "block": {
+          "value": "",
+          "state": "blank"
+        },
+        "building": {
+          "value": "",
+          "state": "blank"
+        },
+        "street": {
+          "value": "",
+          "state": "blank"
+        },
+        "district": {
+          "value": "",
+          "state": "blank"
+        },
+        "region": {
+          "value": "Hong Kong",
+          "state": "filled"
+        }
+      }
+    },
+    "otsu": {
+      "crop": "preprocessed/td320_blank/residential/otsu.png",
+      "response": "```json\n{\n  \"flat\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"floor\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"Hong Kong\",\n    \"state\": \"filled\"\n  }\n}\n```",
+      "parsed": {
+        "flat": {
+          "value": "",
+          "state": "blank"
+        },
+        "floor": {
+          "value": "",
+          "state": "blank"
+        },
+        "block": {
+          "value": "",
+          "state": "blank"
+        },
+        "building": {
+          "value": "",
+          "state": "blank"
+        },
+        "street": {
+          "value": "",
+          "state": "blank"
+        },
+        "district": {
+          "value": "",
+          "state": "blank"
+        },
+        "region": {
+          "value": "Hong Kong",
+          "state": "filled"
+        }
+      }
+    }
+  },
+  "correspondence": {
+    "original": {
+      "crop": "preprocessed/td320_blank/correspondence/original.png",
+      "response": "```json\n{\n  \"flat\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"floor\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"telephone\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}\n```",
+      "parsed": {
+        "flat": {
+          "value": "",
+          "state": "blank"
+        },
+        "floor": {
+          "value": "",
+          "state": "blank"
+        },
+        "block": {
+          "value": "",
+          "state": "blank"
+        },
+        "building": {
+          "value": "",
+          "state": "blank"
+        },
+        "street": {
+          "value": "",
+          "state": "blank"
+        },
+        "district": {
+          "value": "",
+          "state": "blank"
+        },
+        "region": {
+          "value": "",
+          "state": "blank"
+        },
+        "telephone": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    },
+    "clahe": {
+      "crop": "preprocessed/td320_blank/correspondence/clahe.png",
+      "response": "```json\n{\n  \"flat\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"floor\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"telephone\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}\n```",
+      "parsed": {
+        "flat": {
+          "value": "",
+          "state": "blank"
+        },
+        "floor": {
+          "value": "",
+          "state": "blank"
+        },
+        "block": {
+          "value": "",
+          "state": "blank"
+        },
+        "building": {
+          "value": "",
+          "state": "blank"
+        },
+        "street": {
+          "value": "",
+          "state": "blank"
+        },
+        "district": {
+          "value": "",
+          "state": "blank"
+        },
+        "region": {
+          "value": "",
+          "state": "blank"
+        },
+        "telephone": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    },
+    "otsu": {
+      "crop": "preprocessed/td320_blank/correspondence/otsu.png",
+      "response": "```json\n{\n  \"flat\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"floor\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"telephone\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}\n```",
+      "parsed": {
+        "flat": {
+          "value": "",
+          "state": "blank"
+        },
+        "floor": {
+          "value": "",
+          "state": "blank"
+        },
+        "block": {
+          "value": "",
+          "state": "blank"
+        },
+        "building": {
+          "value": "",
+          "state": "blank"
+        },
+        "street": {
+          "value": "",
+          "state": "blank"
+        },
+        "district": {
+          "value": "",
+          "state": "blank"
+        },
+        "region": {
+          "value": "",
+          "state": "blank"
+        },
+        "telephone": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    }
+  },
+  "declaration": {
+    "original": {
+      "crop": "preprocessed/td320_blank/declaration/original.png",
+      "response": "```json\n{\n  \"agent_name\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"agent_identity_document_number\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"date\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}\n```",
+      "parsed": {
+        "agent_name": {
+          "value": "",
+          "state": "blank"
+        },
+        "agent_identity_document_number": {
+          "value": "",
+          "state": "blank"
+        },
+        "date": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    },
+    "clahe": {
+      "crop": "preprocessed/td320_blank/declaration/clahe.png",
+      "response": "```json\n{\n  \"agent_name\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"agent_identity_document_number\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"date\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}\n```",
+      "parsed": {
+        "agent_name": {
+          "value": "",
+          "state": "blank"
+        },
+        "agent_identity_document_number": {
+          "value": "",
+          "state": "blank"
+        },
+        "date": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    },
+    "otsu": {
+      "crop": "preprocessed/td320_blank/declaration/otsu.png",
+      "response": "```json\n{\n  \"agent_name\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"agent_identity_document_number\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"date\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}\n```",
+      "parsed": {
+        "agent_name": {
+          "value": "",
+          "state": "blank"
+        },
+        "agent_identity_document_number": {
+          "value": "",
+          "state": "blank"
+        },
+        "date": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    }
+  }
+}

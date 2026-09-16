@@ -1,0 +1,424 @@
+"""Schemas, prompts, consensus, validation and output helpers."""
+
+from __future__ import annotations
+
+import json
+import re
+import unicodedata
+from collections import Counter
+from collections.abc import Iterable, Mapping, Sequence
+from datetime import datetime
+from pathlib import Path
+
+IDENTITY_FIELDS = ("name_english", "name_chinese", "identity_document_number")
+ADDRESS_FIELDS = ("flat", "floor", "block", "building", "street", "district", "region")
+DECLARATION_FIELDS = ("agent_name", "agent_identity_document_number", "date")
+VALID_STATES = {"filled", "blank", "uncertain"}
+VALID_REGIONS = {
+    "hong kong": "Hong Kong",
+    "kowloon": "Kowloon",
+    "new territories": "New Territories",
+}
+
+
+BASE_RULES = """You are reading one cropped section of a TD320 application form.
+Read only handwritten or typed entries and visibly selected checkboxes.
+Printed labels, instructions, borders and guide marks are never field values.
+Use physical field location rather than guessing from language.
+Preserve Traditional Chinese, spaces that belong inside values, and leading zeros.
+Do not translate, spell-correct, infer, or copy a value from another field.
+For each field return state="filled" only when an entry is visible,
+state="blank" only when the field is visibly empty, and state="uncertain" when
+the evidence is ambiguous. Blank and uncertain fields must have value="".
+Return exactly one valid JSON object with the requested keys and no commentary.
+"""
+
+
+PROMPTS = {
+    "identity": BASE_RULES
+    + """
+Extract the two name locations and identity-document number from this crop.
+The Chinese-name location can contain Latin letters. Names may contain spaces
+and hyphens but must not absorb the vertical writing guides.
+{"name_english":{"value":"","state":"filled|blank|uncertain"},
+ "name_chinese":{"value":"","state":"filled|blank|uncertain"},
+ "identity_document_number":{"value":"","state":"filled|blank|uncertain"}}
+""",
+    "residential": BASE_RULES
+    + """
+Extract only the Residential Address. For region, read the visibly selected
+checkbox and return Hong Kong, Kowloon, New Territories, or an empty value.
+{"flat":{"value":"","state":"filled|blank|uncertain"},
+ "floor":{"value":"","state":"filled|blank|uncertain"},
+ "block":{"value":"","state":"filled|blank|uncertain"},
+ "building":{"value":"","state":"filled|blank|uncertain"},
+ "street":{"value":"","state":"filled|blank|uncertain"},
+ "district":{"value":"","state":"filled|blank|uncertain"},
+ "region":{"value":"","state":"filled|blank|uncertain"}}
+""",
+    "correspondence": BASE_RULES
+    + """
+Extract only the Correspondence Address and Day Time Contact Telephone Number.
+Do not repeat the residential address when this section is blank. For region,
+use only the checkbox inside this correspondence section.
+{"flat":{"value":"","state":"filled|blank|uncertain"},
+ "floor":{"value":"","state":"filled|blank|uncertain"},
+ "block":{"value":"","state":"filled|blank|uncertain"},
+ "building":{"value":"","state":"filled|blank|uncertain"},
+ "street":{"value":"","state":"filled|blank|uncertain"},
+ "district":{"value":"","state":"filled|blank|uncertain"},
+ "region":{"value":"","state":"filled|blank|uncertain"},
+ "telephone":{"value":"","state":"filled|blank|uncertain"}}
+""",
+    "declaration": BASE_RULES
+    + """
+Extract optional agent details and the handwritten date from this declaration
+crop. Do not treat signature strokes as an agent name.
+{"agent_name":{"value":"","state":"filled|blank|uncertain"},
+ "agent_identity_document_number":{"value":"","state":"filled|blank|uncertain"},
+ "date":{"value":"","state":"filled|blank|uncertain"}}
+""",
+}
+
+
+TASK_FIELDS = {
+    "identity": IDENTITY_FIELDS,
+    "residential": ADDRESS_FIELDS,
+    "correspondence": ADDRESS_FIELDS + ("telephone",),
+    "declaration": DECLARATION_FIELDS,
+}
+
+
+ENGLISH_LABELS = {
+    "name_english": "English name",
+    "name_chinese": "Chinese-name field",
+    "identity_document_number": "Identity document number",
+    "residential_address": "Residential address",
+    "correspondence_address": "Correspondence address",
+    "telephone": "Telephone",
+    "agent_name": "Agent name",
+    "agent_identity_document_number": "Agent identity document number",
+    "date": "Date",
+    "flat": "Flat/Room",
+    "floor": "Floor",
+    "block": "Block/Tower",
+    "building": "Building/Estate",
+    "street": "Street/Village",
+    "district": "District",
+    "region": "Region",
+}
+
+
+CHINESE_LABELS = {
+    "name_english": "英文姓名",
+    "name_chinese": "中文姓名",
+    "identity_document_number": "身份證明文件號碼",
+    "residential_address": "住址",
+    "correspondence_address": "通訊地址",
+    "telephone": "日間聯絡電話",
+    "agent_name": "代理人姓名",
+    "agent_identity_document_number": "代理人身份證明文件號碼",
+    "date": "日期",
+    "flat": "室",
+    "floor": "樓",
+    "block": "座",
+    "building": "大廈或屋苑名稱",
+    "street": "門牌號數及街道或鄉村名稱",
+    "district": "地區",
+    "region": "區域",
+}
+
+
+def parse_json_object(text: str) -> dict[str, object]:
+    """Extract the first valid JSON object from a model response."""
+
+    decoder = json.JSONDecoder()
+    for index, character in enumerate(text):
+        if character != "{":
+            continue
+        try:
+            value, _ = decoder.raw_decode(text[index:])
+        except json.JSONDecodeError:
+            continue
+        if isinstance(value, dict):
+            return value
+    raise ValueError("No valid JSON object found in the model response")
+
+
+def normalize_for_agreement(value: object) -> str:
+    """Normalize only for voting; the selected original spelling is retained."""
+
+    text = unicodedata.normalize("NFKC", str(value)).casefold().strip()
+    return re.sub(r"\s+", " ", text)
+
+
+def clean_candidate(node: object) -> dict[str, str]:
+    """Convert one model leaf into a strict ``value/state`` pair."""
+
+    if not isinstance(node, dict):
+        return {"value": "", "state": "uncertain"}
+    value = unicodedata.normalize("NFKC", str(node.get("value", ""))).strip()
+    state = str(node.get("state", "uncertain")).strip().lower()
+    if state not in VALID_STATES:
+        state = "uncertain"
+    if state != "filled":
+        value = ""
+    elif not value:
+        state = "uncertain"
+    return {"value": value, "state": state}
+
+
+def consensus_for_task(
+    task: str,
+    responses: Sequence[Mapping[str, object]],
+    minimum_agreement: int,
+) -> tuple[dict[str, dict[str, str]], list[dict[str, object]]]:
+    """Select field values by agreement across independent image views.
+
+    A value is accepted only when at least ``minimum_agreement`` views produce
+    the same normalized value and state. Ties and low agreement become
+    ``uncertain`` and are retained in the audit instead of being guessed.
+    """
+
+    if task not in TASK_FIELDS:
+        raise KeyError(f"Unknown extraction task: {task}")
+    if not responses:
+        raise ValueError(f"No parsed responses supplied for task {task}")
+
+    fields: dict[str, dict[str, str]] = {}
+    audit: list[dict[str, object]] = []
+    required = min(max(1, minimum_agreement), len(responses))
+
+    for field in TASK_FIELDS[task]:
+        candidates = [clean_candidate(response.get(field)) for response in responses]
+        keys = [
+            (candidate["state"], normalize_for_agreement(candidate["value"]))
+            for candidate in candidates
+        ]
+        counts = Counter(keys)
+        winning_key, votes = counts.most_common(1)[0]
+        tied = list(counts.values()).count(votes) > 1
+
+        if votes >= required and not tied:
+            selected = next(
+                candidate
+                for candidate, key in zip(candidates, keys)
+                if key == winning_key
+            )
+        else:
+            selected = {"value": "", "state": "uncertain"}
+
+        fields[field] = selected
+        if len(counts) > 1 or selected["state"] == "uncertain":
+            audit.append(
+                {
+                    "field": f"{task}.{field}",
+                    "issue": "View disagreement or insufficient agreement",
+                    "required_votes": required,
+                    "candidates": candidates,
+                }
+            )
+    return fields, audit
+
+
+def _is_filled(item: Mapping[str, str]) -> bool:
+    return item.get("state") == "filled" and bool(item.get("value"))
+
+
+def validate_and_combine(
+    task_results: Mapping[str, Mapping[str, Mapping[str, str]]],
+    consensus_audit: Sequence[Mapping[str, object]],
+) -> tuple[dict[str, object], dict[str, object]]:
+    """Combine task outputs, normalize safe formats and flag inconsistencies.
+
+    This function never copies a name or address into another field. Values that
+    cannot be validated remain visible and are flagged for human review.
+    """
+
+    review = [dict(item) for item in consensus_audit]
+    identity = dict(task_results.get("identity", {}))
+    residential = dict(task_results.get("residential", {}))
+    correspondence = dict(task_results.get("correspondence", {}))
+    declaration = dict(task_results.get("declaration", {}))
+
+    for field in IDENTITY_FIELDS:
+        identity.setdefault(field, {"value": "", "state": "uncertain"})
+    for field in ADDRESS_FIELDS:
+        residential.setdefault(field, {"value": "", "state": "uncertain"})
+        correspondence.setdefault(field, {"value": "", "state": "uncertain"})
+    correspondence.setdefault("telephone", {"value": "", "state": "uncertain"})
+    for field in DECLARATION_FIELDS:
+        declaration.setdefault(field, {"value": "", "state": "uncertain"})
+
+    phone = correspondence["telephone"]
+    if _is_filled(phone):
+        phone["value"] = re.sub(r"[\s().-]", "", phone["value"])
+        if not re.fullmatch(r"\d{8}", phone["value"]):
+            review.append({"field": "telephone", "issue": "Expected eight digits"})
+
+    date = declaration["date"]
+    if _is_filled(date):
+        date["value"] = re.sub(r"\s*([/.-])\s*", r"\1", date["value"])
+        valid = False
+        for date_format in ("%d/%m/%Y", "%d-%m-%Y", "%d.%m.%Y"):
+            try:
+                # This parses a form date, not a timezone-bearing timestamp.
+                datetime.strptime(date["value"], date_format)  # noqa: DTZ007
+                valid = True
+                break
+            except ValueError:
+                pass
+        if not valid:
+            review.append({"field": "date", "issue": "Invalid date"})
+
+    for section_name, section in (
+        ("residential_address", residential),
+        ("correspondence_address", correspondence),
+    ):
+        region = section["region"]
+        if _is_filled(region):
+            canonical = VALID_REGIONS.get(normalize_for_agreement(region["value"]))
+            if canonical:
+                region["value"] = canonical
+            else:
+                review.append(
+                    {"field": f"{section_name}.region", "issue": "Invalid region"}
+                )
+
+    # Identical non-empty addresses can be real, but are unsafe to accept silently.
+    comparable = [
+        field
+        for field in ADDRESS_FIELDS
+        if _is_filled(residential[field]) or _is_filled(correspondence[field])
+    ]
+    if len(comparable) >= 3 and all(
+        _is_filled(residential[field])
+        and _is_filled(correspondence[field])
+        and normalize_for_agreement(residential[field]["value"])
+        == normalize_for_agreement(correspondence[field]["value"])
+        for field in comparable
+    ):
+        review.append(
+            {
+                "field": "correspondence_address",
+                "issue": "Matches residential address; verify against the image",
+            }
+        )
+
+    states = {
+        **{key: item["state"] for key, item in identity.items()},
+        "residential_address": {
+            key: item["state"] for key, item in residential.items()
+        },
+        "correspondence_address": {
+            key: item["state"]
+            for key, item in correspondence.items()
+            if key != "telephone"
+        },
+        "telephone": correspondence["telephone"]["state"],
+        **{key: item["state"] for key, item in declaration.items()},
+    }
+    data: dict[str, object] = {
+        **{key: item["value"] for key, item in identity.items()},
+        "residential_address": {
+            key: item["value"] for key, item in residential.items()
+        },
+        "correspondence_address": {
+            key: item["value"]
+            for key, item in correspondence.items()
+            if key != "telephone"
+        },
+        "telephone": correspondence["telephone"]["value"],
+        **{key: item["value"] for key, item in declaration.items()},
+    }
+    audit = {
+        "status": "needs_review" if review else "passed_automated_checks",
+        "review_items": review,
+        "field_states": states,
+    }
+    return data, audit
+
+
+def translate_keys(value: object, labels: Mapping[str, str]) -> object:
+    """Recursively translate dictionary keys while leaving values unchanged."""
+
+    if isinstance(value, dict):
+        return {
+            labels.get(key, key): translate_keys(item, labels)
+            for key, item in value.items()
+        }
+    return value
+
+
+def render_text(data: Mapping[str, object], labels: Mapping[str, str]) -> str:
+    """Render one human-readable flat/nested form summary."""
+
+    lines = []
+    for key, value in data.items():
+        label = labels.get(key, key)
+        if isinstance(value, dict):
+            lines.append(f"{label}:")
+            lines.extend(
+                f"  {labels.get(child, child)}: {entry}"
+                for child, entry in value.items()
+            )
+        else:
+            lines.append(f"{label}: {value}")
+    return "\n".join(lines) + "\n"
+
+
+def write_json(path: Path, value: object) -> None:
+    """Write UTF-8 JSON with stable indentation."""
+
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+
+
+def write_outputs(
+    output_root: Path,
+    image_path: Path,
+    data: Mapping[str, object],
+    audit: Mapping[str, object],
+    raw: Mapping[str, object],
+) -> Path:
+    """Write English/Chinese text, JSON, audit and raw evidence files."""
+
+    folder = output_root / image_path.stem
+    folder.mkdir(parents=True, exist_ok=True)
+    name = image_path.stem
+    (folder / f"{name}_English.txt").write_text(
+        render_text(data, ENGLISH_LABELS), encoding="utf-8"
+    )
+    (folder / f"{name}_Chinese.txt").write_text(
+        render_text(data, CHINESE_LABELS), encoding="utf-8"
+    )
+    write_json(folder / f"{name}_English.json", data)
+    write_json(folder / f"{name}_Chinese.json", translate_keys(data, CHINESE_LABELS))
+    write_json(folder / f"{name}_audit.json", audit)
+    write_json(folder / f"{name}_raw.json", raw)
+
+    # Fail immediately if final JSON was accidentally rendered incorrectly.
+    for language in ("English", "Chinese"):
+        json.loads((folder / f"{name}_{language}.json").read_text(encoding="utf-8"))
+    return folder
+
+
+def list_images(
+    folder: Path, extensions: Iterable[str], template: Path | None = None
+) -> list[Path]:
+    """List supported form images, excluding the optional blank template."""
+
+    if not folder.is_dir():
+        raise FileNotFoundError(f"Input folder not found: {folder.resolve()}")
+    extension_set = {extension.lower() for extension in extensions}
+    template_resolved = template.resolve() if template and template.exists() else None
+    images = [
+        path
+        for path in folder.iterdir()
+        if path.is_file()
+        and path.suffix.lower() in extension_set
+        and (template_resolved is None or path.resolve() != template_resolved)
+    ]
+    return sorted(images, key=lambda path: path.name.casefold())

@@ -1,0 +1,442 @@
+{
+  "identity": {
+    "original": {
+      "crop": "preprocessed/Wong/identity/original.png",
+      "response": "{\n  \"name_english\": {\n    \"value\": \"WONG MEI LING\",\n    \"state\": \"filled\"\n  },\n  \"name_chinese\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"identity_document_number\": {\n    \"value\": \"TEST002\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "name_english": {
+          "value": "WONG MEI LING",
+          "state": "filled"
+        },
+        "name_chinese": {
+          "value": "",
+          "state": "blank"
+        },
+        "identity_document_number": {
+          "value": "TEST002",
+          "state": "filled"
+        }
+      }
+    },
+    "clahe": {
+      "crop": "preprocessed/Wong/identity/clahe.png",
+      "response": "{\n  \"name_english\": {\n    \"value\": \"WONG MEI LING\",\n    \"state\": \"filled\"\n  },\n  \"name_chinese\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"identity_document_number\": {\n    \"value\": \"TEST002\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "name_english": {
+          "value": "WONG MEI LING",
+          "state": "filled"
+        },
+        "name_chinese": {
+          "value": "",
+          "state": "blank"
+        },
+        "identity_document_number": {
+          "value": "TEST002",
+          "state": "filled"
+        }
+      }
+    },
+    "otsu": {
+      "crop": "preprocessed/Wong/identity/otsu.png",
+      "response": "{\n  \"name_english\": {\n    \"value\": \"WONG MEI LING\",\n    \"state\": \"filled\"\n  },\n  \"name_chinese\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"identity_document_number\": {\n    \"value\": \"TEST002\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "name_english": {
+          "value": "WONG MEI LING",
+          "state": "filled"
+        },
+        "name_chinese": {
+          "value": "",
+          "state": "blank"
+        },
+        "identity_document_number": {
+          "value": "TEST002",
+          "state": "filled"
+        }
+      }
+    },
+    "adaptive": {
+      "crop": "preprocessed/Wong/identity/adaptive.png",
+      "response": "{\n  \"name_english\": {\n    \"value\": \"WONG MEI LING\",\n    \"state\": \"filled\"\n  },\n  \"name_chinese\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"identity_document_number\": {\n    \"value\": \"TEST002\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "name_english": {
+          "value": "WONG MEI LING",
+          "state": "filled"
+        },
+        "name_chinese": {
+          "value": "",
+          "state": "blank"
+        },
+        "identity_document_number": {
+          "value": "TEST002",
+          "state": "filled"
+        }
+      }
+    }
+  },
+  "residential": {
+    "original": {
+      "crop": "preprocessed/Wong/residential/original.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"8 A\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"8\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"B\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"MAPLE COURT\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"25 DEMO STREET\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"KOWLOON CITY\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"Kowloon\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "8 A",
+          "state": "filled"
+        },
+        "floor": {
+          "value": "8",
+          "state": "filled"
+        },
+        "block": {
+          "value": "B",
+          "state": "filled"
+        },
+        "building": {
+          "value": "MAPLE COURT",
+          "state": "filled"
+        },
+        "street": {
+          "value": "25 DEMO STREET",
+          "state": "filled"
+        },
+        "district": {
+          "value": "KOWLOON CITY",
+          "state": "filled"
+        },
+        "region": {
+          "value": "Kowloon",
+          "state": "filled"
+        }
+      }
+    },
+    "clahe": {
+      "crop": "preprocessed/Wong/residential/clahe.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"8 A\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"8\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"B\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"MAPLE COURT\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"25 DEMO STREET\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"KOWLOON CITY\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"Kowloon\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "8 A",
+          "state": "filled"
+        },
+        "floor": {
+          "value": "8",
+          "state": "filled"
+        },
+        "block": {
+          "value": "B",
+          "state": "filled"
+        },
+        "building": {
+          "value": "MAPLE COURT",
+          "state": "filled"
+        },
+        "street": {
+          "value": "25 DEMO STREET",
+          "state": "filled"
+        },
+        "district": {
+          "value": "KOWLOON CITY",
+          "state": "filled"
+        },
+        "region": {
+          "value": "Kowloon",
+          "state": "filled"
+        }
+      }
+    },
+    "otsu": {
+      "crop": "preprocessed/Wong/residential/otsu.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"8 A\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"8\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"B\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"MAPLE COURT\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"25 DEMO STREET\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"KOWLOON CITY\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"Kowloon\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "8 A",
+          "state": "filled"
+        },
+        "floor": {
+          "value": "8",
+          "state": "filled"
+        },
+        "block": {
+          "value": "B",
+          "state": "filled"
+        },
+        "building": {
+          "value": "MAPLE COURT",
+          "state": "filled"
+        },
+        "street": {
+          "value": "25 DEMO STREET",
+          "state": "filled"
+        },
+        "district": {
+          "value": "KOWLOON CITY",
+          "state": "filled"
+        },
+        "region": {
+          "value": "Kowloon",
+          "state": "filled"
+        }
+      }
+    },
+    "adaptive": {
+      "crop": "preprocessed/Wong/residential/adaptive.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"8 A\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"8\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"B\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"MAPLE COURT\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"25 DEMO STREET\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"KOWLOON CITY\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"Kowloon\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "8 A",
+          "state": "filled"
+        },
+        "floor": {
+          "value": "8",
+          "state": "filled"
+        },
+        "block": {
+          "value": "B",
+          "state": "filled"
+        },
+        "building": {
+          "value": "MAPLE COURT",
+          "state": "filled"
+        },
+        "street": {
+          "value": "25 DEMO STREET",
+          "state": "filled"
+        },
+        "district": {
+          "value": "KOWLOON CITY",
+          "state": "filled"
+        },
+        "region": {
+          "value": "Kowloon",
+          "state": "filled"
+        }
+      }
+    }
+  },
+  "correspondence": {
+    "original": {
+      "crop": "preprocessed/Wong/correspondence/original.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"3C\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"3\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"D\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"SAMPLE HOUSE\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"7 PRACTICE ROAD\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"WAN CHAI\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"香港 Hong Kong\",\n    \"state\": \"filled\"\n  },\n  \"telephone\": {\n    \"value\": \"00001002\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "3C",
+          "state": "filled"
+        },
+        "floor": {
+          "value": "3",
+          "state": "filled"
+        },
+        "block": {
+          "value": "D",
+          "state": "filled"
+        },
+        "building": {
+          "value": "SAMPLE HOUSE",
+          "state": "filled"
+        },
+        "street": {
+          "value": "7 PRACTICE ROAD",
+          "state": "filled"
+        },
+        "district": {
+          "value": "WAN CHAI",
+          "state": "filled"
+        },
+        "region": {
+          "value": "香港 Hong Kong",
+          "state": "filled"
+        },
+        "telephone": {
+          "value": "00001002",
+          "state": "filled"
+        }
+      }
+    },
+    "clahe": {
+      "crop": "preprocessed/Wong/correspondence/clahe.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"3C\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"3\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"D\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"SAMPLE HOUSE\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"7 PRACTICE ROAD\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"WAN CHAI\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"香港 Hong Kong\",\n    \"state\": \"filled\"\n  },\n  \"telephone\": {\n    \"value\": \"00001002\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "3C",
+          "state": "filled"
+        },
+        "floor": {
+          "value": "3",
+          "state": "filled"
+        },
+        "block": {
+          "value": "D",
+          "state": "filled"
+        },
+        "building": {
+          "value": "SAMPLE HOUSE",
+          "state": "filled"
+        },
+        "street": {
+          "value": "7 PRACTICE ROAD",
+          "state": "filled"
+        },
+        "district": {
+          "value": "WAN CHAI",
+          "state": "filled"
+        },
+        "region": {
+          "value": "香港 Hong Kong",
+          "state": "filled"
+        },
+        "telephone": {
+          "value": "00001002",
+          "state": "filled"
+        }
+      }
+    },
+    "otsu": {
+      "crop": "preprocessed/Wong/correspondence/otsu.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"3C\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"3\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"D\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"SAMPLE HOUSE\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"7 PRACTICE ROAD\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"WAN CHAI\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"Hong Kong\",\n    \"state\": \"filled\"\n  },\n  \"telephone\": {\n    \"value\": \"00001002\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "3C",
+          "state": "filled"
+        },
+        "floor": {
+          "value": "3",
+          "state": "filled"
+        },
+        "block": {
+          "value": "D",
+          "state": "filled"
+        },
+        "building": {
+          "value": "SAMPLE HOUSE",
+          "state": "filled"
+        },
+        "street": {
+          "value": "7 PRACTICE ROAD",
+          "state": "filled"
+        },
+        "district": {
+          "value": "WAN CHAI",
+          "state": "filled"
+        },
+        "region": {
+          "value": "Hong Kong",
+          "state": "filled"
+        },
+        "telephone": {
+          "value": "00001002",
+          "state": "filled"
+        }
+      }
+    },
+    "adaptive": {
+      "crop": "preprocessed/Wong/correspondence/adaptive.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"3C\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"3\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"D\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"SAMPLE HOUSE\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"7 PRACTICE ROAD\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"WAN CHAI\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"Hong Kong\",\n    \"state\": \"filled\"\n  },\n  \"telephone\": {\n    \"value\": \"00001002\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "3C",
+          "state": "filled"
+        },
+        "floor": {
+          "value": "3",
+          "state": "filled"
+        },
+        "block": {
+          "value": "D",
+          "state": "filled"
+        },
+        "building": {
+          "value": "SAMPLE HOUSE",
+          "state": "filled"
+        },
+        "street": {
+          "value": "7 PRACTICE ROAD",
+          "state": "filled"
+        },
+        "district": {
+          "value": "WAN CHAI",
+          "state": "filled"
+        },
+        "region": {
+          "value": "Hong Kong",
+          "state": "filled"
+        },
+        "telephone": {
+          "value": "00001002",
+          "state": "filled"
+        }
+      }
+    }
+  },
+  "declaration": {
+    "original": {
+      "crop": "preprocessed/Wong/declaration/original.png",
+      "response": "{\n  \"agent_name\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"agent_identity_document_number\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"date\": {\n    \"value\": \"15/09/2026\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "agent_name": {
+          "value": "",
+          "state": "blank"
+        },
+        "agent_identity_document_number": {
+          "value": "",
+          "state": "blank"
+        },
+        "date": {
+          "value": "15/09/2026",
+          "state": "filled"
+        }
+      }
+    },
+    "clahe": {
+      "crop": "preprocessed/Wong/declaration/clahe.png",
+      "response": "{\n  \"agent_name\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"agent_identity_document_number\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"date\": {\n    \"value\": \"15/09/2026\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "agent_name": {
+          "value": "",
+          "state": "blank"
+        },
+        "agent_identity_document_number": {
+          "value": "",
+          "state": "blank"
+        },
+        "date": {
+          "value": "15/09/2026",
+          "state": "filled"
+        }
+      }
+    },
+    "otsu": {
+      "crop": "preprocessed/Wong/declaration/otsu.png",
+      "response": "{\n  \"agent_name\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"agent_identity_document_number\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"date\": {\n    \"value\": \"15/09/2026\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "agent_name": {
+          "value": "",
+          "state": "blank"
+        },
+        "agent_identity_document_number": {
+          "value": "",
+          "state": "blank"
+        },
+        "date": {
+          "value": "15/09/2026",
+          "state": "filled"
+        }
+      }
+    },
+    "adaptive": {
+      "crop": "preprocessed/Wong/declaration/adaptive.png",
+      "response": "{\n  \"agent_name\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"agent_identity_document_number\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"date\": {\n    \"value\": \"15/09/2026\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "agent_name": {
+          "value": "",
+          "state": "blank"
+        },
+        "agent_identity_document_number": {
+          "value": "",
+          "state": "blank"
+        },
+        "date": {
+          "value": "15/09/2026",
+          "state": "filled"
+        }
+      }
+    }
+  }
+}

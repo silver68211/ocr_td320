@@ -1,0 +1,32 @@
+[
+  {
+    "image": "Chan.png",
+    "status": "needs_review",
+    "output": "output/Chan",
+    "elapsed_seconds": 122.91
+  },
+  {
+    "image": "Hassan.png",
+    "status": "needs_review",
+    "output": "output/Hassan",
+    "elapsed_seconds": 126.39
+  },
+  {
+    "image": "Lee.png",
+    "status": "passed_automated_checks",
+    "output": "output/Lee",
+    "elapsed_seconds": 124.16
+  },
+  {
+    "image": "td320_form_borders_only.png",
+    "status": "passed_automated_checks",
+    "output": "output/td320_form_borders_only",
+    "elapsed_seconds": 103.85
+  },
+  {
+    "image": "Wong.png",
+    "status": "needs_review",
+    "output": "output/Wong",
+    "elapsed_seconds": 126.96
+  }
+]

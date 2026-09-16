@@ -1,0 +1,23 @@
+English name: Hassan NOGHEREI
+Chinese-name field: 
+Identity document number: TH003345
+Residential address:
+  Flat/Room: 01
+  Floor: 2
+  Block/Tower: A
+  Building/Estate: a s a s d a s
+  Street/Village: a s a s d a s
+  District: 
+  Region: Hong Kong
+Correspondence address:
+  Flat/Room: 
+  Floor: 
+  Block/Tower: 
+  Building/Estate: 
+  Street/Village: 
+  District: 
+  Region: 新界 New Territories
+Telephone: 6458255132
+Agent name: 
+Agent identity document number: 
+Date: 

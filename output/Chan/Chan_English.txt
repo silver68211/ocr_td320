@@ -1,0 +1,23 @@
+English name: CHAN TAI MAN
+Chinese-name field: 
+Identity document number: TEST001
+Residential address:
+  Flat/Room: 12B
+  Floor: 12
+  Block/Tower: A
+  Building/Estate: HARBOUR GARDEN
+  Street/Village: 18 SAMPLE ROAD
+  District: SHA TIN
+  Region: New Territories
+Correspondence address:
+  Flat/Room: 
+  Floor: 
+  Block/Tower: 
+  Building/Estate: 
+  Street/Village: 
+  District: 
+  Region: 
+Telephone: 00001001
+Agent name: 
+Agent identity document number: 
+Date: 14/09/2026

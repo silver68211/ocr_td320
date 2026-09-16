@@ -1,0 +1,91 @@
+{
+  "status": "passed_automated_checks",
+  "review_items": [],
+  "field_states": {
+    "name_english": "filled",
+    "name_chinese": "filled",
+    "identity_document_number": "blank",
+    "residential_address": {
+      "flat": "blank",
+      "floor": "blank",
+      "block": "blank",
+      "building": "blank",
+      "street": "blank",
+      "district": "blank",
+      "region": "filled"
+    },
+    "correspondence_address": {
+      "flat": "blank",
+      "floor": "blank",
+      "block": "blank",
+      "building": "blank",
+      "street": "blank",
+      "district": "blank",
+      "region": "blank"
+    },
+    "telephone": "blank",
+    "agent_name": "blank",
+    "agent_identity_document_number": "blank",
+    "date": "blank"
+  },
+  "original_image": "figs/td320_blank.png",
+  "model": "Qwen/Qwen3-VL-2B-Instruct",
+  "profile": "balanced",
+  "preprocessing": {
+    "original_size": [
+      2481,
+      3508
+    ],
+    "profile": "balanced",
+    "views": [
+      "original",
+      "clahe",
+      "otsu"
+    ],
+    "template_alignment": {
+      "aligned": true,
+      "matches": 86,
+      "inliers": 52
+    },
+    "deskew_angle_degrees": 0.0,
+    "regions": {
+      "identity": {
+        "task": "identity",
+        "box": [
+          0.025,
+          0.17,
+          0.975,
+          0.305
+        ]
+      },
+      "residential": {
+        "task": "residential",
+        "box": [
+          0.025,
+          0.275,
+          0.985,
+          0.545
+        ]
+      },
+      "correspondence": {
+        "task": "correspondence",
+        "box": [
+          0.025,
+          0.495,
+          0.985,
+          0.725
+        ]
+      },
+      "declaration": {
+        "task": "declaration",
+        "box": [
+          0.025,
+          0.685,
+          0.985,
+          0.985
+        ]
+      }
+    }
+  },
+  "elapsed_seconds": 47.77
+}

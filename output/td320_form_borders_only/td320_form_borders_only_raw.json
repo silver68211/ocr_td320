@@ -1,0 +1,442 @@
+{
+  "identity": {
+    "original": {
+      "crop": "preprocessed/td320_form_borders_only/identity/original.png",
+      "response": "{\n  \"name_english\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"name_chinese\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"identity_document_number\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
+      "parsed": {
+        "name_english": {
+          "value": "",
+          "state": "blank"
+        },
+        "name_chinese": {
+          "value": "",
+          "state": "blank"
+        },
+        "identity_document_number": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    },
+    "clahe": {
+      "crop": "preprocessed/td320_form_borders_only/identity/clahe.png",
+      "response": "{\n  \"name_english\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"name_chinese\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"identity_document_number\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
+      "parsed": {
+        "name_english": {
+          "value": "",
+          "state": "blank"
+        },
+        "name_chinese": {
+          "value": "",
+          "state": "blank"
+        },
+        "identity_document_number": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    },
+    "otsu": {
+      "crop": "preprocessed/td320_form_borders_only/identity/otsu.png",
+      "response": "{\n  \"name_english\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"name_chinese\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"identity_document_number\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
+      "parsed": {
+        "name_english": {
+          "value": "",
+          "state": "blank"
+        },
+        "name_chinese": {
+          "value": "",
+          "state": "blank"
+        },
+        "identity_document_number": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    },
+    "adaptive": {
+      "crop": "preprocessed/td320_form_borders_only/identity/adaptive.png",
+      "response": "{\n  \"name_english\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"name_chinese\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"identity_document_number\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
+      "parsed": {
+        "name_english": {
+          "value": "",
+          "state": "blank"
+        },
+        "name_chinese": {
+          "value": "",
+          "state": "blank"
+        },
+        "identity_document_number": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    }
+  },
+  "residential": {
+    "original": {
+      "crop": "preprocessed/td320_form_borders_only/residential/original.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"floor\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "",
+          "state": "blank"
+        },
+        "floor": {
+          "value": "",
+          "state": "blank"
+        },
+        "block": {
+          "value": "",
+          "state": "blank"
+        },
+        "building": {
+          "value": "",
+          "state": "blank"
+        },
+        "street": {
+          "value": "",
+          "state": "blank"
+        },
+        "district": {
+          "value": "",
+          "state": "blank"
+        },
+        "region": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    },
+    "clahe": {
+      "crop": "preprocessed/td320_form_borders_only/residential/clahe.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"floor\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "",
+          "state": "blank"
+        },
+        "floor": {
+          "value": "",
+          "state": "blank"
+        },
+        "block": {
+          "value": "",
+          "state": "blank"
+        },
+        "building": {
+          "value": "",
+          "state": "blank"
+        },
+        "street": {
+          "value": "",
+          "state": "blank"
+        },
+        "district": {
+          "value": "",
+          "state": "blank"
+        },
+        "region": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    },
+    "otsu": {
+      "crop": "preprocessed/td320_form_borders_only/residential/otsu.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"floor\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "",
+          "state": "blank"
+        },
+        "floor": {
+          "value": "",
+          "state": "blank"
+        },
+        "block": {
+          "value": "",
+          "state": "blank"
+        },
+        "building": {
+          "value": "",
+          "state": "blank"
+        },
+        "street": {
+          "value": "",
+          "state": "blank"
+        },
+        "district": {
+          "value": "",
+          "state": "blank"
+        },
+        "region": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    },
+    "adaptive": {
+      "crop": "preprocessed/td320_form_borders_only/residential/adaptive.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"floor\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "",
+          "state": "blank"
+        },
+        "floor": {
+          "value": "",
+          "state": "blank"
+        },
+        "block": {
+          "value": "",
+          "state": "blank"
+        },
+        "building": {
+          "value": "",
+          "state": "blank"
+        },
+        "street": {
+          "value": "",
+          "state": "blank"
+        },
+        "district": {
+          "value": "",
+          "state": "blank"
+        },
+        "region": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    }
+  },
+  "correspondence": {
+    "original": {
+      "crop": "preprocessed/td320_form_borders_only/correspondence/original.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"floor\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"telephone\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "",
+          "state": "blank"
+        },
+        "floor": {
+          "value": "",
+          "state": "blank"
+        },
+        "block": {
+          "value": "",
+          "state": "blank"
+        },
+        "building": {
+          "value": "",
+          "state": "blank"
+        },
+        "street": {
+          "value": "",
+          "state": "blank"
+        },
+        "district": {
+          "value": "",
+          "state": "blank"
+        },
+        "region": {
+          "value": "",
+          "state": "blank"
+        },
+        "telephone": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    },
+    "clahe": {
+      "crop": "preprocessed/td320_form_borders_only/correspondence/clahe.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"floor\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"telephone\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "",
+          "state": "blank"
+        },
+        "floor": {
+          "value": "",
+          "state": "blank"
+        },
+        "block": {
+          "value": "",
+          "state": "blank"
+        },
+        "building": {
+          "value": "",
+          "state": "blank"
+        },
+        "street": {
+          "value": "",
+          "state": "blank"
+        },
+        "district": {
+          "value": "",
+          "state": "blank"
+        },
+        "region": {
+          "value": "",
+          "state": "blank"
+        },
+        "telephone": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    },
+    "otsu": {
+      "crop": "preprocessed/td320_form_borders_only/correspondence/otsu.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"floor\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"telephone\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "",
+          "state": "blank"
+        },
+        "floor": {
+          "value": "",
+          "state": "blank"
+        },
+        "block": {
+          "value": "",
+          "state": "blank"
+        },
+        "building": {
+          "value": "",
+          "state": "blank"
+        },
+        "street": {
+          "value": "",
+          "state": "blank"
+        },
+        "district": {
+          "value": "",
+          "state": "blank"
+        },
+        "region": {
+          "value": "",
+          "state": "blank"
+        },
+        "telephone": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    },
+    "adaptive": {
+      "crop": "preprocessed/td320_form_borders_only/correspondence/adaptive.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"floor\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"telephone\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "",
+          "state": "blank"
+        },
+        "floor": {
+          "value": "",
+          "state": "blank"
+        },
+        "block": {
+          "value": "",
+          "state": "blank"
+        },
+        "building": {
+          "value": "",
+          "state": "blank"
+        },
+        "street": {
+          "value": "",
+          "state": "blank"
+        },
+        "district": {
+          "value": "",
+          "state": "blank"
+        },
+        "region": {
+          "value": "",
+          "state": "blank"
+        },
+        "telephone": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    }
+  },
+  "declaration": {
+    "original": {
+      "crop": "preprocessed/td320_form_borders_only/declaration/original.png",
+      "response": "{\n  \"agent_name\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"agent_identity_document_number\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"date\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
+      "parsed": {
+        "agent_name": {
+          "value": "",
+          "state": "blank"
+        },
+        "agent_identity_document_number": {
+          "value": "",
+          "state": "blank"
+        },
+        "date": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    },
+    "clahe": {
+      "crop": "preprocessed/td320_form_borders_only/declaration/clahe.png",
+      "response": "{\n  \"agent_name\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"agent_identity_document_number\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"date\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
+      "parsed": {
+        "agent_name": {
+          "value": "",
+          "state": "blank"
+        },
+        "agent_identity_document_number": {
+          "value": "",
+          "state": "blank"
+        },
+        "date": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    },
+    "otsu": {
+      "crop": "preprocessed/td320_form_borders_only/declaration/otsu.png",
+      "response": "{\n  \"agent_name\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"agent_identity_document_number\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"date\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
+      "parsed": {
+        "agent_name": {
+          "value": "",
+          "state": "blank"
+        },
+        "agent_identity_document_number": {
+          "value": "",
+          "state": "blank"
+        },
+        "date": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    },
+    "adaptive": {
+      "crop": "preprocessed/td320_form_borders_only/declaration/adaptive.png",
+      "response": "{\n  \"agent_name\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"agent_identity_document_number\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"date\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
+      "parsed": {
+        "agent_name": {
+          "value": "",
+          "state": "blank"
+        },
+        "agent_identity_document_number": {
+          "value": "",
+          "state": "blank"
+        },
+        "date": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    }
+  }
+}

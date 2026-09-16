@@ -1,0 +1,116 @@
+{
+  "status": "needs_review",
+  "review_items": [
+    {
+      "field": "correspondence.region",
+      "issue": "View disagreement or insufficient agreement",
+      "required_votes": 2,
+      "candidates": [
+        {
+          "value": "香港 Hong Kong",
+          "state": "filled"
+        },
+        {
+          "value": "香港 Hong Kong",
+          "state": "filled"
+        },
+        {
+          "value": "Hong Kong",
+          "state": "filled"
+        },
+        {
+          "value": "Hong Kong",
+          "state": "filled"
+        }
+      ]
+    }
+  ],
+  "field_states": {
+    "name_english": "filled",
+    "name_chinese": "blank",
+    "identity_document_number": "filled",
+    "residential_address": {
+      "flat": "filled",
+      "floor": "filled",
+      "block": "filled",
+      "building": "filled",
+      "street": "filled",
+      "district": "filled",
+      "region": "filled"
+    },
+    "correspondence_address": {
+      "flat": "filled",
+      "floor": "filled",
+      "block": "filled",
+      "building": "filled",
+      "street": "filled",
+      "district": "filled",
+      "region": "uncertain"
+    },
+    "telephone": "filled",
+    "agent_name": "blank",
+    "agent_identity_document_number": "blank",
+    "date": "filled"
+  },
+  "original_image": "figs/Wong.png",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "profile": "accurate",
+  "preprocessing": {
+    "original_size": [
+      1055,
+      1491
+    ],
+    "profile": "accurate",
+    "views": [
+      "original",
+      "clahe",
+      "otsu",
+      "adaptive"
+    ],
+    "template_alignment": {
+      "aligned": true,
+      "matches": 314,
+      "inliers": 194
+    },
+    "deskew_angle_degrees": 0.0,
+    "regions": {
+      "identity": {
+        "task": "identity",
+        "box": [
+          0.025,
+          0.17,
+          0.975,
+          0.305
+        ]
+      },
+      "residential": {
+        "task": "residential",
+        "box": [
+          0.025,
+          0.275,
+          0.985,
+          0.545
+        ]
+      },
+      "correspondence": {
+        "task": "correspondence",
+        "box": [
+          0.025,
+          0.495,
+          0.985,
+          0.725
+        ]
+      },
+      "declaration": {
+        "task": "declaration",
+        "box": [
+          0.025,
+          0.685,
+          0.985,
+          0.985
+        ]
+      }
+    }
+  },
+  "elapsed_seconds": 126.96
+}

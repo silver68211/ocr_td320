@@ -1,0 +1,308 @@
+{
+  "status": "needs_review",
+  "review_items": [
+    {
+      "field": "residential.building",
+      "issue": "View disagreement or insufficient agreement",
+      "required_votes": 2,
+      "candidates": [
+        {
+          "value": "a s a s d a s",
+          "state": "filled"
+        },
+        {
+          "value": "assadas",
+          "state": "filled"
+        },
+        {
+          "value": "asdasdasdasdas",
+          "state": "filled"
+        },
+        {
+          "value": "a s a s d a s",
+          "state": "filled"
+        }
+      ]
+    },
+    {
+      "field": "residential.street",
+      "issue": "View disagreement or insufficient agreement",
+      "required_votes": 2,
+      "candidates": [
+        {
+          "value": "a s a s d a s",
+          "state": "filled"
+        },
+        {
+          "value": "",
+          "state": "blank"
+        },
+        {
+          "value": "asasdas",
+          "state": "filled"
+        },
+        {
+          "value": "a s a s d a s",
+          "state": "filled"
+        }
+      ]
+    },
+    {
+      "field": "residential.district",
+      "issue": "View disagreement or insufficient agreement",
+      "required_votes": 2,
+      "candidates": [
+        {
+          "value": "s a",
+          "state": "filled"
+        },
+        {
+          "value": "",
+          "state": "blank"
+        },
+        {
+          "value": "",
+          "state": "blank"
+        },
+        {
+          "value": "",
+          "state": "blank"
+        }
+      ]
+    },
+    {
+      "field": "residential.region",
+      "issue": "View disagreement or insufficient agreement",
+      "required_votes": 2,
+      "candidates": [
+        {
+          "value": "Hong Kong",
+          "state": "filled"
+        },
+        {
+          "value": "Hong Kong",
+          "state": "filled"
+        },
+        {
+          "value": "Hong Kong",
+          "state": "filled"
+        },
+        {
+          "value": "香港",
+          "state": "filled"
+        }
+      ]
+    },
+    {
+      "field": "correspondence.flat",
+      "issue": "View disagreement or insufficient agreement",
+      "required_votes": 2,
+      "candidates": [
+        {
+          "value": "",
+          "state": "blank"
+        },
+        {
+          "value": "a",
+          "state": "filled"
+        },
+        {
+          "value": "",
+          "state": "blank"
+        },
+        {
+          "value": "a s d s d a s d",
+          "state": "filled"
+        }
+      ]
+    },
+    {
+      "field": "correspondence.floor",
+      "issue": "View disagreement or insufficient agreement",
+      "required_votes": 2,
+      "candidates": [
+        {
+          "value": "",
+          "state": "blank"
+        },
+        {
+          "value": "s",
+          "state": "filled"
+        },
+        {
+          "value": "",
+          "state": "blank"
+        },
+        {
+          "value": "a s d s d a s d",
+          "state": "filled"
+        }
+      ]
+    },
+    {
+      "field": "correspondence.block",
+      "issue": "View disagreement or insufficient agreement",
+      "required_votes": 2,
+      "candidates": [
+        {
+          "value": "",
+          "state": "blank"
+        },
+        {
+          "value": "s",
+          "state": "filled"
+        },
+        {
+          "value": "",
+          "state": "blank"
+        },
+        {
+          "value": "a s d s d a s d",
+          "state": "filled"
+        }
+      ]
+    },
+    {
+      "field": "correspondence.building",
+      "issue": "View disagreement or insufficient agreement",
+      "required_votes": 2,
+      "candidates": [
+        {
+          "value": "",
+          "state": "blank"
+        },
+        {
+          "value": "a",
+          "state": "filled"
+        },
+        {
+          "value": "",
+          "state": "blank"
+        },
+        {
+          "value": "a s d a s d s d a s",
+          "state": "filled"
+        }
+      ]
+    },
+    {
+      "field": "correspondence.region",
+      "issue": "View disagreement or insufficient agreement",
+      "required_votes": 2,
+      "candidates": [
+        {
+          "value": "新界",
+          "state": "filled"
+        },
+        {
+          "value": "新界 New Territories",
+          "state": "filled"
+        },
+        {
+          "value": "New Territories",
+          "state": "filled"
+        },
+        {
+          "value": "新界 New Territories",
+          "state": "filled"
+        }
+      ]
+    },
+    {
+      "field": "telephone",
+      "issue": "Expected eight digits"
+    },
+    {
+      "field": "correspondence_address.region",
+      "issue": "Invalid region"
+    }
+  ],
+  "field_states": {
+    "name_english": "filled",
+    "name_chinese": "blank",
+    "identity_document_number": "filled",
+    "residential_address": {
+      "flat": "filled",
+      "floor": "filled",
+      "block": "filled",
+      "building": "filled",
+      "street": "filled",
+      "district": "blank",
+      "region": "filled"
+    },
+    "correspondence_address": {
+      "flat": "blank",
+      "floor": "blank",
+      "block": "blank",
+      "building": "blank",
+      "street": "blank",
+      "district": "blank",
+      "region": "filled"
+    },
+    "telephone": "filled",
+    "agent_name": "blank",
+    "agent_identity_document_number": "blank",
+    "date": "blank"
+  },
+  "original_image": "figs/Hassan.png",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "profile": "accurate",
+  "preprocessing": {
+    "original_size": [
+      1057,
+      1218
+    ],
+    "profile": "accurate",
+    "views": [
+      "original",
+      "clahe",
+      "otsu",
+      "adaptive"
+    ],
+    "template_alignment": {
+      "aligned": true,
+      "matches": 576,
+      "inliers": 461
+    },
+    "deskew_angle_degrees": 0.0,
+    "regions": {
+      "identity": {
+        "task": "identity",
+        "box": [
+          0.025,
+          0.17,
+          0.975,
+          0.305
+        ]
+      },
+      "residential": {
+        "task": "residential",
+        "box": [
+          0.025,
+          0.275,
+          0.985,
+          0.545
+        ]
+      },
+      "correspondence": {
+        "task": "correspondence",
+        "box": [
+          0.025,
+          0.495,
+          0.985,
+          0.725
+        ]
+      },
+      "declaration": {
+        "task": "declaration",
+        "box": [
+          0.025,
+          0.685,
+          0.985,
+          0.985
+        ]
+      }
+    }
+  },
+  "elapsed_seconds": 126.39
+}

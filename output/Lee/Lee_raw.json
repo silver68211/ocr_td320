@@ -1,0 +1,442 @@
+{
+  "identity": {
+    "original": {
+      "crop": "preprocessed/Lee/identity/original.png",
+      "response": "{\n  \"name_english\": {\n    \"value\": \"LEE KAYAN\",\n    \"state\": \"filled\"\n  },\n  \"name_chinese\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"identity_document_number\": {\n    \"value\": \"TEST003\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "name_english": {
+          "value": "LEE KAYAN",
+          "state": "filled"
+        },
+        "name_chinese": {
+          "value": "",
+          "state": "blank"
+        },
+        "identity_document_number": {
+          "value": "TEST003",
+          "state": "filled"
+        }
+      }
+    },
+    "clahe": {
+      "crop": "preprocessed/Lee/identity/clahe.png",
+      "response": "{\n  \"name_english\": {\n    \"value\": \"LEE KAYAN\",\n    \"state\": \"filled\"\n  },\n  \"name_chinese\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"identity_document_number\": {\n    \"value\": \"TEST003\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "name_english": {
+          "value": "LEE KAYAN",
+          "state": "filled"
+        },
+        "name_chinese": {
+          "value": "",
+          "state": "blank"
+        },
+        "identity_document_number": {
+          "value": "TEST003",
+          "state": "filled"
+        }
+      }
+    },
+    "otsu": {
+      "crop": "preprocessed/Lee/identity/otsu.png",
+      "response": "{\n  \"name_english\": {\n    \"value\": \"LEE KAYAN\",\n    \"state\": \"filled\"\n  },\n  \"name_chinese\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"identity_document_number\": {\n    \"value\": \"TEST003\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "name_english": {
+          "value": "LEE KAYAN",
+          "state": "filled"
+        },
+        "name_chinese": {
+          "value": "",
+          "state": "blank"
+        },
+        "identity_document_number": {
+          "value": "TEST003",
+          "state": "filled"
+        }
+      }
+    },
+    "adaptive": {
+      "crop": "preprocessed/Lee/identity/adaptive.png",
+      "response": "{\n  \"name_english\": {\n    \"value\": \"LEE KAYAN\",\n    \"state\": \"filled\"\n  },\n  \"name_chinese\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"identity_document_number\": {\n    \"value\": \"TEST003\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "name_english": {
+          "value": "LEE KAYAN",
+          "state": "filled"
+        },
+        "name_chinese": {
+          "value": "",
+          "state": "blank"
+        },
+        "identity_document_number": {
+          "value": "TEST003",
+          "state": "filled"
+        }
+      }
+    }
+  },
+  "residential": {
+    "original": {
+      "crop": "preprocessed/Lee/residential/original.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"5\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"5\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"SUNNY COURT\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"36 EXAMPLE LANE\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"NORTH POINT\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"Hong Kong\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "5",
+          "state": "filled"
+        },
+        "floor": {
+          "value": "5",
+          "state": "filled"
+        },
+        "block": {
+          "value": "",
+          "state": "blank"
+        },
+        "building": {
+          "value": "SUNNY COURT",
+          "state": "filled"
+        },
+        "street": {
+          "value": "36 EXAMPLE LANE",
+          "state": "filled"
+        },
+        "district": {
+          "value": "NORTH POINT",
+          "state": "filled"
+        },
+        "region": {
+          "value": "Hong Kong",
+          "state": "filled"
+        }
+      }
+    },
+    "clahe": {
+      "crop": "preprocessed/Lee/residential/clahe.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"5\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"5\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"SUNNY COURT\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"36 EXAMPLE LANE\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"NORTH POINT\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"Hong Kong\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "5",
+          "state": "filled"
+        },
+        "floor": {
+          "value": "5",
+          "state": "filled"
+        },
+        "block": {
+          "value": "",
+          "state": "blank"
+        },
+        "building": {
+          "value": "SUNNY COURT",
+          "state": "filled"
+        },
+        "street": {
+          "value": "36 EXAMPLE LANE",
+          "state": "filled"
+        },
+        "district": {
+          "value": "NORTH POINT",
+          "state": "filled"
+        },
+        "region": {
+          "value": "Hong Kong",
+          "state": "filled"
+        }
+      }
+    },
+    "otsu": {
+      "crop": "preprocessed/Lee/residential/otsu.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"5\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"5\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"SUNNY COURT\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"36 EXAMPLE LANE\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"NORTH POINT\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"Hong Kong\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "5",
+          "state": "filled"
+        },
+        "floor": {
+          "value": "5",
+          "state": "filled"
+        },
+        "block": {
+          "value": "",
+          "state": "blank"
+        },
+        "building": {
+          "value": "SUNNY COURT",
+          "state": "filled"
+        },
+        "street": {
+          "value": "36 EXAMPLE LANE",
+          "state": "filled"
+        },
+        "district": {
+          "value": "NORTH POINT",
+          "state": "filled"
+        },
+        "region": {
+          "value": "Hong Kong",
+          "state": "filled"
+        }
+      }
+    },
+    "adaptive": {
+      "crop": "preprocessed/Lee/residential/adaptive.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"5\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"5\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"SUNNY COURT\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"36 EXAMPLE LANE\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"NORTH POINT\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"Hong Kong\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "5",
+          "state": "filled"
+        },
+        "floor": {
+          "value": "5",
+          "state": "filled"
+        },
+        "block": {
+          "value": "",
+          "state": "blank"
+        },
+        "building": {
+          "value": "SUNNY COURT",
+          "state": "filled"
+        },
+        "street": {
+          "value": "36 EXAMPLE LANE",
+          "state": "filled"
+        },
+        "district": {
+          "value": "NORTH POINT",
+          "state": "filled"
+        },
+        "region": {
+          "value": "Hong Kong",
+          "state": "filled"
+        }
+      }
+    }
+  },
+  "correspondence": {
+    "original": {
+      "crop": "preprocessed/Lee/correspondence/original.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"floor\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"telephone\": {\n    \"value\": \"00001003\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "",
+          "state": "blank"
+        },
+        "floor": {
+          "value": "",
+          "state": "blank"
+        },
+        "block": {
+          "value": "",
+          "state": "blank"
+        },
+        "building": {
+          "value": "",
+          "state": "blank"
+        },
+        "street": {
+          "value": "",
+          "state": "blank"
+        },
+        "district": {
+          "value": "",
+          "state": "blank"
+        },
+        "region": {
+          "value": "",
+          "state": "blank"
+        },
+        "telephone": {
+          "value": "00001003",
+          "state": "filled"
+        }
+      }
+    },
+    "clahe": {
+      "crop": "preprocessed/Lee/correspondence/clahe.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"floor\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"telephone\": {\n    \"value\": \"00001003\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "",
+          "state": "blank"
+        },
+        "floor": {
+          "value": "",
+          "state": "blank"
+        },
+        "block": {
+          "value": "",
+          "state": "blank"
+        },
+        "building": {
+          "value": "",
+          "state": "blank"
+        },
+        "street": {
+          "value": "",
+          "state": "blank"
+        },
+        "district": {
+          "value": "",
+          "state": "blank"
+        },
+        "region": {
+          "value": "",
+          "state": "blank"
+        },
+        "telephone": {
+          "value": "00001003",
+          "state": "filled"
+        }
+      }
+    },
+    "otsu": {
+      "crop": "preprocessed/Lee/correspondence/otsu.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"floor\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"telephone\": {\n    \"value\": \"00001003\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "",
+          "state": "blank"
+        },
+        "floor": {
+          "value": "",
+          "state": "blank"
+        },
+        "block": {
+          "value": "",
+          "state": "blank"
+        },
+        "building": {
+          "value": "",
+          "state": "blank"
+        },
+        "street": {
+          "value": "",
+          "state": "blank"
+        },
+        "district": {
+          "value": "",
+          "state": "blank"
+        },
+        "region": {
+          "value": "",
+          "state": "blank"
+        },
+        "telephone": {
+          "value": "00001003",
+          "state": "filled"
+        }
+      }
+    },
+    "adaptive": {
+      "crop": "preprocessed/Lee/correspondence/adaptive.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"floor\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"telephone\": {\n    \"value\": \"00001003\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "",
+          "state": "blank"
+        },
+        "floor": {
+          "value": "",
+          "state": "blank"
+        },
+        "block": {
+          "value": "",
+          "state": "blank"
+        },
+        "building": {
+          "value": "",
+          "state": "blank"
+        },
+        "street": {
+          "value": "",
+          "state": "blank"
+        },
+        "district": {
+          "value": "",
+          "state": "blank"
+        },
+        "region": {
+          "value": "",
+          "state": "blank"
+        },
+        "telephone": {
+          "value": "00001003",
+          "state": "filled"
+        }
+      }
+    }
+  },
+  "declaration": {
+    "original": {
+      "crop": "preprocessed/Lee/declaration/original.png",
+      "response": "{\n  \"agent_name\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"agent_identity_document_number\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"date\": {\n    \"value\": \"16 / 09 / 2026\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "agent_name": {
+          "value": "",
+          "state": "blank"
+        },
+        "agent_identity_document_number": {
+          "value": "",
+          "state": "blank"
+        },
+        "date": {
+          "value": "16 / 09 / 2026",
+          "state": "filled"
+        }
+      }
+    },
+    "clahe": {
+      "crop": "preprocessed/Lee/declaration/clahe.png",
+      "response": "{\n  \"agent_name\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"agent_identity_document_number\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"date\": {\n    \"value\": \"16 / 09 / 2026\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "agent_name": {
+          "value": "",
+          "state": "blank"
+        },
+        "agent_identity_document_number": {
+          "value": "",
+          "state": "blank"
+        },
+        "date": {
+          "value": "16 / 09 / 2026",
+          "state": "filled"
+        }
+      }
+    },
+    "otsu": {
+      "crop": "preprocessed/Lee/declaration/otsu.png",
+      "response": "{\n  \"agent_name\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"agent_identity_document_number\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"date\": {\n    \"value\": \"16 / 09 / 2026\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "agent_name": {
+          "value": "",
+          "state": "blank"
+        },
+        "agent_identity_document_number": {
+          "value": "",
+          "state": "blank"
+        },
+        "date": {
+          "value": "16 / 09 / 2026",
+          "state": "filled"
+        }
+      }
+    },
+    "adaptive": {
+      "crop": "preprocessed/Lee/declaration/adaptive.png",
+      "response": "{\n  \"agent_name\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"agent_identity_document_number\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"date\": {\n    \"value\": \"16 / 09 / 2026\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "agent_name": {
+          "value": "",
+          "state": "blank"
+        },
+        "agent_identity_document_number": {
+          "value": "",
+          "state": "blank"
+        },
+        "date": {
+          "value": "16 / 09 / 2026",
+          "state": "filled"
+        }
+      }
+    }
+  }
+}

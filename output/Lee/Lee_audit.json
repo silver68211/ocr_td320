@@ -1,0 +1,92 @@
+{
+  "status": "passed_automated_checks",
+  "review_items": [],
+  "field_states": {
+    "name_english": "filled",
+    "name_chinese": "blank",
+    "identity_document_number": "filled",
+    "residential_address": {
+      "flat": "filled",
+      "floor": "filled",
+      "block": "blank",
+      "building": "filled",
+      "street": "filled",
+      "district": "filled",
+      "region": "filled"
+    },
+    "correspondence_address": {
+      "flat": "blank",
+      "floor": "blank",
+      "block": "blank",
+      "building": "blank",
+      "street": "blank",
+      "district": "blank",
+      "region": "blank"
+    },
+    "telephone": "filled",
+    "agent_name": "blank",
+    "agent_identity_document_number": "blank",
+    "date": "filled"
+  },
+  "original_image": "figs/Lee.png",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "profile": "accurate",
+  "preprocessing": {
+    "original_size": [
+      1055,
+      1491
+    ],
+    "profile": "accurate",
+    "views": [
+      "original",
+      "clahe",
+      "otsu",
+      "adaptive"
+    ],
+    "template_alignment": {
+      "aligned": true,
+      "matches": 381,
+      "inliers": 224
+    },
+    "deskew_angle_degrees": 0.0,
+    "regions": {
+      "identity": {
+        "task": "identity",
+        "box": [
+          0.025,
+          0.17,
+          0.975,
+          0.305
+        ]
+      },
+      "residential": {
+        "task": "residential",
+        "box": [
+          0.025,
+          0.275,
+          0.985,
+          0.545
+        ]
+      },
+      "correspondence": {
+        "task": "correspondence",
+        "box": [
+          0.025,
+          0.495,
+          0.985,
+          0.725
+        ]
+      },
+      "declaration": {
+        "task": "declaration",
+        "box": [
+          0.025,
+          0.685,
+          0.985,
+          0.985
+        ]
+      }
+    }
+  },
+  "elapsed_seconds": 124.16
+}
