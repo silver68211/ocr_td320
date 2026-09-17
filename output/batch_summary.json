@@ -3,36 +3,42 @@
     "image": "Chan.png",
     "status": "needs_review",
     "output": "output/Chan",
-    "elapsed_seconds": 271.9
+    "elapsed_seconds": 255.43
   },
   {
     "image": "Hassan.png",
     "status": "needs_review",
     "output": "output/Hassan",
-    "elapsed_seconds": 121.13
+    "elapsed_seconds": 128.49
   },
   {
     "image": "Lee.png",
     "status": "needs_review",
     "output": "output/Lee",
-    "elapsed_seconds": 114.53
+    "elapsed_seconds": 122.17
   },
   {
     "image": "td320_form_borders_only.png",
     "status": "passed_automated_checks",
     "output": "output/td320_form_borders_only",
-    "elapsed_seconds": 93.89
+    "elapsed_seconds": 100.0
+  },
+  {
+    "image": "test2-1.png",
+    "status": "needs_review",
+    "output": "output/test2-1",
+    "elapsed_seconds": 121.33
   },
   {
     "image": "text-1.png",
     "status": "needs_review",
     "output": "output/text-1",
-    "elapsed_seconds": 123.32
+    "elapsed_seconds": 130.59
   },
   {
     "image": "Wong.png",
     "status": "needs_review",
     "output": "output/Wong",
-    "elapsed_seconds": 117.21
+    "elapsed_seconds": 126.85
   }
 ]

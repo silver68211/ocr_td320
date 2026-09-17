@@ -1,0 +1,27 @@
+{
+  "name_english": "CHOW TAK PING",
+  "name_chinese": "周德平",
+  "identity_document_number": "",
+  "residential_address": {
+    "flat": "C",
+    "floor": "11",
+    "block": "D",
+    "building": "CYBERPORT 100",
+    "street": "",
+    "district": "",
+    "region": ""
+  },
+  "correspondence_address": {
+    "flat": "A",
+    "floor": "22",
+    "block": "C",
+    "building": "DRAGON MANSION",
+    "street": "726-448 CHOW TAIK STREET",
+    "district": "CHENG SHA WAN",
+    "region": "九龍 Kowloon"
+  },
+  "telephone": "93306829",
+  "agent_name": "",
+  "agent_identity_document_number": "",
+  "date": ""
+}

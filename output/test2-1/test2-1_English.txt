@@ -1,0 +1,23 @@
+English name: CHOW TAK PING
+Chinese-name field: 周德平
+Identity document number: 
+Residential address:
+  Flat/Room: C
+  Floor: 11
+  Block/Tower: D
+  Building/Estate: CYBERPORT 100
+  Street/Village: 
+  District: 
+  Region: 
+Correspondence address:
+  Flat/Room: A
+  Floor: 22
+  Block/Tower: C
+  Building/Estate: DRAGON MANSION
+  Street/Village: 726-448 CHOW TAIK STREET
+  District: CHENG SHA WAN
+  Region: 九龍 Kowloon
+Telephone: 93306829
+Agent name: 
+Agent identity document number: 
+Date: 

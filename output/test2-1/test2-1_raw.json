@@ -1,0 +1,442 @@
+{
+  "identity": {
+    "original": {
+      "crop": "preprocessed/test2-1/identity/original.png",
+      "response": "{\n  \"name_english\": {\n    \"value\": \"CHOW TAK PING\",\n    \"state\": \"filled\"\n  },\n  \"name_chinese\": {\n    \"value\": \"周德平\",\n    \"state\": \"filled\"\n  },\n  \"identity_document_number\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
+      "parsed": {
+        "name_english": {
+          "value": "CHOW TAK PING",
+          "state": "filled"
+        },
+        "name_chinese": {
+          "value": "周德平",
+          "state": "filled"
+        },
+        "identity_document_number": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    },
+    "clahe": {
+      "crop": "preprocessed/test2-1/identity/clahe.png",
+      "response": "{\n  \"name_english\": {\n    \"value\": \"CHOW TAK PING\",\n    \"state\": \"filled\"\n  },\n  \"name_chinese\": {\n    \"value\": \"周德平\",\n    \"state\": \"filled\"\n  },\n  \"identity_document_number\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
+      "parsed": {
+        "name_english": {
+          "value": "CHOW TAK PING",
+          "state": "filled"
+        },
+        "name_chinese": {
+          "value": "周德平",
+          "state": "filled"
+        },
+        "identity_document_number": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    },
+    "otsu": {
+      "crop": "preprocessed/test2-1/identity/otsu.png",
+      "response": "{\n  \"name_english\": {\n    \"value\": \"CHOW TAK PING\",\n    \"state\": \"filled\"\n  },\n  \"name_chinese\": {\n    \"value\": \"周德平\",\n    \"state\": \"filled\"\n  },\n  \"identity_document_number\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
+      "parsed": {
+        "name_english": {
+          "value": "CHOW TAK PING",
+          "state": "filled"
+        },
+        "name_chinese": {
+          "value": "周德平",
+          "state": "filled"
+        },
+        "identity_document_number": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    },
+    "adaptive": {
+      "crop": "preprocessed/test2-1/identity/adaptive.png",
+      "response": "{\n  \"name_english\": {\n    \"value\": \"CHOW TAK PING\",\n    \"state\": \"filled\"\n  },\n  \"name_chinese\": {\n    \"value\": \"周德平\",\n    \"state\": \"filled\"\n  },\n  \"identity_document_number\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
+      "parsed": {
+        "name_english": {
+          "value": "CHOW TAK PING",
+          "state": "filled"
+        },
+        "name_chinese": {
+          "value": "周德平",
+          "state": "filled"
+        },
+        "identity_document_number": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    }
+  },
+  "residential": {
+    "original": {
+      "crop": "preprocessed/test2-1/residential/original.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"C\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"11\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"D\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"CYBERPORT 100\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"80, K BUI\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "C",
+          "state": "filled"
+        },
+        "floor": {
+          "value": "11",
+          "state": "filled"
+        },
+        "block": {
+          "value": "D",
+          "state": "filled"
+        },
+        "building": {
+          "value": "CYBERPORT 100",
+          "state": "filled"
+        },
+        "street": {
+          "value": "80, K BUI",
+          "state": "filled"
+        },
+        "district": {
+          "value": "",
+          "state": "blank"
+        },
+        "region": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    },
+    "clahe": {
+      "crop": "preprocessed/test2-1/residential/clahe.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"C\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"11\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"D\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"CYBERPORT 100\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"80, K P O L I A N\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "C",
+          "state": "filled"
+        },
+        "floor": {
+          "value": "11",
+          "state": "filled"
+        },
+        "block": {
+          "value": "D",
+          "state": "filled"
+        },
+        "building": {
+          "value": "CYBERPORT 100",
+          "state": "filled"
+        },
+        "street": {
+          "value": "80, K P O L I A N",
+          "state": "filled"
+        },
+        "district": {
+          "value": "",
+          "state": "blank"
+        },
+        "region": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    },
+    "otsu": {
+      "crop": "preprocessed/test2-1/residential/otsu.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"C\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"14\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"D\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"CYBERPORT 100\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "C",
+          "state": "filled"
+        },
+        "floor": {
+          "value": "14",
+          "state": "filled"
+        },
+        "block": {
+          "value": "D",
+          "state": "filled"
+        },
+        "building": {
+          "value": "CYBERPORT 100",
+          "state": "filled"
+        },
+        "street": {
+          "value": "",
+          "state": "blank"
+        },
+        "district": {
+          "value": "",
+          "state": "blank"
+        },
+        "region": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    },
+    "adaptive": {
+      "crop": "preprocessed/test2-1/residential/adaptive.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"C4\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"11\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"DT\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"CYBERPORT 100\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"80, K. F. L. A.\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "C4",
+          "state": "filled"
+        },
+        "floor": {
+          "value": "11",
+          "state": "filled"
+        },
+        "block": {
+          "value": "DT",
+          "state": "filled"
+        },
+        "building": {
+          "value": "CYBERPORT 100",
+          "state": "filled"
+        },
+        "street": {
+          "value": "80, K. F. L. A.",
+          "state": "filled"
+        },
+        "district": {
+          "value": "",
+          "state": "blank"
+        },
+        "region": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    }
+  },
+  "correspondence": {
+    "original": {
+      "crop": "preprocessed/test2-1/correspondence/original.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"A\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"22\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"C\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"DRAGON MANSION\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"726-448 CHOW TAIK STREET\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"CHENG SHA WAN\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"九龍 Kowloon\",\n    \"state\": \"filled\"\n  },\n  \"telephone\": {\n    \"value\": \"93306829\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "A",
+          "state": "filled"
+        },
+        "floor": {
+          "value": "22",
+          "state": "filled"
+        },
+        "block": {
+          "value": "C",
+          "state": "filled"
+        },
+        "building": {
+          "value": "DRAGON MANSION",
+          "state": "filled"
+        },
+        "street": {
+          "value": "726-448 CHOW TAIK STREET",
+          "state": "filled"
+        },
+        "district": {
+          "value": "CHENG SHA WAN",
+          "state": "filled"
+        },
+        "region": {
+          "value": "九龍 Kowloon",
+          "state": "filled"
+        },
+        "telephone": {
+          "value": "93306829",
+          "state": "filled"
+        }
+      }
+    },
+    "clahe": {
+      "crop": "preprocessed/test2-1/correspondence/clahe.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"A\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"22\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"C\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"DRAGON MANSION\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"726-448 CHOW TAIK STREET\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"CHENG SHA WAN\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"九龍 Kowloon\",\n    \"state\": \"filled\"\n  },\n  \"telephone\": {\n    \"value\": \"93306829\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "A",
+          "state": "filled"
+        },
+        "floor": {
+          "value": "22",
+          "state": "filled"
+        },
+        "block": {
+          "value": "C",
+          "state": "filled"
+        },
+        "building": {
+          "value": "DRAGON MANSION",
+          "state": "filled"
+        },
+        "street": {
+          "value": "726-448 CHOW TAIK STREET",
+          "state": "filled"
+        },
+        "district": {
+          "value": "CHENG SHA WAN",
+          "state": "filled"
+        },
+        "region": {
+          "value": "九龍 Kowloon",
+          "state": "filled"
+        },
+        "telephone": {
+          "value": "93306829",
+          "state": "filled"
+        }
+      }
+    },
+    "otsu": {
+      "crop": "preprocessed/test2-1/correspondence/otsu.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"22\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"block\": {\n    \"value\": \"C\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"DRAGON MANSION\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"326-448 CITADIN TAK STREET\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"CHENG SHA WAN\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"九龍 Kowloon\",\n    \"state\": \"filled\"\n  },\n  \"telephone\": {\n    \"value\": \"93306829\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "22",
+          "state": "filled"
+        },
+        "floor": {
+          "value": "",
+          "state": "blank"
+        },
+        "block": {
+          "value": "C",
+          "state": "filled"
+        },
+        "building": {
+          "value": "DRAGON MANSION",
+          "state": "filled"
+        },
+        "street": {
+          "value": "326-448 CITADIN TAK STREET",
+          "state": "filled"
+        },
+        "district": {
+          "value": "CHENG SHA WAN",
+          "state": "filled"
+        },
+        "region": {
+          "value": "九龍 Kowloon",
+          "state": "filled"
+        },
+        "telephone": {
+          "value": "93306829",
+          "state": "filled"
+        }
+      }
+    },
+    "adaptive": {
+      "crop": "preprocessed/test2-1/correspondence/adaptive.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"74\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"24\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"C\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"DRAGON MANSION\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"226-448 CHOW TAIK STREET\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"CHENG SHA WAN\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"九龍 Kowloon\",\n    \"state\": \"filled\"\n  },\n  \"telephone\": {\n    \"value\": \"93306829\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "74",
+          "state": "filled"
+        },
+        "floor": {
+          "value": "24",
+          "state": "filled"
+        },
+        "block": {
+          "value": "C",
+          "state": "filled"
+        },
+        "building": {
+          "value": "DRAGON MANSION",
+          "state": "filled"
+        },
+        "street": {
+          "value": "226-448 CHOW TAIK STREET",
+          "state": "filled"
+        },
+        "district": {
+          "value": "CHENG SHA WAN",
+          "state": "filled"
+        },
+        "region": {
+          "value": "九龍 Kowloon",
+          "state": "filled"
+        },
+        "telephone": {
+          "value": "93306829",
+          "state": "filled"
+        }
+      }
+    }
+  },
+  "declaration": {
+    "original": {
+      "crop": "preprocessed/test2-1/declaration/original.png",
+      "response": "{\"agent_name\":{\"value\":\"\",\"state\":\"blank\"}, \"agent_identity_document_number\":{\"value\":\"\",\"state\":\"blank\"}, \"date\":{\"value\":\"\",\"state\":\"blank\"}}",
+      "parsed": {
+        "agent_name": {
+          "value": "",
+          "state": "blank"
+        },
+        "agent_identity_document_number": {
+          "value": "",
+          "state": "blank"
+        },
+        "date": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    },
+    "clahe": {
+      "crop": "preprocessed/test2-1/declaration/clahe.png",
+      "response": "{\"agent_name\":{\"value\":\"\",\"state\":\"blank\"}, \"agent_identity_document_number\":{\"value\":\"\",\"state\":\"blank\"}, \"date\":{\"value\":\"\",\"state\":\"blank\"}}",
+      "parsed": {
+        "agent_name": {
+          "value": "",
+          "state": "blank"
+        },
+        "agent_identity_document_number": {
+          "value": "",
+          "state": "blank"
+        },
+        "date": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    },
+    "otsu": {
+      "crop": "preprocessed/test2-1/declaration/otsu.png",
+      "response": "{\"agent_name\":{\"value\":\"\",\"state\":\"blank\"}, \"agent_identity_document_number\":{\"value\":\"\",\"state\":\"blank\"}, \"date\":{\"value\":\"\",\"state\":\"blank\"}}",
+      "parsed": {
+        "agent_name": {
+          "value": "",
+          "state": "blank"
+        },
+        "agent_identity_document_number": {
+          "value": "",
+          "state": "blank"
+        },
+        "date": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    },
+    "adaptive": {
+      "crop": "preprocessed/test2-1/declaration/adaptive.png",
+      "response": "{\"agent_name\":{\"value\":\"\",\"state\":\"blank\"}, \"agent_identity_document_number\":{\"value\":\"\",\"state\":\"blank\"}, \"date\":{\"value\":\"\",\"state\":\"blank\"}}",
+      "parsed": {
+        "agent_name": {
+          "value": "",
+          "state": "blank"
+        },
+        "agent_identity_document_number": {
+          "value": "",
+          "state": "blank"
+        },
+        "date": {
+          "value": "",
+          "state": "blank"
+        }
+      }
+    }
+  }
+}

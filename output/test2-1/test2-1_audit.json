@@ -2,47 +2,70 @@
   "status": "needs_review",
   "review_items": [
     {
-      "field": "identity.name_english",
+      "field": "residential.flat",
       "issue": "View disagreement or insufficient agreement",
       "required_votes": 2,
       "candidates": [
         {
-          "value": "Hassan NOGHEREI",
+          "value": "C",
           "state": "filled"
         },
         {
-          "value": "Hassan NOGHEREI",
+          "value": "C",
           "state": "filled"
         },
         {
-          "value": "Hassan NOGHRERI",
+          "value": "C",
           "state": "filled"
         },
         {
-          "value": "Hassan NOGHEREI",
+          "value": "C4",
           "state": "filled"
         }
       ]
     },
     {
-      "field": "residential.building",
+      "field": "residential.floor",
       "issue": "View disagreement or insufficient agreement",
       "required_votes": 2,
       "candidates": [
         {
-          "value": "and as j d j a s d b a s j b d j a s j d a",
+          "value": "11",
           "state": "filled"
         },
         {
-          "value": "a n d a s j d j a s d b a s j b d j a s j d a",
+          "value": "11",
           "state": "filled"
         },
         {
-          "value": "and asjdj asd b as sj bdj asj da",
+          "value": "14",
           "state": "filled"
         },
         {
-          "value": "a n d a s j d j a s d b a s j b d j a s j d a",
+          "value": "11",
+          "state": "filled"
+        }
+      ]
+    },
+    {
+      "field": "residential.block",
+      "issue": "View disagreement or insufficient agreement",
+      "required_votes": 2,
+      "candidates": [
+        {
+          "value": "D",
+          "state": "filled"
+        },
+        {
+          "value": "D",
+          "state": "filled"
+        },
+        {
+          "value": "D",
+          "state": "filled"
+        },
+        {
+          "value": "DT",
           "state": "filled"
         }
       ]
@@ -53,65 +76,65 @@
       "required_votes": 2,
       "candidates": [
         {
-          "value": "a s a s s d a s",
+          "value": "80, K BUI",
           "state": "filled"
         },
         {
-          "value": "a s a s s d a s",
+          "value": "80, K P O L I A N",
           "state": "filled"
         },
         {
-          "value": "asassdas",
-          "state": "filled"
+          "value": "",
+          "state": "blank"
         },
         {
-          "value": "a s a s s d a s",
+          "value": "80, K. F. L. A.",
           "state": "filled"
         }
       ]
     },
     {
-      "field": "correspondence.block",
+      "field": "correspondence.flat",
       "issue": "View disagreement or insufficient agreement",
       "required_votes": 2,
       "candidates": [
         {
-          "value": "s s",
+          "value": "A",
           "state": "filled"
         },
         {
-          "value": "s s",
+          "value": "A",
           "state": "filled"
         },
         {
-          "value": "SS",
+          "value": "22",
           "state": "filled"
         },
         {
-          "value": "s s",
+          "value": "74",
           "state": "filled"
         }
       ]
     },
     {
-      "field": "correspondence.building",
+      "field": "correspondence.floor",
       "issue": "View disagreement or insufficient agreement",
       "required_votes": 2,
       "candidates": [
         {
-          "value": "a s d a s d s d a s",
+          "value": "22",
           "state": "filled"
         },
         {
-          "value": "a s d a s d s d a s",
+          "value": "22",
           "state": "filled"
         },
         {
-          "value": "asdsdasd",
-          "state": "filled"
+          "value": "",
+          "state": "blank"
         },
         {
-          "value": "a s d s d a s d",
+          "value": "24",
           "state": "filled"
         }
       ]
@@ -122,26 +145,22 @@
       "required_votes": 2,
       "candidates": [
         {
-          "value": "a s d a s d s d a s",
+          "value": "726-448 CHOW TAIK STREET",
           "state": "filled"
         },
         {
-          "value": "a s d a s d s d a s",
+          "value": "726-448 CHOW TAIK STREET",
           "state": "filled"
         },
         {
-          "value": "asdsdas",
+          "value": "326-448 CITADIN TAK STREET",
           "state": "filled"
         },
         {
-          "value": "a s d a s d s d a s",
+          "value": "226-448 CHOW TAIK STREET",
           "state": "filled"
         }
       ]
-    },
-    {
-      "field": "telephone",
-      "issue": "Expected eight digits"
     },
     {
       "field": "correspondence_address.region",
@@ -150,16 +169,16 @@
   ],
   "field_states": {
     "name_english": "filled",
-    "name_chinese": "blank",
-    "identity_document_number": "filled",
+    "name_chinese": "filled",
+    "identity_document_number": "blank",
     "residential_address": {
       "flat": "filled",
       "floor": "filled",
       "block": "filled",
       "building": "filled",
-      "street": "filled",
+      "street": "uncertain",
       "district": "blank",
-      "region": "filled"
+      "region": "blank"
     },
     "correspondence_address": {
       "flat": "filled",
@@ -167,7 +186,7 @@
       "block": "filled",
       "building": "filled",
       "street": "filled",
-      "district": "blank",
+      "district": "filled",
       "region": "filled"
     },
     "telephone": "filled",
@@ -175,13 +194,13 @@
     "agent_identity_document_number": "blank",
     "date": "blank"
   },
-  "original_image": "figs/Hassan.png",
+  "original_image": "figs/test2-1.png",
   "model": "Qwen/Qwen3-VL-8B-Instruct",
   "profile": "maximum",
   "preprocessing": {
     "original_size": [
-      1057,
-      1218
+      2481,
+      3508
     ],
     "profile": "maximum",
     "views": [
@@ -192,10 +211,10 @@
     ],
     "template_alignment": {
       "aligned": true,
-      "matches": 576,
-      "inliers": 461
+      "matches": 213,
+      "inliers": 42
     },
-    "deskew_angle_degrees": 0.0,
+    "deskew_angle_degrees": 1.6912,
     "regions": {
       "identity": {
         "task": "identity",
@@ -235,5 +254,5 @@
       }
     }
   },
-  "elapsed_seconds": 128.49
+  "elapsed_seconds": 121.33
 }
