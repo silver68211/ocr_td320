@@ -76,10 +76,10 @@
   "residential": {
     "original": {
       "crop": "preprocessed/Wong/residential/original.png",
-      "response": "{\n  \"flat\": {\n    \"value\": \"8 A\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"8\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"B\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"MAPLE COURT\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"25 DEMO STREET\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"KOWLOON CITY\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"Kowloon\",\n    \"state\": \"filled\"\n  }\n}",
+      "response": "{\n  \"flat\": {\"value\": \"8A\", \"state\": \"filled\"},\n  \"floor\": {\"value\": \"8\", \"state\": \"filled\"},\n  \"block\": {\"value\": \"B\", \"state\": \"filled\"},\n  \"building\": {\"value\": \"MAPLE COURT\", \"state\": \"filled\"},\n  \"street\": {\"value\": \"25 DEMO STREET\", \"state\": \"filled\"},\n  \"district\": {\"value\": \"KOWLOON CITY\", \"state\": \"filled\"},\n  \"region\": {\"value\": \"Kowloon\", \"state\": \"filled\"}\n}",
       "parsed": {
         "flat": {
-          "value": "8 A",
+          "value": "8A",
           "state": "filled"
         },
         "floor": {
@@ -110,10 +110,10 @@
     },
     "clahe": {
       "crop": "preprocessed/Wong/residential/clahe.png",
-      "response": "{\n  \"flat\": {\n    \"value\": \"8 A\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"8\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"B\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"MAPLE COURT\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"25 DEMO STREET\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"KOWLOON CITY\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"Kowloon\",\n    \"state\": \"filled\"\n  }\n}",
+      "response": "{\n  \"flat\": {\n    \"value\": \"8A\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"8\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"B\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"MAPLE COURT\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"25 DEMO STREET\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"KOWLOON CITY\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"Kowloon\",\n    \"state\": \"filled\"\n  }\n}",
       "parsed": {
         "flat": {
-          "value": "8 A",
+          "value": "8A",
           "state": "filled"
         },
         "floor": {
@@ -144,10 +144,10 @@
     },
     "otsu": {
       "crop": "preprocessed/Wong/residential/otsu.png",
-      "response": "{\n  \"flat\": {\n    \"value\": \"8 A\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"8\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"B\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"MAPLE COURT\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"25 DEMO STREET\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"KOWLOON CITY\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"Kowloon\",\n    \"state\": \"filled\"\n  }\n}",
+      "response": "{\n  \"flat\": {\n    \"value\": \"8A\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"8\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"B\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"MAPLE COURT\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"25 DEMO STREET\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"KOWLOON CITY\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"Kowloon\",\n    \"state\": \"filled\"\n  }\n}",
       "parsed": {
         "flat": {
-          "value": "8 A",
+          "value": "8A",
           "state": "filled"
         },
         "floor": {
@@ -178,10 +178,10 @@
     },
     "adaptive": {
       "crop": "preprocessed/Wong/residential/adaptive.png",
-      "response": "{\n  \"flat\": {\n    \"value\": \"8 A\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"8\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"B\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"MAPLE COURT\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"25 DEMO STREET\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"KOWLOON CITY\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"Kowloon\",\n    \"state\": \"filled\"\n  }\n}",
+      "response": "{\n  \"flat\": {\n    \"value\": \"8A\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"8\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"B\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"MAPLE COURT\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"25, DEMO STREET\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"KOWLOON CITY\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"Kowloon\",\n    \"state\": \"filled\"\n  }\n}",
       "parsed": {
         "flat": {
-          "value": "8 A",
+          "value": "8A",
           "state": "filled"
         },
         "floor": {
@@ -197,7 +197,7 @@
           "state": "filled"
         },
         "street": {
-          "value": "25 DEMO STREET",
+          "value": "25, DEMO STREET",
           "state": "filled"
         },
         "district": {
@@ -214,7 +214,7 @@
   "correspondence": {
     "original": {
       "crop": "preprocessed/Wong/correspondence/original.png",
-      "response": "{\n  \"flat\": {\n    \"value\": \"3C\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"3\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"D\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"SAMPLE HOUSE\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"7 PRACTICE ROAD\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"WAN CHAI\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"香港 Hong Kong\",\n    \"state\": \"filled\"\n  },\n  \"telephone\": {\n    \"value\": \"00001002\",\n    \"state\": \"filled\"\n  }\n}",
+      "response": "{\n  \"flat\": {\n    \"value\": \"3C\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"3\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"D\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"SAMPLE HOUSE\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"7 PRACTICE ROAD\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"WAN CHAI\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"香港\",\n    \"state\": \"filled\"\n  },\n  \"telephone\": {\n    \"value\": \"00001002\",\n    \"state\": \"filled\"\n  }\n}",
       "parsed": {
         "flat": {
           "value": "3C",
@@ -241,7 +241,7 @@
           "state": "filled"
         },
         "region": {
-          "value": "香港 Hong Kong",
+          "value": "香港",
           "state": "filled"
         },
         "telephone": {

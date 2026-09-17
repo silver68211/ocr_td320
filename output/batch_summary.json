@@ -3,30 +3,36 @@
     "image": "Chan.png",
     "status": "needs_review",
     "output": "output/Chan",
-    "elapsed_seconds": 122.91
+    "elapsed_seconds": 271.9
   },
   {
     "image": "Hassan.png",
     "status": "needs_review",
     "output": "output/Hassan",
-    "elapsed_seconds": 126.39
+    "elapsed_seconds": 121.13
   },
   {
     "image": "Lee.png",
-    "status": "passed_automated_checks",
+    "status": "needs_review",
     "output": "output/Lee",
-    "elapsed_seconds": 124.16
+    "elapsed_seconds": 114.53
   },
   {
     "image": "td320_form_borders_only.png",
     "status": "passed_automated_checks",
     "output": "output/td320_form_borders_only",
-    "elapsed_seconds": 103.85
+    "elapsed_seconds": 93.89
+  },
+  {
+    "image": "text-1.png",
+    "status": "needs_review",
+    "output": "output/text-1",
+    "elapsed_seconds": 123.32
   },
   {
     "image": "Wong.png",
     "status": "needs_review",
     "output": "output/Wong",
-    "elapsed_seconds": 126.96
+    "elapsed_seconds": 117.21
   }
 ]

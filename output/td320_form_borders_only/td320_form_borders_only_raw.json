@@ -76,7 +76,7 @@
   "residential": {
     "original": {
       "crop": "preprocessed/td320_form_borders_only/residential/original.png",
-      "response": "{\n  \"flat\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"floor\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
+      "response": "{\n  \"flat\": {\"value\": \"\", \"state\": \"blank\"},\n  \"floor\": {\"value\": \"\", \"state\": \"blank\"},\n  \"block\": {\"value\": \"\", \"state\": \"blank\"},\n  \"building\": {\"value\": \"\", \"state\": \"blank\"},\n  \"street\": {\"value\": \"\", \"state\": \"blank\"},\n  \"district\": {\"value\": \"\", \"state\": \"blank\"},\n  \"region\": {\"value\": \"\", \"state\": \"blank\"}\n}",
       "parsed": {
         "flat": {
           "value": "",
@@ -110,7 +110,7 @@
     },
     "clahe": {
       "crop": "preprocessed/td320_form_borders_only/residential/clahe.png",
-      "response": "{\n  \"flat\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"floor\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
+      "response": "{\n  \"flat\": {\"value\": \"\", \"state\": \"blank\"},\n  \"floor\": {\"value\": \"\", \"state\": \"blank\"},\n  \"block\": {\"value\": \"\", \"state\": \"blank\"},\n  \"building\": {\"value\": \"\", \"state\": \"blank\"},\n  \"street\": {\"value\": \"\", \"state\": \"blank\"},\n  \"district\": {\"value\": \"\", \"state\": \"blank\"},\n  \"region\": {\"value\": \"\", \"state\": \"blank\"}\n}",
       "parsed": {
         "flat": {
           "value": "",
@@ -144,7 +144,7 @@
     },
     "otsu": {
       "crop": "preprocessed/td320_form_borders_only/residential/otsu.png",
-      "response": "{\n  \"flat\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"floor\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
+      "response": "{\n  \"flat\": {\"value\": \"\", \"state\": \"blank\"},\n  \"floor\": {\"value\": \"\", \"state\": \"blank\"},\n  \"block\": {\"value\": \"\", \"state\": \"blank\"},\n  \"building\": {\"value\": \"\", \"state\": \"blank\"},\n  \"street\": {\"value\": \"\", \"state\": \"blank\"},\n  \"district\": {\"value\": \"\", \"state\": \"blank\"},\n  \"region\": {\"value\": \"\", \"state\": \"blank\"}\n}",
       "parsed": {
         "flat": {
           "value": "",
@@ -178,7 +178,7 @@
     },
     "adaptive": {
       "crop": "preprocessed/td320_form_borders_only/residential/adaptive.png",
-      "response": "{\n  \"flat\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"floor\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
+      "response": "{\n  \"flat\": {\"value\": \"\", \"state\": \"blank\"},\n  \"floor\": {\"value\": \"\", \"state\": \"blank\"},\n  \"block\": {\"value\": \"\", \"state\": \"blank\"},\n  \"building\": {\"value\": \"\", \"state\": \"blank\"},\n  \"street\": {\"value\": \"\", \"state\": \"blank\"},\n  \"district\": {\"value\": \"\", \"state\": \"blank\"},\n  \"region\": {\"value\": \"\", \"state\": \"blank\"}\n}",
       "parsed": {
         "flat": {
           "value": "",

@@ -29,14 +29,14 @@
     "date": "blank"
   },
   "original_image": "figs/td320_form_borders_only.png",
-  "model": "Qwen/Qwen3-VL-4B-Instruct",
-  "profile": "accurate",
+  "model": "Qwen/Qwen3-VL-8B-Instruct",
+  "profile": "maximum",
   "preprocessing": {
     "original_size": [
       2481,
       3508
     ],
-    "profile": "accurate",
+    "profile": "maximum",
     "views": [
       "original",
       "clahe",
@@ -88,5 +88,5 @@
       }
     }
   },
-  "elapsed_seconds": 103.85
+  "elapsed_seconds": 93.89
 }

@@ -76,10 +76,10 @@
   "residential": {
     "original": {
       "crop": "preprocessed/Chan/residential/original.png",
-      "response": "{\n  \"flat\": {\n    \"value\": \"12 B\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"12\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"A\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"HARBOUR GARDEN\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"18 SAMPLE ROAD\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"SHA TIN\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"New Territories\",\n    \"state\": \"filled\"\n  }\n}",
+      "response": "{\n  \"flat\": {\n    \"value\": \"12B\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"12\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"A\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"HARBOUR GARDEN\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"18 SAMPLE ROAD\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"SHA TIN\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"New Territories\",\n    \"state\": \"filled\"\n  }\n}",
       "parsed": {
         "flat": {
-          "value": "12 B",
+          "value": "12B",
           "state": "filled"
         },
         "floor": {
@@ -144,7 +144,7 @@
     },
     "otsu": {
       "crop": "preprocessed/Chan/residential/otsu.png",
-      "response": "{\n  \"flat\": {\n    \"value\": \"12B\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"12\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"A\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"HARBOUR GARDEN\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"18 SAMPLE ROAD\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"SHATIN\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"New Territories\",\n    \"state\": \"filled\"\n  }\n}",
+      "response": "{\n  \"flat\": {\n    \"value\": \"12B\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"12\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"A\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"HARBOUR GARDEN\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"18 SAMPLE ROAD\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"SHA TIN\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"New Territories\",\n    \"state\": \"filled\"\n  }\n}",
       "parsed": {
         "flat": {
           "value": "12B",
@@ -167,7 +167,7 @@
           "state": "filled"
         },
         "district": {
-          "value": "SHATIN",
+          "value": "SHA TIN",
           "state": "filled"
         },
         "region": {
@@ -178,26 +178,26 @@
     },
     "adaptive": {
       "crop": "preprocessed/Chan/residential/adaptive.png",
-      "response": "{\n  \"flat\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"floor\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"HARBOUR GARDEN\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"18 SAMPLE ROAD\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"SHA TIN\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"New Territories\",\n    \"state\": \"filled\"\n  }\n}",
+      "response": "{\n  \"flat\": {\n    \"value\": \"1,2,B\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"1,2\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"A\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"HARBOUR GARDEN\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"18, SAMPLE ROAD\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"SHA TIN\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"New Territories\",\n    \"state\": \"filled\"\n  }\n}",
       "parsed": {
         "flat": {
-          "value": "",
-          "state": "blank"
+          "value": "1,2,B",
+          "state": "filled"
         },
         "floor": {
-          "value": "",
-          "state": "blank"
+          "value": "1,2",
+          "state": "filled"
         },
         "block": {
-          "value": "",
-          "state": "blank"
+          "value": "A",
+          "state": "filled"
         },
         "building": {
           "value": "HARBOUR GARDEN",
           "state": "filled"
         },
         "street": {
-          "value": "18 SAMPLE ROAD",
+          "value": "18, SAMPLE ROAD",
           "state": "filled"
         },
         "district": {
@@ -214,7 +214,7 @@
   "correspondence": {
     "original": {
       "crop": "preprocessed/Chan/correspondence/original.png",
-      "response": "{\n  \"flat\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"floor\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"telephone\": {\n    \"value\": \"00001001\",\n    \"state\": \"filled\"\n  }\n}",
+      "response": "{\n  \"flat\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"floor\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"香港 Hong Kong\",\n    \"state\": \"filled\"\n  },\n  \"telephone\": {\n    \"value\": \"00001001\",\n    \"state\": \"filled\"\n  }\n}",
       "parsed": {
         "flat": {
           "value": "",
@@ -241,8 +241,8 @@
           "state": "blank"
         },
         "region": {
-          "value": "",
-          "state": "blank"
+          "value": "香港 Hong Kong",
+          "state": "filled"
         },
         "telephone": {
           "value": "00001001",

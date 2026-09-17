@@ -3,7 +3,7 @@
   "name_chinese": "",
   "identity_document_number": "TEST002",
   "residential_address": {
-    "flat": "8 A",
+    "flat": "8A",
     "floor": "8",
     "block": "B",
     "building": "MAPLE COURT",
@@ -18,7 +18,7 @@
     "building": "SAMPLE HOUSE",
     "street": "7 PRACTICE ROAD",
     "district": "WAN CHAI",
-    "region": ""
+    "region": "Hong Kong"
   },
   "telephone": "00001002",
   "agent_name": "",

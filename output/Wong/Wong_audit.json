@@ -2,12 +2,35 @@
   "status": "needs_review",
   "review_items": [
     {
+      "field": "residential.street",
+      "issue": "View disagreement or insufficient agreement",
+      "required_votes": 2,
+      "candidates": [
+        {
+          "value": "25 DEMO STREET",
+          "state": "filled"
+        },
+        {
+          "value": "25 DEMO STREET",
+          "state": "filled"
+        },
+        {
+          "value": "25 DEMO STREET",
+          "state": "filled"
+        },
+        {
+          "value": "25, DEMO STREET",
+          "state": "filled"
+        }
+      ]
+    },
+    {
       "field": "correspondence.region",
       "issue": "View disagreement or insufficient agreement",
       "required_votes": 2,
       "candidates": [
         {
-          "value": "香港 Hong Kong",
+          "value": "香港",
           "state": "filled"
         },
         {
@@ -45,7 +68,7 @@
       "building": "filled",
       "street": "filled",
       "district": "filled",
-      "region": "uncertain"
+      "region": "filled"
     },
     "telephone": "filled",
     "agent_name": "blank",
@@ -53,14 +76,14 @@
     "date": "filled"
   },
   "original_image": "figs/Wong.png",
-  "model": "Qwen/Qwen3-VL-4B-Instruct",
-  "profile": "accurate",
+  "model": "Qwen/Qwen3-VL-8B-Instruct",
+  "profile": "maximum",
   "preprocessing": {
     "original_size": [
       1055,
       1491
     ],
-    "profile": "accurate",
+    "profile": "maximum",
     "views": [
       "original",
       "clahe",
@@ -112,5 +135,5 @@
       }
     }
   },
-  "elapsed_seconds": 126.96
+  "elapsed_seconds": 117.21
 }

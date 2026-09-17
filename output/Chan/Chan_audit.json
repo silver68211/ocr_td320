@@ -7,10 +7,6 @@
       "required_votes": 2,
       "candidates": [
         {
-          "value": "12 B",
-          "state": "filled"
-        },
-        {
           "value": "12B",
           "state": "filled"
         },
@@ -19,8 +15,12 @@
           "state": "filled"
         },
         {
-          "value": "",
-          "state": "blank"
+          "value": "12B",
+          "state": "filled"
+        },
+        {
+          "value": "1,2,B",
+          "state": "filled"
         }
       ]
     },
@@ -42,54 +42,54 @@
           "state": "filled"
         },
         {
-          "value": "",
-          "state": "blank"
+          "value": "1,2",
+          "state": "filled"
         }
       ]
     },
     {
-      "field": "residential.block",
+      "field": "residential.street",
       "issue": "View disagreement or insufficient agreement",
       "required_votes": 2,
       "candidates": [
         {
-          "value": "A",
+          "value": "18 SAMPLE ROAD",
           "state": "filled"
         },
         {
-          "value": "A",
+          "value": "18 SAMPLE ROAD",
           "state": "filled"
         },
         {
-          "value": "A",
+          "value": "18 SAMPLE ROAD",
+          "state": "filled"
+        },
+        {
+          "value": "18, SAMPLE ROAD",
+          "state": "filled"
+        }
+      ]
+    },
+    {
+      "field": "correspondence.region",
+      "issue": "View disagreement or insufficient agreement",
+      "required_votes": 2,
+      "candidates": [
+        {
+          "value": "香港 Hong Kong",
           "state": "filled"
         },
         {
           "value": "",
           "state": "blank"
-        }
-      ]
-    },
-    {
-      "field": "residential.district",
-      "issue": "View disagreement or insufficient agreement",
-      "required_votes": 2,
-      "candidates": [
-        {
-          "value": "SHA TIN",
-          "state": "filled"
         },
         {
-          "value": "SHA TIN",
-          "state": "filled"
+          "value": "",
+          "state": "blank"
         },
         {
-          "value": "SHATIN",
-          "state": "filled"
-        },
-        {
-          "value": "SHA TIN",
-          "state": "filled"
+          "value": "",
+          "state": "blank"
         }
       ]
     }
@@ -122,14 +122,14 @@
     "date": "filled"
   },
   "original_image": "figs/Chan.png",
-  "model": "Qwen/Qwen3-VL-4B-Instruct",
-  "profile": "accurate",
+  "model": "Qwen/Qwen3-VL-8B-Instruct",
+  "profile": "maximum",
   "preprocessing": {
     "original_size": [
       1055,
       1491
     ],
-    "profile": "accurate",
+    "profile": "maximum",
     "views": [
       "original",
       "clahe",
@@ -181,5 +181,5 @@
       }
     }
   },
-  "elapsed_seconds": 122.91
+  "elapsed_seconds": 271.9
 }

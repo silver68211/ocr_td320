@@ -5,16 +5,16 @@ Residential address:
   Flat/Room: 01
   Floor: 2
   Block/Tower: A
-  Building/Estate: a s a s d a s
-  Street/Village: a s a s d a s
+  Building/Estate: a n d a s j d j a s d b a s j b d j a s j d a
+  Street/Village: a s a s s d a s
   District: 
   Region: Hong Kong
 Correspondence address:
-  Flat/Room: 
-  Floor: 
-  Block/Tower: 
-  Building/Estate: 
-  Street/Village: 
+  Flat/Room: a
+  Floor: a
+  Block/Tower: s s
+  Building/Estate: a s d a s d s d a s
+  Street/Village: a s d a s d s d a s
   District: 
   Region: 新界 New Territories
 Telephone: 6458255132

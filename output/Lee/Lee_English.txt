@@ -1,4 +1,4 @@
-English name: LEE KAYAN
+English name: 
 Chinese-name field: 
 Identity document number: TEST003
 Residential address:

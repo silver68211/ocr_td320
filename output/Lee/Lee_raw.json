@@ -38,10 +38,10 @@
     },
     "otsu": {
       "crop": "preprocessed/Lee/identity/otsu.png",
-      "response": "{\n  \"name_english\": {\n    \"value\": \"LEE KAYAN\",\n    \"state\": \"filled\"\n  },\n  \"name_chinese\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"identity_document_number\": {\n    \"value\": \"TEST003\",\n    \"state\": \"filled\"\n  }\n}",
+      "response": "{\n  \"name_english\": {\n    \"value\": \"LEE K A YAN\",\n    \"state\": \"filled\"\n  },\n  \"name_chinese\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"identity_document_number\": {\n    \"value\": \"TEST003\",\n    \"state\": \"filled\"\n  }\n}",
       "parsed": {
         "name_english": {
-          "value": "LEE KAYAN",
+          "value": "LEE K A YAN",
           "state": "filled"
         },
         "name_chinese": {
@@ -56,10 +56,10 @@
     },
     "adaptive": {
       "crop": "preprocessed/Lee/identity/adaptive.png",
-      "response": "{\n  \"name_english\": {\n    \"value\": \"LEE KAYAN\",\n    \"state\": \"filled\"\n  },\n  \"name_chinese\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"identity_document_number\": {\n    \"value\": \"TEST003\",\n    \"state\": \"filled\"\n  }\n}",
+      "response": "{\n  \"name_english\": {\n    \"value\": \"LEE K A YAN\",\n    \"state\": \"filled\"\n  },\n  \"name_chinese\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"identity_document_number\": {\n    \"value\": \"TEST003\",\n    \"state\": \"filled\"\n  }\n}",
       "parsed": {
         "name_english": {
-          "value": "LEE KAYAN",
+          "value": "LEE K A YAN",
           "state": "filled"
         },
         "name_chinese": {
@@ -214,7 +214,7 @@
   "correspondence": {
     "original": {
       "crop": "preprocessed/Lee/correspondence/original.png",
-      "response": "{\n  \"flat\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"floor\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"telephone\": {\n    \"value\": \"00001003\",\n    \"state\": \"filled\"\n  }\n}",
+      "response": "{\n  \"flat\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"floor\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"street\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"香港 Hong Kong\",\n    \"state\": \"filled\"\n  },\n  \"telephone\": {\n    \"value\": \"00001003\",\n    \"state\": \"filled\"\n  }\n}",
       "parsed": {
         "flat": {
           "value": "",
@@ -241,8 +241,8 @@
           "state": "blank"
         },
         "region": {
-          "value": "",
-          "state": "blank"
+          "value": "香港 Hong Kong",
+          "state": "filled"
         },
         "telephone": {
           "value": "00001003",

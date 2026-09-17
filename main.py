@@ -170,7 +170,7 @@ def parse_arguments() -> argparse.Namespace:
     parser.add_argument(
         "--profile",
         choices=("simple", "balanced", "accurate", "maximum"),
-        default="accurate",
+        default="maximum",
     )
     parser.add_argument("--root", type=Path, default=Path("."))
     parser.add_argument("--image", help="Process one filename or stem")

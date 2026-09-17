@@ -2,24 +2,47 @@
   "status": "needs_review",
   "review_items": [
     {
+      "field": "identity.name_english",
+      "issue": "View disagreement or insufficient agreement",
+      "required_votes": 2,
+      "candidates": [
+        {
+          "value": "Hassan NOGHEREI",
+          "state": "filled"
+        },
+        {
+          "value": "Hassan NOGHEREI",
+          "state": "filled"
+        },
+        {
+          "value": "Hassan NOGHRERI",
+          "state": "filled"
+        },
+        {
+          "value": "Hassan NOGHEREI",
+          "state": "filled"
+        }
+      ]
+    },
+    {
       "field": "residential.building",
       "issue": "View disagreement or insufficient agreement",
       "required_votes": 2,
       "candidates": [
         {
-          "value": "a s a s d a s",
+          "value": "and as j d j a s d b a s j b d j a s j d a",
           "state": "filled"
         },
         {
-          "value": "assadas",
+          "value": "a n d a s j d j a s d b a s j b d j a s j d a",
           "state": "filled"
         },
         {
-          "value": "asdasdasdasdas",
+          "value": "and asjdj asd b as sj bdj asj da",
           "state": "filled"
         },
         {
-          "value": "a s a s d a s",
+          "value": "a n d a s j d j a s d b a s j b d j a s j d a",
           "state": "filled"
         }
       ]
@@ -30,111 +53,19 @@
       "required_votes": 2,
       "candidates": [
         {
-          "value": "a s a s d a s",
+          "value": "a s a s s d a s",
           "state": "filled"
         },
         {
-          "value": "",
-          "state": "blank"
-        },
-        {
-          "value": "asasdas",
+          "value": "a s a s s d a s",
           "state": "filled"
         },
         {
-          "value": "a s a s d a s",
-          "state": "filled"
-        }
-      ]
-    },
-    {
-      "field": "residential.district",
-      "issue": "View disagreement or insufficient agreement",
-      "required_votes": 2,
-      "candidates": [
-        {
-          "value": "s a",
+          "value": "asassdas",
           "state": "filled"
         },
         {
-          "value": "",
-          "state": "blank"
-        },
-        {
-          "value": "",
-          "state": "blank"
-        },
-        {
-          "value": "",
-          "state": "blank"
-        }
-      ]
-    },
-    {
-      "field": "residential.region",
-      "issue": "View disagreement or insufficient agreement",
-      "required_votes": 2,
-      "candidates": [
-        {
-          "value": "Hong Kong",
-          "state": "filled"
-        },
-        {
-          "value": "Hong Kong",
-          "state": "filled"
-        },
-        {
-          "value": "Hong Kong",
-          "state": "filled"
-        },
-        {
-          "value": "香港",
-          "state": "filled"
-        }
-      ]
-    },
-    {
-      "field": "correspondence.flat",
-      "issue": "View disagreement or insufficient agreement",
-      "required_votes": 2,
-      "candidates": [
-        {
-          "value": "",
-          "state": "blank"
-        },
-        {
-          "value": "a",
-          "state": "filled"
-        },
-        {
-          "value": "",
-          "state": "blank"
-        },
-        {
-          "value": "a s d s d a s d",
-          "state": "filled"
-        }
-      ]
-    },
-    {
-      "field": "correspondence.floor",
-      "issue": "View disagreement or insufficient agreement",
-      "required_votes": 2,
-      "candidates": [
-        {
-          "value": "",
-          "state": "blank"
-        },
-        {
-          "value": "s",
-          "state": "filled"
-        },
-        {
-          "value": "",
-          "state": "blank"
-        },
-        {
-          "value": "a s d s d a s d",
+          "value": "a s a s s d a s",
           "state": "filled"
         }
       ]
@@ -145,19 +76,19 @@
       "required_votes": 2,
       "candidates": [
         {
-          "value": "",
-          "state": "blank"
-        },
-        {
-          "value": "s",
+          "value": "s s",
           "state": "filled"
         },
         {
-          "value": "",
-          "state": "blank"
+          "value": "s s",
+          "state": "filled"
         },
         {
-          "value": "a s d s d a s d",
+          "value": "SS",
+          "state": "filled"
+        },
+        {
+          "value": "s s",
           "state": "filled"
         }
       ]
@@ -168,42 +99,42 @@
       "required_votes": 2,
       "candidates": [
         {
-          "value": "",
-          "state": "blank"
-        },
-        {
-          "value": "a",
+          "value": "a s d a s d s d a s",
           "state": "filled"
         },
         {
-          "value": "",
-          "state": "blank"
+          "value": "a s d a s d s d a s",
+          "state": "filled"
         },
         {
-          "value": "a s d a s d s d a s",
+          "value": "asdsdasd",
+          "state": "filled"
+        },
+        {
+          "value": "a s d s d a s d",
           "state": "filled"
         }
       ]
     },
     {
-      "field": "correspondence.region",
+      "field": "correspondence.street",
       "issue": "View disagreement or insufficient agreement",
       "required_votes": 2,
       "candidates": [
         {
-          "value": "新界",
+          "value": "a s d a s d s d a s",
           "state": "filled"
         },
         {
-          "value": "新界 New Territories",
+          "value": "a s d a s d s d a s",
           "state": "filled"
         },
         {
-          "value": "New Territories",
+          "value": "asdsdas",
           "state": "filled"
         },
         {
-          "value": "新界 New Territories",
+          "value": "a s d a s d s d a s",
           "state": "filled"
         }
       ]
@@ -231,11 +162,11 @@
       "region": "filled"
     },
     "correspondence_address": {
-      "flat": "blank",
-      "floor": "blank",
-      "block": "blank",
-      "building": "blank",
-      "street": "blank",
+      "flat": "filled",
+      "floor": "filled",
+      "block": "filled",
+      "building": "filled",
+      "street": "filled",
       "district": "blank",
       "region": "filled"
     },
@@ -245,14 +176,14 @@
     "date": "blank"
   },
   "original_image": "figs/Hassan.png",
-  "model": "Qwen/Qwen3-VL-4B-Instruct",
-  "profile": "accurate",
+  "model": "Qwen/Qwen3-VL-8B-Instruct",
+  "profile": "maximum",
   "preprocessing": {
     "original_size": [
       1057,
       1218
     ],
-    "profile": "accurate",
+    "profile": "maximum",
     "views": [
       "original",
       "clahe",
@@ -304,5 +235,5 @@
       }
     }
   },
-  "elapsed_seconds": 126.39
+  "elapsed_seconds": 121.13
 }

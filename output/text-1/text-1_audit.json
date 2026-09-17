@@ -2,24 +2,47 @@
   "status": "needs_review",
   "review_items": [
     {
-      "field": "identity.name_english",
+      "field": "residential.street",
       "issue": "View disagreement or insufficient agreement",
       "required_votes": 2,
       "candidates": [
         {
-          "value": "LEE KAYAN",
+          "value": "i WAN HANG ROAD, PO LAM",
           "state": "filled"
         },
         {
-          "value": "LEE KAYAN",
+          "value": "i WAN HANG ROAD, PO LAM",
           "state": "filled"
         },
         {
-          "value": "LEE K A YAN",
+          "value": "1 WAN HANG ROAD, PO LAM",
           "state": "filled"
         },
         {
-          "value": "LEE K A YAN",
+          "value": "1 WAN HANG ROAD, PO LAM",
+          "state": "filled"
+        }
+      ]
+    },
+    {
+      "field": "correspondence.building",
+      "issue": "View disagreement or insufficient agreement",
+      "required_votes": 2,
+      "candidates": [
+        {
+          "value": "LEMMI CETERE",
+          "state": "filled"
+        },
+        {
+          "value": "LEMMI CETERE",
+          "state": "filled"
+        },
+        {
+          "value": "LEMMI CETERE",
+          "state": "filled"
+        },
+        {
+          "value": "LEMMI CENTRE",
           "state": "filled"
         }
       ]
@@ -30,58 +53,62 @@
       "required_votes": 2,
       "candidates": [
         {
-          "value": "香港 Hong Kong",
+          "value": "九龍 Kowloon",
           "state": "filled"
         },
         {
-          "value": "",
-          "state": "blank"
+          "value": "九龍 Kowloon",
+          "state": "filled"
         },
         {
-          "value": "",
-          "state": "blank"
+          "value": "Kowloon",
+          "state": "filled"
         },
         {
-          "value": "",
-          "state": "blank"
+          "value": "Kowloon",
+          "state": "filled"
         }
       ]
+    },
+    {
+      "field": "date",
+      "issue": "Invalid date"
     }
   ],
   "field_states": {
-    "name_english": "uncertain",
-    "name_chinese": "blank",
+    "name_english": "filled",
+    "name_chinese": "filled",
     "identity_document_number": "filled",
     "residential_address": {
+      "flat": "filled",
+      "floor": "filled",
+      "block": "filled",
+      "building": "filled",
+      "street": "uncertain",
+      "district": "filled",
+      "region": "filled"
+    },
+    "correspondence_address": {
       "flat": "filled",
       "floor": "filled",
       "block": "blank",
       "building": "filled",
       "street": "filled",
       "district": "filled",
-      "region": "filled"
-    },
-    "correspondence_address": {
-      "flat": "blank",
-      "floor": "blank",
-      "block": "blank",
-      "building": "blank",
-      "street": "blank",
-      "district": "blank",
-      "region": "blank"
+      "region": "uncertain"
     },
     "telephone": "filled",
     "agent_name": "blank",
     "agent_identity_document_number": "blank",
     "date": "filled"
   },
-  "original_image": "figs/Lee.png",
+  "original_image": "figs/text-1.png",
   "model": "Qwen/Qwen3-VL-8B-Instruct",
   "profile": "maximum",
   "preprocessing": {
     "original_size": [
-      1055,
-      1491
+      2480,
+      3505
     ],
     "profile": "maximum",
     "views": [
@@ -92,8 +119,8 @@
     ],
     "template_alignment": {
       "aligned": true,
-      "matches": 381,
-      "inliers": 224
+      "matches": 711,
+      "inliers": 504
     },
     "deskew_angle_degrees": 0.0,
     "regions": {
@@ -135,5 +162,5 @@
       }
     }
   },
-  "elapsed_seconds": 114.53
+  "elapsed_seconds": 123.32
 }
