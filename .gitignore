@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environments
+.env
+.venv/
+venv/
+env/
+
+# IDE and operating-system files
+.vscode/
+.idea/
+.DS_Store
+
+# Generated OCR files
+output/
+preprocessed/
+ground_truth/
+
+# Model weights and caches
+models/
+.cache/
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# Temporary files
+*.tmp
+*.log
+*~
+
+# Input forms may contain personal information
+figs/*
+
+# Keep only approved blank templates
+!figs/td320_blank.png
+!figs/td555_blank.png
