@@ -19,7 +19,7 @@
           "state": "filled"
         },
         {
-          "value": "Hassan NOGHEREI",
+          "value": "Hassan NOGHR E I",
           "state": "filled"
         }
       ]
@@ -30,7 +30,7 @@
       "required_votes": 2,
       "candidates": [
         {
-          "value": "and as j d j a s d b a s j b d j a s j d a",
+          "value": "a n d a s j d j a s d b a s j b d j a s j d a",
           "state": "filled"
         },
         {
@@ -38,7 +38,7 @@
           "state": "filled"
         },
         {
-          "value": "and asjdj asd b as sj bdj asj da",
+          "value": "andasjdj asd b as sj bdj asj da",
           "state": "filled"
         },
         {
@@ -71,29 +71,6 @@
       ]
     },
     {
-      "field": "correspondence.block",
-      "issue": "View disagreement or insufficient agreement",
-      "required_votes": 2,
-      "candidates": [
-        {
-          "value": "s s",
-          "state": "filled"
-        },
-        {
-          "value": "s s",
-          "state": "filled"
-        },
-        {
-          "value": "SS",
-          "state": "filled"
-        },
-        {
-          "value": "s s",
-          "state": "filled"
-        }
-      ]
-    },
-    {
       "field": "correspondence.building",
       "issue": "View disagreement or insufficient agreement",
       "required_votes": 2,
@@ -107,34 +84,11 @@
           "state": "filled"
         },
         {
-          "value": "asdsdasd",
+          "value": "a s d s d a s d",
           "state": "filled"
         },
         {
           "value": "a s d s d a s d",
-          "state": "filled"
-        }
-      ]
-    },
-    {
-      "field": "correspondence.street",
-      "issue": "View disagreement or insufficient agreement",
-      "required_votes": 2,
-      "candidates": [
-        {
-          "value": "a s d a s d s d a s",
-          "state": "filled"
-        },
-        {
-          "value": "a s d a s d s d a s",
-          "state": "filled"
-        },
-        {
-          "value": "asdsdas",
-          "state": "filled"
-        },
-        {
-          "value": "a s d a s d s d a s",
           "state": "filled"
         }
       ]
@@ -165,7 +119,7 @@
       "flat": "filled",
       "floor": "filled",
       "block": "filled",
-      "building": "filled",
+      "building": "uncertain",
       "street": "filled",
       "district": "blank",
       "region": "filled"
@@ -235,5 +189,5 @@
       }
     }
   },
-  "elapsed_seconds": 128.49
+  "elapsed_seconds": 130.48
 }

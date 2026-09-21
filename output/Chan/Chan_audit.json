@@ -69,29 +69,6 @@
           "state": "filled"
         }
       ]
-    },
-    {
-      "field": "correspondence.region",
-      "issue": "View disagreement or insufficient agreement",
-      "required_votes": 2,
-      "candidates": [
-        {
-          "value": "香港 Hong Kong",
-          "state": "filled"
-        },
-        {
-          "value": "",
-          "state": "blank"
-        },
-        {
-          "value": "",
-          "state": "blank"
-        },
-        {
-          "value": "",
-          "state": "blank"
-        }
-      ]
     }
   ],
   "field_states": {
@@ -181,5 +158,5 @@
       }
     }
   },
-  "elapsed_seconds": 255.43
+  "elapsed_seconds": 230.22
 }

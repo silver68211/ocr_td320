@@ -76,11 +76,11 @@
       "required_votes": 2,
       "candidates": [
         {
-          "value": "80, K BUI",
+          "value": "CYBERPORT 1",
           "state": "filled"
         },
         {
-          "value": "80, K P O L I A N",
+          "value": "CYBERPORT 1",
           "state": "filled"
         },
         {
@@ -134,7 +134,7 @@
           "state": "blank"
         },
         {
-          "value": "24",
+          "value": "74",
           "state": "filled"
         }
       ]
@@ -176,7 +176,7 @@
       "floor": "filled",
       "block": "filled",
       "building": "filled",
-      "street": "uncertain",
+      "street": "filled",
       "district": "blank",
       "region": "blank"
     },
@@ -254,5 +254,5 @@
       }
     }
   },
-  "elapsed_seconds": 121.33
+  "elapsed_seconds": 120.9
 }

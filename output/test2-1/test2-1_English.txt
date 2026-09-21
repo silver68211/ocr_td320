@@ -6,7 +6,7 @@ Residential address:
   Floor: 11
   Block/Tower: D
   Building/Estate: CYBERPORT 100
-  Street/Village: 
+  Street/Village: CYBERPORT 1
   District: 
   Region: 
 Correspondence address:

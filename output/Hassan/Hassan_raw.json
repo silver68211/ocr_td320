@@ -56,10 +56,10 @@
     },
     "adaptive": {
       "crop": "preprocessed/Hassan/identity/adaptive.png",
-      "response": "{\n  \"name_english\": {\n    \"value\": \"Hassan NOGHEREI\",\n    \"state\": \"filled\"\n  },\n  \"name_chinese\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"identity_document_number\": {\n    \"value\": \"TH003345\",\n    \"state\": \"filled\"\n  }\n}",
+      "response": "{\n  \"name_english\": {\n    \"value\": \"Hassan NOGHR E I\",\n    \"state\": \"filled\"\n  },\n  \"name_chinese\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"identity_document_number\": {\n    \"value\": \"TH003345\",\n    \"state\": \"filled\"\n  }\n}",
       "parsed": {
         "name_english": {
-          "value": "Hassan NOGHEREI",
+          "value": "Hassan NOGHR E I",
           "state": "filled"
         },
         "name_chinese": {
@@ -76,7 +76,7 @@
   "residential": {
     "original": {
       "crop": "preprocessed/Hassan/residential/original.png",
-      "response": "{\n  \"flat\": {\n    \"value\": \"01\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"2\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"A\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"and as j d j a s d b a s j b d j a s j d a\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"a s a s s d a s\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"Hong Kong\",\n    \"state\": \"filled\"\n  }\n}",
+      "response": "{\n  \"flat\": {\n    \"value\": \"01\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"2\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"A\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"a n d a s j d j a s d b a s j b d j a s j d a\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"a s a s s d a s\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"Hong Kong\",\n    \"state\": \"filled\"\n  }\n}",
       "parsed": {
         "flat": {
           "value": "01",
@@ -91,7 +91,7 @@
           "state": "filled"
         },
         "building": {
-          "value": "and as j d j a s d b a s j b d j a s j d a",
+          "value": "a n d a s j d j a s d b a s j b d j a s j d a",
           "state": "filled"
         },
         "street": {
@@ -144,7 +144,7 @@
     },
     "otsu": {
       "crop": "preprocessed/Hassan/residential/otsu.png",
-      "response": "{\n  \"flat\": {\n    \"value\": \"01\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"2\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"A\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"and asjdj asd b as sj bdj asj da\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"asassdas\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"Hong Kong\",\n    \"state\": \"filled\"\n  }\n}",
+      "response": "{\n  \"flat\": {\n    \"value\": \"01\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"2\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"A\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"andasjdj asd b as sj bdj asj da\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"asassdas\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"Hong Kong\",\n    \"state\": \"filled\"\n  }\n}",
       "parsed": {
         "flat": {
           "value": "01",
@@ -159,7 +159,7 @@
           "state": "filled"
         },
         "building": {
-          "value": "and asjdj asd b as sj bdj asj da",
+          "value": "andasjdj asd b as sj bdj asj da",
           "state": "filled"
         },
         "street": {
@@ -290,7 +290,7 @@
     },
     "otsu": {
       "crop": "preprocessed/Hassan/correspondence/otsu.png",
-      "response": "{\n  \"flat\": {\n    \"value\": \"a\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"a\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"SS\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"asdsdasd\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"asdsdas\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"新界 New Territories\",\n    \"state\": \"filled\"\n  },\n  \"telephone\": {\n    \"value\": \"6458255132\",\n    \"state\": \"filled\"\n  }\n}",
+      "response": "{\n  \"flat\": {\n    \"value\": \"a\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"a\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"s s\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"a s d s d a s d\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"a s d a s d s d a s\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"新界 New Territories\",\n    \"state\": \"filled\"\n  },\n  \"telephone\": {\n    \"value\": \"6458255132\",\n    \"state\": \"filled\"\n  }\n}",
       "parsed": {
         "flat": {
           "value": "a",
@@ -301,15 +301,15 @@
           "state": "filled"
         },
         "block": {
-          "value": "SS",
+          "value": "s s",
           "state": "filled"
         },
         "building": {
-          "value": "asdsdasd",
+          "value": "a s d s d a s d",
           "state": "filled"
         },
         "street": {
-          "value": "asdsdas",
+          "value": "a s d a s d s d a s",
           "state": "filled"
         },
         "district": {
@@ -328,7 +328,7 @@
     },
     "adaptive": {
       "crop": "preprocessed/Hassan/correspondence/adaptive.png",
-      "response": "{\n  \"flat\": {\n    \"value\": \"a\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"a\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"s s\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"a s d s d a s d\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"a s d a s d s d a s\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"新界 New Territories\",\n    \"state\": \"filled\"\n  },\n  \"telephone\": {\n    \"value\": \"6458255132\",\n    \"state\": \"filled\"\n  }\n}",
+      "response": "{\n  \"flat\": {\n    \"value\": \"a\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"a\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"S S\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"a s d s d a s d\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"a s d a s d s d a s\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"新界 New Territories\",\n    \"state\": \"filled\"\n  },\n  \"telephone\": {\n    \"value\": \"6458255132\",\n    \"state\": \"filled\"\n  }\n}",
       "parsed": {
         "flat": {
           "value": "a",
@@ -339,7 +339,7 @@
           "state": "filled"
         },
         "block": {
-          "value": "s s",
+          "value": "S S",
           "state": "filled"
         },
         "building": {

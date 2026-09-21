@@ -76,7 +76,7 @@
   "residential": {
     "original": {
       "crop": "preprocessed/test2-1/residential/original.png",
-      "response": "{\n  \"flat\": {\n    \"value\": \"C\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"11\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"D\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"CYBERPORT 100\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"80, K BUI\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
+      "response": "{\n  \"flat\": {\n    \"value\": \"C\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"11\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"D\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"CYBERPORT 100\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"CYBERPORT 1\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
       "parsed": {
         "flat": {
           "value": "C",
@@ -95,7 +95,7 @@
           "state": "filled"
         },
         "street": {
-          "value": "80, K BUI",
+          "value": "CYBERPORT 1",
           "state": "filled"
         },
         "district": {
@@ -110,7 +110,7 @@
     },
     "clahe": {
       "crop": "preprocessed/test2-1/residential/clahe.png",
-      "response": "{\n  \"flat\": {\n    \"value\": \"C\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"11\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"D\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"CYBERPORT 100\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"80, K P O L I A N\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
+      "response": "{\n  \"flat\": {\n    \"value\": \"C\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"11\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"D\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"CYBERPORT 100\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"CYBERPORT 1\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"region\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  }\n}",
       "parsed": {
         "flat": {
           "value": "C",
@@ -129,7 +129,7 @@
           "state": "filled"
         },
         "street": {
-          "value": "80, K P O L I A N",
+          "value": "CYBERPORT 1",
           "state": "filled"
         },
         "district": {
@@ -328,14 +328,14 @@
     },
     "adaptive": {
       "crop": "preprocessed/test2-1/correspondence/adaptive.png",
-      "response": "{\n  \"flat\": {\n    \"value\": \"74\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"24\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"C\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"DRAGON MANSION\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"226-448 CHOW TAIK STREET\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"CHENG SHA WAN\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"九龍 Kowloon\",\n    \"state\": \"filled\"\n  },\n  \"telephone\": {\n    \"value\": \"93306829\",\n    \"state\": \"filled\"\n  }\n}",
+      "response": "{\n  \"flat\": {\n    \"value\": \"74\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"74\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"C\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"DRAGON MANSION\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"226-448 CHOW TAIK STREET\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"CHENG SHA WAN\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"九龍 Kowloon\",\n    \"state\": \"filled\"\n  },\n  \"telephone\": {\n    \"value\": \"93306829\",\n    \"state\": \"filled\"\n  }\n}",
       "parsed": {
         "flat": {
           "value": "74",
           "state": "filled"
         },
         "floor": {
-          "value": "24",
+          "value": "74",
           "state": "filled"
         },
         "block": {
