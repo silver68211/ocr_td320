@@ -13,7 +13,7 @@ Correspondence address:
   Flat/Room: a
   Floor: a
   Block/Tower: s s
-  Building/Estate: a s d a s d s d a s
+  Building/Estate: 
   Street/Village: a s d a s d s d a s
   District: 
   Region: 新界 New Territories

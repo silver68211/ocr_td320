@@ -6,7 +6,7 @@ Residential address:
   Floor: 17
   Block/Tower: B
   Building/Estate: METRO CITY
-  Street/Village: 
+  Street/Village: 1 WAN HANG ROAD, PO LAM
   District: TSEUNG KWAN O
   Region: New Territories
 Correspondence address:

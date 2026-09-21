@@ -15,7 +15,7 @@
     "flat": "a",
     "floor": "a",
     "block": "s s",
-    "building": "a s d a s d s d a s",
+    "building": "",
     "street": "a s d a s d s d a s",
     "district": "",
     "region": "新界 New Territories"
