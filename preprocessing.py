@@ -18,7 +18,7 @@ from pathlib import Path
 
 import cv2
 import numpy as np
-from config import Box, PipelineConfig
+from config import Box, LayoutConfig, PipelineConfig
 
 
 @dataclass
@@ -27,8 +27,13 @@ class PreprocessResult:
 
     original_path: Path
     aligned_path: Path
+    layout: LayoutConfig
     crops: dict[str, dict[str, Path]]
     metadata: dict[str, object]
+
+
+class LayoutDetectionError(RuntimeError):
+    """Raised when no known layout can be selected safely."""
 
 
 def read_image(path: Path | str, grayscale: bool = False) -> np.ndarray:
@@ -181,6 +186,106 @@ def align_to_template(
     }
 
 
+def identify_layout(
+    image: np.ndarray, config: PipelineConfig
+) -> tuple[LayoutConfig, dict[str, object]]:
+    """Identify a form by geometric agreement with registered blank templates.
+
+    ORB descriptors and a RANSAC homography make the detector insensitive to
+    scan resolution, moderate perspective distortion and handwritten entries.
+    A low-confidence or near-tied result is rejected instead of allowing the
+    pipeline to crop fields with coordinates from the wrong form.
+    """
+
+    requested = config.preprocessing.layout.casefold()
+    if requested != "auto":
+        layout = config.resolve_layout(requested)
+        if not layout.template.is_file():
+            raise FileNotFoundError(
+                f"Template for forced layout {requested!r} was not found: "
+                f"{layout.template.resolve()}"
+            )
+        return layout, {
+            "method": "forced",
+            "selected": layout.form_id,
+            "candidates": [],
+        }
+
+    candidates: list[dict[str, object]] = []
+    for layout in config.layouts.values():
+        if not layout.template.is_file():
+            candidates.append(
+                {
+                    "form_id": layout.form_id,
+                    "accepted": False,
+                    "reason": f"Template not found: {layout.template}",
+                    "score": 0.0,
+                }
+            )
+            continue
+        template = read_image(layout.template)
+        _aligned, diagnostics = align_to_template(
+            image,
+            template,
+            maximum_features=config.preprocessing.orb_features,
+            minimum_matches=config.preprocessing.minimum_template_matches,
+        )
+        matches = int(diagnostics.get("matches", 0))
+        inliers = int(diagnostics.get("inliers", 0))
+        ratio = inliers / matches if matches else 0.0
+        # Inliers carry most of the evidence; ratio prevents many weak matches
+        # from beating a smaller but geometrically coherent match set.
+        score = float(inliers * ratio)
+        candidates.append(
+            {
+                "form_id": layout.form_id,
+                "accepted": bool(diagnostics.get("aligned")),
+                "matches": matches,
+                "inliers": inliers,
+                "inlier_ratio": round(ratio, 4),
+                "score": round(score, 4),
+                "reason": diagnostics.get("reason", "matched"),
+            }
+        )
+
+    ranked = sorted(candidates, key=lambda item: float(item["score"]), reverse=True)
+    if not ranked or float(ranked[0]["score"]) <= 0:
+        raise LayoutDetectionError(
+            "No usable form template matched the input. Add a blank template "
+            "or select a known layout with --layout."
+        )
+
+    best = ranked[0]
+    if (
+        int(best.get("inliers", 0)) < config.preprocessing.minimum_layout_inliers
+        or float(best.get("inlier_ratio", 0.0))
+        < config.preprocessing.minimum_layout_inlier_ratio
+    ):
+        raise LayoutDetectionError(
+            f"Layout confidence is too low: best candidate {best['form_id']!r} "
+            f"has {best.get('inliers', 0)} inliers and ratio "
+            f"{best.get('inlier_ratio', 0.0):.3f}."
+        )
+
+    if len(ranked) > 1 and float(ranked[1]["score"]) > 0:
+        margin = float(best["score"]) / float(ranked[1]["score"])
+        if margin < config.preprocessing.minimum_layout_margin:
+            raise LayoutDetectionError(
+                f"Ambiguous layout: {best['form_id']!r} and "
+                f"{ranked[1]['form_id']!r} have similar template scores."
+            )
+    else:
+        margin = None
+
+    selected = config.resolve_layout(str(best["form_id"]))
+    return selected, {
+        "method": "orb_homography",
+        "selected": selected.form_id,
+        "score_margin": round(margin, 4) if margin is not None else None,
+        "candidates": ranked,
+    }
+
+
 def create_views(image: np.ndarray, config) -> dict[str, np.ndarray]:
     """Create independent OCR views from one aligned BGR image.
 
@@ -257,7 +362,7 @@ def crop_normalized(
 def preprocess_image(
     image_path: Path | str, config: PipelineConfig
 ) -> PreprocessResult:
-    """Align, deskew, enhance, crop and save every configured view.
+    """Identify, align, deskew, enhance and crop one form.
 
     Outputs are placed under ``preprocessed/<image>/<region>/<view>.png``.
     Keeping each view in a separate file prevents the overwrite bug in the
@@ -267,14 +372,18 @@ def preprocess_image(
     image_path = Path(image_path)
     image = read_image(image_path)
     work = image.copy()
+    layout, detection = identify_layout(work, config)
     metadata: dict[str, object] = {
         "original_size": [image.shape[1], image.shape[0]],
         "profile": config.profile,
         "views": list(config.preprocessing.views),
+        "layout_detection": detection,
+        "form_id": layout.form_id,
+        "form_name": layout.display_name,
     }
 
-    template_path = config.paths.template
-    if config.preprocessing.align_to_template and template_path.is_file():
+    template_path = layout.template
+    if config.preprocessing.align_to_template:
         template = read_image(template_path)
         work, alignment = align_to_template(
             work,
@@ -283,14 +392,14 @@ def preprocess_image(
             minimum_matches=config.preprocessing.minimum_template_matches,
         )
         metadata["template_alignment"] = alignment
-    elif config.preprocessing.align_to_template:
-        metadata["template_alignment"] = {
-            "aligned": False,
-            "reason": f"Template not found: {template_path}",
-        }
 
     if config.preprocessing.deskew:
-        angle = estimate_skew_angle(work, config.preprocessing.max_skew_degrees)
+        max_skew = (
+            layout.max_skew_degrees
+            if layout.max_skew_degrees is not None
+            else config.preprocessing.max_skew_degrees
+        )
+        angle = estimate_skew_angle(work, max_skew)
         # estimate_skew_angle reports the page-line angle; rotate by its negative.
         work = rotate_image(work, -angle)
         metadata["deskew_angle_degrees"] = round(angle, 4)
@@ -299,15 +408,25 @@ def preprocess_image(
     aligned_path = write_image(image_folder / "aligned.png", work)
     views = create_views(work, config.preprocessing)
     crop_paths: dict[str, dict[str, Path]] = {}
+    crop_margin = (
+        layout.crop_margin
+        if layout.crop_margin is not None
+        else config.preprocessing.crop_margin
+    )
+    crop_upscale = (
+        layout.crop_upscale
+        if layout.crop_upscale is not None
+        else config.preprocessing.crop_upscale
+    )
 
-    for region_name, region in config.preprocessing.regions.items():
+    for region_name, region in layout.regions.items():
         crop_paths[region_name] = {}
         for view_name, view_image in views.items():
             crop = crop_normalized(
                 view_image,
                 region.box,
-                margin=config.preprocessing.crop_margin,
-                upscale=config.preprocessing.crop_upscale,
+                margin=crop_margin,
+                upscale=crop_upscale,
                 interpolation=(
                     cv2.INTER_NEAREST
                     if view_name in {"otsu", "adaptive"}
@@ -318,6 +437,10 @@ def preprocess_image(
             crop_paths[region_name][view_name] = write_image(output_path, crop)
 
     metadata["regions"] = {
-        name: asdict(region) for name, region in config.preprocessing.regions.items()
+        name: asdict(region) for name, region in layout.regions.items()
     }
-    return PreprocessResult(image_path, aligned_path, crop_paths, metadata)
+    metadata["effective_preprocessing"] = {
+        "crop_margin": crop_margin,
+        "crop_upscale": crop_upscale,
+    }
+    return PreprocessResult(image_path, aligned_path, layout, crop_paths, metadata)
