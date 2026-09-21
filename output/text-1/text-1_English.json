@@ -1,4 +1,5 @@
 {
+  "form_type": "td320",
   "name_english": "CHAN TAI MAN, PETER",
   "name_chinese": "陳大文",
   "identity_document_number": "H376529(3)",
@@ -7,7 +8,7 @@
     "floor": "17",
     "block": "B",
     "building": "METRO CITY",
-    "street": "",
+    "street": "1 WAN HANG ROAD, PO LAM",
     "district": "TSEUNG KWAN O",
     "region": "New Territories"
   },

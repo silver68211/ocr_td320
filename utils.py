@@ -11,6 +11,7 @@ from datetime import datetime
 from pathlib import Path
 
 IDENTITY_FIELDS = ("name_english", "name_chinese", "identity_document_number")
+IDENTITY_WITH_BIRTH_FIELDS = IDENTITY_FIELDS + ("date_of_birth",)
 ADDRESS_FIELDS = ("flat", "floor", "block", "building", "street", "district", "region")
 DECLARATION_FIELDS = ("agent_name", "agent_identity_document_number", "date")
 VALID_STATES = {"filled", "blank", "uncertain"}
@@ -21,7 +22,7 @@ VALID_REGIONS = {
 }
 
 
-BASE_RULES = """You are reading one cropped section of a TD320 application form.
+BASE_RULES = """You are reading one cropped section of a Hong Kong Transport Department form.
 Read only handwritten or typed entries and visibly selected checkboxes.
 Printed labels, instructions, borders and guide marks are never field values.
 Use physical field location rather than guessing from language.
@@ -43,6 +44,22 @@ and hyphens but must not absorb the vertical writing guides.
 {"name_english":{"value":"","state":"filled|blank|uncertain"},
  "name_chinese":{"value":"","state":"filled|blank|uncertain"},
  "identity_document_number":{"value":"","state":"filled|blank|uncertain"}}
+""",
+    "identity_with_birth": BASE_RULES
+    + """
+Extract the English name, Chinese name, identity-document number and date of
+birth from this crop. Do not read the printed honorifics as part of a name.
+{"name_english":{"value":"","state":"filled|blank|uncertain"},
+ "name_chinese":{"value":"","state":"filled|blank|uncertain"},
+ "identity_document_number":{"value":"","state":"filled|blank|uncertain"},
+ "date_of_birth":{"value":"","state":"filled|blank|uncertain"}}
+""",
+    "e_contact": BASE_RULES
+    + """
+Extract only the handwritten Hong Kong mobile number or email address entered
+in the E-CONTACT MEANS field. Return the visible entry exactly; do not treat
+the bilingual instructions as a value.
+{"e_contact":{"value":"","state":"filled|blank|uncertain"}}
 """,
     "residential": BASE_RULES
     + """
@@ -83,6 +100,8 @@ crop. Do not treat signature strokes as an agent name.
 
 TASK_FIELDS = {
     "identity": IDENTITY_FIELDS,
+    "identity_with_birth": IDENTITY_WITH_BIRTH_FIELDS,
+    "e_contact": ("e_contact",),
     "residential": ADDRESS_FIELDS,
     "correspondence": ADDRESS_FIELDS + ("telephone",),
     "declaration": DECLARATION_FIELDS,
@@ -90,9 +109,12 @@ TASK_FIELDS = {
 
 
 ENGLISH_LABELS = {
+    "form_type": "Form type",
     "name_english": "English name",
     "name_chinese": "Chinese-name field",
     "identity_document_number": "Identity document number",
+    "date_of_birth": "Date of birth",
+    "e_contact": "E-contact means",
     "residential_address": "Residential address",
     "correspondence_address": "Correspondence address",
     "telephone": "Telephone",
@@ -110,9 +132,12 @@ ENGLISH_LABELS = {
 
 
 CHINESE_LABELS = {
+    "form_type": "表格類型",
     "name_english": "英文姓名",
     "name_chinese": "中文姓名",
     "identity_document_number": "身份證明文件號碼",
+    "date_of_birth": "出生日期",
+    "e_contact": "電子聯絡方式",
     "residential_address": "住址",
     "correspondence_address": "通訊地址",
     "telephone": "日間聯絡電話",
@@ -228,6 +253,7 @@ def _is_filled(item: Mapping[str, str]) -> bool:
 def validate_and_combine(
     task_results: Mapping[str, Mapping[str, Mapping[str, str]]],
     consensus_audit: Sequence[Mapping[str, object]],
+    form_id: str = "td320",
 ) -> tuple[dict[str, object], dict[str, object]]:
     """Combine task outputs, normalize safe formats and flag inconsistencies.
 
@@ -236,19 +262,28 @@ def validate_and_combine(
     """
 
     review = [dict(item) for item in consensus_audit]
-    identity = dict(task_results.get("identity", {}))
+    identity = dict(
+        task_results.get("identity_with_birth", task_results.get("identity", {}))
+    )
+    e_contact = dict(task_results.get("e_contact", {}))
     residential = dict(task_results.get("residential", {}))
     correspondence = dict(task_results.get("correspondence", {}))
     declaration = dict(task_results.get("declaration", {}))
+    has_declaration = "declaration" in task_results
 
     for field in IDENTITY_FIELDS:
         identity.setdefault(field, {"value": "", "state": "uncertain"})
+    if "identity_with_birth" in task_results:
+        identity.setdefault("date_of_birth", {"value": "", "state": "uncertain"})
+    if "e_contact" in task_results:
+        e_contact.setdefault("e_contact", {"value": "", "state": "uncertain"})
     for field in ADDRESS_FIELDS:
         residential.setdefault(field, {"value": "", "state": "uncertain"})
         correspondence.setdefault(field, {"value": "", "state": "uncertain"})
     correspondence.setdefault("telephone", {"value": "", "state": "uncertain"})
-    for field in DECLARATION_FIELDS:
-        declaration.setdefault(field, {"value": "", "state": "uncertain"})
+    if has_declaration:
+        for field in DECLARATION_FIELDS:
+            declaration.setdefault(field, {"value": "", "state": "uncertain"})
 
     phone = correspondence["telephone"]
     if _is_filled(phone):
@@ -256,7 +291,18 @@ def validate_and_combine(
         if not re.fullmatch(r"\d{8}", phone["value"]):
             review.append({"field": "telephone", "issue": "Expected eight digits"})
 
-    date = declaration["date"]
+    if _is_filled(e_contact.get("e_contact", {})):
+        value = e_contact["e_contact"]["value"]
+        compact_phone = re.sub(r"[\s().-]", "", value)
+        if "@" not in value and not re.fullmatch(r"\d{8}", compact_phone):
+            review.append(
+                {
+                    "field": "e_contact",
+                    "issue": "Expected an email address or eight-digit phone number",
+                }
+            )
+
+    date = declaration.get("date", {})
     if _is_filled(date):
         date["value"] = re.sub(r"\s*([/.-])\s*", r"\1", date["value"])
         valid = False
@@ -306,6 +352,7 @@ def validate_and_combine(
         )
 
     states = {
+        "form_type": "filled",
         **{key: item["state"] for key, item in identity.items()},
         "residential_address": {
             key: item["state"] for key, item in residential.items()
@@ -316,9 +363,15 @@ def validate_and_combine(
             if key != "telephone"
         },
         "telephone": correspondence["telephone"]["state"],
+        **(
+            {"e_contact": e_contact["e_contact"]["state"]}
+            if "e_contact" in e_contact
+            else {}
+        ),
         **{key: item["state"] for key, item in declaration.items()},
     }
     data: dict[str, object] = {
+        "form_type": form_id,
         **{key: item["value"] for key, item in identity.items()},
         "residential_address": {
             key: item["value"] for key, item in residential.items()
@@ -329,6 +382,11 @@ def validate_and_combine(
             if key != "telephone"
         },
         "telephone": correspondence["telephone"]["value"],
+        **(
+            {"e_contact": e_contact["e_contact"]["value"]}
+            if "e_contact" in e_contact
+            else {}
+        ),
         **{key: item["value"] for key, item in declaration.items()},
     }
     audit = {
@@ -406,19 +464,23 @@ def write_outputs(
 
 
 def list_images(
-    folder: Path, extensions: Iterable[str], template: Path | None = None
+    folder: Path,
+    extensions: Iterable[str],
+    templates: Iterable[Path] = (),
 ) -> list[Path]:
-    """List supported form images, excluding the optional blank template."""
+    """List supported form images, excluding every registered template."""
 
     if not folder.is_dir():
         raise FileNotFoundError(f"Input folder not found: {folder.resolve()}")
     extension_set = {extension.lower() for extension in extensions}
-    template_resolved = template.resolve() if template and template.exists() else None
+    template_paths = {
+        template.resolve() for template in templates if template.exists()
+    }
     images = [
         path
         for path in folder.iterdir()
         if path.is_file()
         and path.suffix.lower() in extension_set
-        and (template_resolved is None or path.resolve() != template_resolved)
+        and path.resolve() not in template_paths
     ]
     return sorted(images, key=lambda path: path.name.casefold())

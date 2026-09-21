@@ -2,6 +2,75 @@
   "status": "needs_review",
   "review_items": [
     {
+      "field": "identity_with_birth.name_english",
+      "issue": "View disagreement or insufficient agreement",
+      "required_votes": 2,
+      "candidates": [
+        {
+          "value": "CHOW TAK PING",
+          "state": "filled"
+        },
+        {
+          "value": "CHOW TAK PING",
+          "state": "filled"
+        },
+        {
+          "value": "CHOW TAK PING",
+          "state": "filled"
+        },
+        {
+          "value": "CHOW TAK PENG",
+          "state": "filled"
+        }
+      ]
+    },
+    {
+      "field": "identity_with_birth.identity_document_number",
+      "issue": "View disagreement or insufficient agreement",
+      "required_votes": 2,
+      "candidates": [
+        {
+          "value": "A827943",
+          "state": "filled"
+        },
+        {
+          "value": "A821943",
+          "state": "filled"
+        },
+        {
+          "value": "A827943",
+          "state": "filled"
+        },
+        {
+          "value": "R827943",
+          "state": "filled"
+        }
+      ]
+    },
+    {
+      "field": "e_contact.e_contact",
+      "issue": "View disagreement or insufficient agreement",
+      "required_votes": 2,
+      "candidates": [
+        {
+          "value": "682145",
+          "state": "filled"
+        },
+        {
+          "value": "682145",
+          "state": "filled"
+        },
+        {
+          "value": "661145",
+          "state": "filled"
+        },
+        {
+          "value": "662145",
+          "state": "filled"
+        }
+      ]
+    },
+    {
       "field": "residential.flat",
       "issue": "View disagreement or insufficient agreement",
       "required_votes": 2,
@@ -19,7 +88,7 @@
           "state": "filled"
         },
         {
-          "value": "C4",
+          "value": "100",
           "state": "filled"
         }
       ]
@@ -30,11 +99,7 @@
       "required_votes": 2,
       "candidates": [
         {
-          "value": "11",
-          "state": "filled"
-        },
-        {
-          "value": "11",
+          "value": "14",
           "state": "filled"
         },
         {
@@ -42,7 +107,11 @@
           "state": "filled"
         },
         {
-          "value": "11",
+          "value": "14",
+          "state": "filled"
+        },
+        {
+          "value": "10",
           "state": "filled"
         }
       ]
@@ -71,70 +140,24 @@
       ]
     },
     {
-      "field": "residential.street",
+      "field": "residential.building",
       "issue": "View disagreement or insufficient agreement",
       "required_votes": 2,
       "candidates": [
         {
-          "value": "80, K BUI",
+          "value": "CYBERPORT 100",
           "state": "filled"
         },
         {
-          "value": "80, K P O L I A N",
+          "value": "CYBERPORT 100",
           "state": "filled"
         },
         {
-          "value": "",
-          "state": "blank"
-        },
-        {
-          "value": "80, K. F. L. A.",
-          "state": "filled"
-        }
-      ]
-    },
-    {
-      "field": "correspondence.flat",
-      "issue": "View disagreement or insufficient agreement",
-      "required_votes": 2,
-      "candidates": [
-        {
-          "value": "A",
+          "value": "CYBERPORT 100",
           "state": "filled"
         },
         {
-          "value": "A",
-          "state": "filled"
-        },
-        {
-          "value": "22",
-          "state": "filled"
-        },
-        {
-          "value": "74",
-          "state": "filled"
-        }
-      ]
-    },
-    {
-      "field": "correspondence.floor",
-      "issue": "View disagreement or insufficient agreement",
-      "required_votes": 2,
-      "candidates": [
-        {
-          "value": "22",
-          "state": "filled"
-        },
-        {
-          "value": "22",
-          "state": "filled"
-        },
-        {
-          "value": "",
-          "state": "blank"
-        },
-        {
-          "value": "24",
+          "value": "CYBERPORT",
           "state": "filled"
         }
       ]
@@ -153,14 +176,41 @@
           "state": "filled"
         },
         {
-          "value": "326-448 CITADIN TAK STREET",
+          "value": "326-448 CHOW TAIK STREET",
           "state": "filled"
         },
         {
-          "value": "226-448 CHOW TAIK STREET",
+          "value": "726-448 CITOU TAIK STREET",
           "state": "filled"
         }
       ]
+    },
+    {
+      "field": "correspondence.region",
+      "issue": "View disagreement or insufficient agreement",
+      "required_votes": 2,
+      "candidates": [
+        {
+          "value": "九龍 Kowloon",
+          "state": "filled"
+        },
+        {
+          "value": "九龍",
+          "state": "filled"
+        },
+        {
+          "value": "九龍 Kowloon",
+          "state": "filled"
+        },
+        {
+          "value": "九龍 Kowloon",
+          "state": "filled"
+        }
+      ]
+    },
+    {
+      "field": "e_contact",
+      "issue": "Expected an email address or eight-digit phone number"
     },
     {
       "field": "correspondence_address.region",
@@ -168,17 +218,19 @@
     }
   ],
   "field_states": {
+    "form_type": "filled",
     "name_english": "filled",
     "name_chinese": "filled",
-    "identity_document_number": "blank",
+    "identity_document_number": "filled",
+    "date_of_birth": "filled",
     "residential_address": {
       "flat": "filled",
       "floor": "filled",
       "block": "filled",
       "building": "filled",
-      "street": "uncertain",
+      "street": "filled",
       "district": "blank",
-      "region": "blank"
+      "region": "filled"
     },
     "correspondence_address": {
       "flat": "filled",
@@ -190,13 +242,13 @@
       "region": "filled"
     },
     "telephone": "filled",
-    "agent_name": "blank",
-    "agent_identity_document_number": "blank",
-    "date": "blank"
+    "e_contact": "filled"
   },
   "original_image": "figs/test2-1.png",
   "model": "Qwen/Qwen3-VL-8B-Instruct",
   "profile": "maximum",
+  "form_type": "td555",
+  "form_name": "TD555 learner's driving licence",
   "preprocessing": {
     "original_size": [
       2481,
@@ -209,50 +261,81 @@
       "otsu",
       "adaptive"
     ],
+    "layout_detection": {
+      "method": "orb_homography",
+      "selected": "td555",
+      "score_margin": 45.5076,
+      "candidates": [
+        {
+          "form_id": "td555",
+          "accepted": true,
+          "matches": 619,
+          "inliers": 483,
+          "inlier_ratio": 0.7803,
+          "score": 376.8805,
+          "reason": "matched"
+        },
+        {
+          "form_id": "td320",
+          "accepted": true,
+          "matches": 213,
+          "inliers": 42,
+          "inlier_ratio": 0.1972,
+          "score": 8.2817,
+          "reason": "matched"
+        }
+      ]
+    },
+    "form_id": "td555",
+    "form_name": "TD555 learner's driving licence",
     "template_alignment": {
       "aligned": true,
-      "matches": 213,
-      "inliers": 42
+      "matches": 619,
+      "inliers": 483
     },
-    "deskew_angle_degrees": 1.6912,
+    "deskew_angle_degrees": 0.0,
     "regions": {
       "identity": {
-        "task": "identity",
+        "task": "identity_with_birth",
         "box": [
-          0.025,
-          0.17,
-          0.975,
-          0.305
+          0.02,
+          0.205,
+          0.98,
+          0.36
+        ]
+      },
+      "e_contact": {
+        "task": "e_contact",
+        "box": [
+          0.02,
+          0.35,
+          0.985,
+          0.435
         ]
       },
       "residential": {
         "task": "residential",
         "box": [
-          0.025,
-          0.275,
+          0.02,
+          0.42,
           0.985,
-          0.545
+          0.635
         ]
       },
       "correspondence": {
         "task": "correspondence",
         "box": [
-          0.025,
-          0.495,
+          0.02,
+          0.625,
           0.985,
-          0.725
-        ]
-      },
-      "declaration": {
-        "task": "declaration",
-        "box": [
-          0.025,
-          0.685,
-          0.985,
-          0.985
+          0.875
         ]
       }
+    },
+    "effective_preprocessing": {
+      "crop_margin": 0.006,
+      "crop_upscale": 1.6
     }
   },
-  "elapsed_seconds": 121.33
+  "elapsed_seconds": 120.52
 }

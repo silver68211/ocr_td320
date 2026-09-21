@@ -15,41 +15,19 @@
           "state": "filled"
         },
         {
-          "value": "LEE K A YAN",
+          "value": "LEE KAYAN",
           "state": "filled"
         },
         {
           "value": "LEE K A YAN",
           "state": "filled"
-        }
-      ]
-    },
-    {
-      "field": "correspondence.region",
-      "issue": "View disagreement or insufficient agreement",
-      "required_votes": 2,
-      "candidates": [
-        {
-          "value": "香港 Hong Kong",
-          "state": "filled"
-        },
-        {
-          "value": "",
-          "state": "blank"
-        },
-        {
-          "value": "",
-          "state": "blank"
-        },
-        {
-          "value": "",
-          "state": "blank"
         }
       ]
     }
   ],
   "field_states": {
-    "name_english": "uncertain",
+    "form_type": "filled",
+    "name_english": "filled",
     "name_chinese": "blank",
     "identity_document_number": "filled",
     "residential_address": {
@@ -78,6 +56,8 @@
   "original_image": "figs/Lee.png",
   "model": "Qwen/Qwen3-VL-8B-Instruct",
   "profile": "maximum",
+  "form_type": "td320",
+  "form_name": "TD320 driving licence particulars",
   "preprocessing": {
     "original_size": [
       1055,
@@ -90,6 +70,33 @@
       "otsu",
       "adaptive"
     ],
+    "layout_detection": {
+      "method": "orb_homography",
+      "selected": "td320",
+      "score_margin": 26.3887,
+      "candidates": [
+        {
+          "form_id": "td320",
+          "accepted": true,
+          "matches": 381,
+          "inliers": 224,
+          "inlier_ratio": 0.5879,
+          "score": 131.6955,
+          "reason": "matched"
+        },
+        {
+          "form_id": "td555",
+          "accepted": true,
+          "matches": 106,
+          "inliers": 23,
+          "inlier_ratio": 0.217,
+          "score": 4.9906,
+          "reason": "matched"
+        }
+      ]
+    },
+    "form_id": "td320",
+    "form_name": "TD320 driving licence particulars",
     "template_alignment": {
       "aligned": true,
       "matches": 381,
@@ -101,9 +108,9 @@
         "task": "identity",
         "box": [
           0.025,
-          0.17,
+          0.175,
           0.975,
-          0.305
+          0.3
         ]
       },
       "residential": {
@@ -133,7 +140,11 @@
           0.985
         ]
       }
+    },
+    "effective_preprocessing": {
+      "crop_margin": 0.008,
+      "crop_upscale": 1.5
     }
   },
-  "elapsed_seconds": 122.17
+  "elapsed_seconds": 121.34
 }

@@ -13,7 +13,10 @@ def leaf(value, state="filled"):
 
 class CoreTests(unittest.TestCase):
     def test_profiles(self):
-        self.assertEqual(build_config("simple").inference.minimum_agreement, 1)
+        config = build_config("simple")
+        self.assertEqual(config.inference.minimum_agreement, 1)
+        self.assertEqual(set(config.layouts), {"td320", "td555"})
+        self.assertIn("e_contact", config.layouts["td555"].regions)
         self.assertEqual(
             build_config("balanced").model.model_id, "Qwen/Qwen3-VL-2B-Instruct"
         )
