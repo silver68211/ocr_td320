@@ -1,4 +1,4 @@
-"""Command-line entry point and orchestration for modular TD320 OCR."""
+"""Command-line entry point for adaptive, multi-layout form OCR."""
 
 from __future__ import annotations
 
@@ -59,7 +59,7 @@ class FormOCRPipeline:
         consensus_results: dict[str, object] = {}
         consensus_audit = []
 
-        for region_name, region_config in self.config.preprocessing.regions.items():
+        for region_name, region_config in preprocessed.layout.regions.items():
             task = region_config.task
             prompt = PROMPTS[task]
             raw[task] = {}
@@ -92,12 +92,18 @@ class FormOCRPipeline:
             consensus_results[task] = fields
             consensus_audit.extend(task_audit)
 
-        data, audit = validate_and_combine(consensus_results, consensus_audit)
+        data, audit = validate_and_combine(
+            consensus_results,
+            consensus_audit,
+            form_id=preprocessed.layout.form_id,
+        )
         audit.update(
             {
                 "original_image": str(image_path),
                 "model": self.config.model.model_id,
                 "profile": self.config.profile,
+                "form_type": preprocessed.layout.form_id,
+                "form_name": preprocessed.layout.display_name,
                 "preprocessing": preprocessed.metadata,
                 "elapsed_seconds": round(time.perf_counter() - started, 2),
             }
@@ -148,7 +154,7 @@ def select_images(config: PipelineConfig, requested: str | None = None) -> list[
     images = list_images(
         config.paths.figures,
         config.image_extensions,
-        config.paths.template,
+        config.template_paths(),
     )
     if requested is None:
         return images
@@ -170,11 +176,16 @@ def parse_arguments() -> argparse.Namespace:
     parser.add_argument(
         "--profile",
         choices=("simple", "balanced", "accurate", "maximum"),
-        default="maximum",
+        default="balanced",
     )
     parser.add_argument("--root", type=Path, default=Path("."))
     parser.add_argument("--image", help="Process one filename or stem")
     parser.add_argument("--model-id", help="Override the profile model")
+    parser.add_argument(
+        "--layout",
+        default="auto",
+        help="Detect layout automatically (default) or force a form id such as td320",
+    )
     parser.add_argument(
         "--preprocess-only",
         action="store_true",
@@ -196,6 +207,9 @@ def main() -> None:
     config = build_config(args.profile, args.root)
     if args.model_id:
         config.model.model_id = args.model_id
+    config.preprocessing.layout = args.layout.casefold()
+    if config.preprocessing.layout != "auto":
+        config.resolve_layout(config.preprocessing.layout)
     config.make_directories()
     images = select_images(config, args.image)
     if not images:
@@ -205,7 +219,13 @@ def main() -> None:
     if args.preprocess_only:
         for image_path in images:
             result = pipeline.preprocess(image_path)
-            print(image_path.name, "->", result.aligned_path.parent)
+            print(
+                image_path.name,
+                "->",
+                result.layout.form_id,
+                "->",
+                result.aligned_path.parent,
+            )
         return
     pipeline.run_batch(images)
 
