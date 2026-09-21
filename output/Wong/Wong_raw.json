@@ -76,7 +76,7 @@
   "residential": {
     "original": {
       "crop": "preprocessed/Wong/residential/original.png",
-      "response": "{\n  \"flat\": {\"value\": \"8A\", \"state\": \"filled\"},\n  \"floor\": {\"value\": \"8\", \"state\": \"filled\"},\n  \"block\": {\"value\": \"B\", \"state\": \"filled\"},\n  \"building\": {\"value\": \"MAPLE COURT\", \"state\": \"filled\"},\n  \"street\": {\"value\": \"25 DEMO STREET\", \"state\": \"filled\"},\n  \"district\": {\"value\": \"KOWLOON CITY\", \"state\": \"filled\"},\n  \"region\": {\"value\": \"Kowloon\", \"state\": \"filled\"}\n}",
+      "response": "{\n  \"flat\": {\n    \"value\": \"8A\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"8\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"B\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"MAPLE COURT\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"25 DEMO STREET\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"KOWLOON CITY\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"Kowloon\",\n    \"state\": \"filled\"\n  }\n}",
       "parsed": {
         "flat": {
           "value": "8A",

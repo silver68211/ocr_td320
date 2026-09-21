@@ -76,74 +76,6 @@
   "residential": {
     "original": {
       "crop": "preprocessed/text-1/residential/original.png",
-      "response": "{\n  \"flat\": {\n    \"value\": \"C\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"17\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"B\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"METRO CITY\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"i WAN HANG ROAD, PO LAM\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"TSEUNG KWAN O\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"New Territories\",\n    \"state\": \"filled\"\n  }\n}",
-      "parsed": {
-        "flat": {
-          "value": "C",
-          "state": "filled"
-        },
-        "floor": {
-          "value": "17",
-          "state": "filled"
-        },
-        "block": {
-          "value": "B",
-          "state": "filled"
-        },
-        "building": {
-          "value": "METRO CITY",
-          "state": "filled"
-        },
-        "street": {
-          "value": "i WAN HANG ROAD, PO LAM",
-          "state": "filled"
-        },
-        "district": {
-          "value": "TSEUNG KWAN O",
-          "state": "filled"
-        },
-        "region": {
-          "value": "New Territories",
-          "state": "filled"
-        }
-      }
-    },
-    "clahe": {
-      "crop": "preprocessed/text-1/residential/clahe.png",
-      "response": "{\n  \"flat\": {\n    \"value\": \"C\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"17\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"B\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"METRO CITY\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"i WAN HANG ROAD, PO LAM\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"TSEUNG KWAN O\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"New Territories\",\n    \"state\": \"filled\"\n  }\n}",
-      "parsed": {
-        "flat": {
-          "value": "C",
-          "state": "filled"
-        },
-        "floor": {
-          "value": "17",
-          "state": "filled"
-        },
-        "block": {
-          "value": "B",
-          "state": "filled"
-        },
-        "building": {
-          "value": "METRO CITY",
-          "state": "filled"
-        },
-        "street": {
-          "value": "i WAN HANG ROAD, PO LAM",
-          "state": "filled"
-        },
-        "district": {
-          "value": "TSEUNG KWAN O",
-          "state": "filled"
-        },
-        "region": {
-          "value": "New Territories",
-          "state": "filled"
-        }
-      }
-    },
-    "otsu": {
-      "crop": "preprocessed/text-1/residential/otsu.png",
       "response": "{\n  \"flat\": {\n    \"value\": \"C\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"17\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"B\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"METRO CITY\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"1 WAN HANG ROAD, PO LAM\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"TSEUNG KWAN O\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"New Territories\",\n    \"state\": \"filled\"\n  }\n}",
       "parsed": {
         "flat": {
@@ -164,6 +96,74 @@
         },
         "street": {
           "value": "1 WAN HANG ROAD, PO LAM",
+          "state": "filled"
+        },
+        "district": {
+          "value": "TSEUNG KWAN O",
+          "state": "filled"
+        },
+        "region": {
+          "value": "New Territories",
+          "state": "filled"
+        }
+      }
+    },
+    "clahe": {
+      "crop": "preprocessed/text-1/residential/clahe.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"C\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"17\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"B\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"METRO CITY\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"1 WAN HANG ROAD, PO LAM\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"TSEUNG KWAN O\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"New Territories\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "C",
+          "state": "filled"
+        },
+        "floor": {
+          "value": "17",
+          "state": "filled"
+        },
+        "block": {
+          "value": "B",
+          "state": "filled"
+        },
+        "building": {
+          "value": "METRO CITY",
+          "state": "filled"
+        },
+        "street": {
+          "value": "1 WAN HANG ROAD, PO LAM",
+          "state": "filled"
+        },
+        "district": {
+          "value": "TSEUNG KWAN O",
+          "state": "filled"
+        },
+        "region": {
+          "value": "New Territories",
+          "state": "filled"
+        }
+      }
+    },
+    "otsu": {
+      "crop": "preprocessed/text-1/residential/otsu.png",
+      "response": "{\n  \"flat\": {\n    \"value\": \"C\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"17\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"B\",\n    \"state\": \"filled\"\n  },\n  \"building\": {\n    \"value\": \"METRO CITY\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"i WAN HANG ROAD, PO LAM\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"TSEUNG KWAN O\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"New Territories\",\n    \"state\": \"filled\"\n  }\n}",
+      "parsed": {
+        "flat": {
+          "value": "C",
+          "state": "filled"
+        },
+        "floor": {
+          "value": "17",
+          "state": "filled"
+        },
+        "block": {
+          "value": "B",
+          "state": "filled"
+        },
+        "building": {
+          "value": "METRO CITY",
+          "state": "filled"
+        },
+        "street": {
+          "value": "i WAN HANG ROAD, PO LAM",
           "state": "filled"
         },
         "district": {
@@ -290,7 +290,7 @@
     },
     "otsu": {
       "crop": "preprocessed/text-1/correspondence/otsu.png",
-      "response": "{\n  \"flat\": {\n    \"value\": \"2\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"15\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"LEMMI CETERE\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"50 HOI YUEN ROAD\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"KWUN TONG\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"Kowloon\",\n    \"state\": \"filled\"\n  },\n  \"telephone\": {\n    \"value\": \"63632828\",\n    \"state\": \"filled\"\n  }\n}",
+      "response": "{\n  \"flat\": {\n    \"value\": \"2\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"15\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"LEMMI CENTRE\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"50 HOI YUEN ROAD\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"KWUN TONG\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"Kowloon\",\n    \"state\": \"filled\"\n  },\n  \"telephone\": {\n    \"value\": \"63632828\",\n    \"state\": \"filled\"\n  }\n}",
       "parsed": {
         "flat": {
           "value": "2",
@@ -305,7 +305,7 @@
           "state": "blank"
         },
         "building": {
-          "value": "LEMMI CETERE",
+          "value": "LEMMI CENTRE",
           "state": "filled"
         },
         "street": {
@@ -328,7 +328,7 @@
     },
     "adaptive": {
       "crop": "preprocessed/text-1/correspondence/adaptive.png",
-      "response": "{\n  \"flat\": {\n    \"value\": \"2\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"15\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"LEMMI CENTRE\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"50 HOI YUEN ROAD\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"KWUN TONG\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"Kowloon\",\n    \"state\": \"filled\"\n  },\n  \"telephone\": {\n    \"value\": \"63632828\",\n    \"state\": \"filled\"\n  }\n}",
+      "response": "{\n  \"flat\": {\n    \"value\": \"2\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"15\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"LEMMI CETERE\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"50 HOI YUEN ROAD\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"KWUN TONG\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"Kowloon\",\n    \"state\": \"filled\"\n  },\n  \"telephone\": {\n    \"value\": \"63632828\",\n    \"state\": \"filled\"\n  }\n}",
       "parsed": {
         "flat": {
           "value": "2",
@@ -343,7 +343,7 @@
           "state": "blank"
         },
         "building": {
-          "value": "LEMMI CENTRE",
+          "value": "LEMMI CETERE",
           "state": "filled"
         },
         "street": {

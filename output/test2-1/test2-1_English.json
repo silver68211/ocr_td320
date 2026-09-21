@@ -1,15 +1,17 @@
 {
+  "form_type": "td555",
   "name_english": "CHOW TAK PING",
   "name_chinese": "周德平",
-  "identity_document_number": "",
+  "identity_document_number": "A827943",
+  "date_of_birth": "28 06 1912",
   "residential_address": {
     "flat": "C",
-    "floor": "11",
+    "floor": "14",
     "block": "D",
     "building": "CYBERPORT 100",
     "street": "",
-    "district": "",
-    "region": ""
+    "district": "POK FU LAM",
+    "region": "Hong Kong"
   },
   "correspondence_address": {
     "flat": "A",
@@ -21,7 +23,5 @@
     "region": "九龍 Kowloon"
   },
   "telephone": "93306829",
-  "agent_name": "",
-  "agent_identity_document_number": "",
-  "date": ""
+  "e_contact": "682145"
 }

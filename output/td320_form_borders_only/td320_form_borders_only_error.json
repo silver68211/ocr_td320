@@ -1,0 +1,6 @@
+{
+  "image": "td320_form_borders_only.png",
+  "status": "error",
+  "error": "'PathConfig' object has no attribute 'template'",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/hnksm/ocr_td320_adaptive/main.py\", line 132, in run_batch\n    result = self.process_image(image_path)\n  File \"/home/hnksm/ocr_td320_adaptive/main.py\", line 56, in process_image\n    preprocessed = self.preprocess(image_path)\n  File \"/home/hnksm/ocr_td320_adaptive/main.py\", line 45, in preprocess\n    return preprocess_image(image_path, self.config)\n  File \"/home/hnksm/ocr_td320_adaptive/preprocessing.py\", line 276, in preprocess_image\n    template_path = config.paths.template\n                    ^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'PathConfig' object has no attribute 'template'\n"
+}

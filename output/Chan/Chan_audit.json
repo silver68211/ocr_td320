@@ -19,7 +19,7 @@
           "state": "filled"
         },
         {
-          "value": "1,2,B",
+          "value": "1,2",
           "state": "filled"
         }
       ]
@@ -46,55 +46,10 @@
           "state": "filled"
         }
       ]
-    },
-    {
-      "field": "residential.street",
-      "issue": "View disagreement or insufficient agreement",
-      "required_votes": 2,
-      "candidates": [
-        {
-          "value": "18 SAMPLE ROAD",
-          "state": "filled"
-        },
-        {
-          "value": "18 SAMPLE ROAD",
-          "state": "filled"
-        },
-        {
-          "value": "18 SAMPLE ROAD",
-          "state": "filled"
-        },
-        {
-          "value": "18, SAMPLE ROAD",
-          "state": "filled"
-        }
-      ]
-    },
-    {
-      "field": "correspondence.region",
-      "issue": "View disagreement or insufficient agreement",
-      "required_votes": 2,
-      "candidates": [
-        {
-          "value": "香港 Hong Kong",
-          "state": "filled"
-        },
-        {
-          "value": "",
-          "state": "blank"
-        },
-        {
-          "value": "",
-          "state": "blank"
-        },
-        {
-          "value": "",
-          "state": "blank"
-        }
-      ]
     }
   ],
   "field_states": {
+    "form_type": "filled",
     "name_english": "filled",
     "name_chinese": "blank",
     "identity_document_number": "filled",
@@ -124,6 +79,8 @@
   "original_image": "figs/Chan.png",
   "model": "Qwen/Qwen3-VL-8B-Instruct",
   "profile": "maximum",
+  "form_type": "td320",
+  "form_name": "TD320 driving licence particulars",
   "preprocessing": {
     "original_size": [
       1055,
@@ -136,6 +93,33 @@
       "otsu",
       "adaptive"
     ],
+    "layout_detection": {
+      "method": "orb_homography",
+      "selected": "td320",
+      "score_margin": 27.7584,
+      "candidates": [
+        {
+          "form_id": "td320",
+          "accepted": true,
+          "matches": 386,
+          "inliers": 224,
+          "inlier_ratio": 0.5803,
+          "score": 129.9896,
+          "reason": "matched"
+        },
+        {
+          "form_id": "td555",
+          "accepted": true,
+          "matches": 123,
+          "inliers": 24,
+          "inlier_ratio": 0.1951,
+          "score": 4.6829,
+          "reason": "matched"
+        }
+      ]
+    },
+    "form_id": "td320",
+    "form_name": "TD320 driving licence particulars",
     "template_alignment": {
       "aligned": true,
       "matches": 386,
@@ -147,9 +131,9 @@
         "task": "identity",
         "box": [
           0.025,
-          0.17,
+          0.175,
           0.975,
-          0.305
+          0.3
         ]
       },
       "residential": {
@@ -179,7 +163,11 @@
           0.985
         ]
       }
+    },
+    "effective_preprocessing": {
+      "crop_margin": 0.008,
+      "crop_upscale": 1.5
     }
   },
-  "elapsed_seconds": 255.43
+  "elapsed_seconds": 181.89
 }

@@ -1,7 +1,9 @@
 {
+  "form_type": "td555",
   "name_english": "",
   "name_chinese": "",
   "identity_document_number": "",
+  "date_of_birth": "",
   "residential_address": {
     "flat": "",
     "floor": "",
@@ -21,7 +23,5 @@
     "region": ""
   },
   "telephone": "",
-  "agent_name": "",
-  "agent_identity_document_number": "",
-  "date": ""
+  "e_contact": ""
 }

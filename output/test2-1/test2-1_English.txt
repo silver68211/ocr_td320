@@ -1,14 +1,16 @@
+Form type: td555
 English name: CHOW TAK PING
 Chinese-name field: 周德平
-Identity document number: 
+Identity document number: A827943
+Date of birth: 28 06 1912
 Residential address:
   Flat/Room: C
-  Floor: 11
+  Floor: 14
   Block/Tower: D
   Building/Estate: CYBERPORT 100
-  Street/Village: 
+  Street/Village: POK FU LAM
   District: 
-  Region: 
+  Region: Hong Kong
 Correspondence address:
   Flat/Room: A
   Floor: 22
@@ -18,6 +20,4 @@ Correspondence address:
   District: CHENG SHA WAN
   Region: 九龍 Kowloon
 Telephone: 93306829
-Agent name: 
-Agent identity document number: 
-Date: 
+E-contact means: 682145

@@ -1,6 +1,8 @@
+Form type: td555
 English name: 
 Chinese-name field: 
 Identity document number: 
+Date of birth: 
 Residential address:
   Flat/Room: 
   Floor: 
@@ -18,6 +20,4 @@ Correspondence address:
   District: 
   Region: 
 Telephone: 
-Agent name: 
-Agent identity document number: 
-Date: 
+E-contact means: 

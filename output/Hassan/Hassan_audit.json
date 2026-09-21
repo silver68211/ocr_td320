@@ -25,71 +25,48 @@
       ]
     },
     {
-      "field": "residential.building",
+      "field": "correspondence.flat",
       "issue": "View disagreement or insufficient agreement",
       "required_votes": 2,
       "candidates": [
         {
-          "value": "and as j d j a s d b a s j b d j a s j d a",
+          "value": "a",
           "state": "filled"
         },
         {
-          "value": "a n d a s j d j a s d b a s j b d j a s j d a",
+          "value": "a",
           "state": "filled"
         },
         {
-          "value": "and asjdj asd b as sj bdj asj da",
+          "value": "a",
           "state": "filled"
         },
         {
-          "value": "a n d a s j d j a s d b a s j b d j a s j d a",
+          "value": "a s d s d a s d",
           "state": "filled"
         }
       ]
     },
     {
-      "field": "residential.street",
+      "field": "correspondence.floor",
       "issue": "View disagreement or insufficient agreement",
       "required_votes": 2,
       "candidates": [
         {
-          "value": "a s a s s d a s",
+          "value": "a",
           "state": "filled"
         },
         {
-          "value": "a s a s s d a s",
+          "value": "a",
           "state": "filled"
         },
         {
-          "value": "asassdas",
+          "value": "a",
           "state": "filled"
         },
         {
-          "value": "a s a s s d a s",
-          "state": "filled"
-        }
-      ]
-    },
-    {
-      "field": "correspondence.block",
-      "issue": "View disagreement or insufficient agreement",
-      "required_votes": 2,
-      "candidates": [
-        {
-          "value": "s s",
-          "state": "filled"
-        },
-        {
-          "value": "s s",
-          "state": "filled"
-        },
-        {
-          "value": "SS",
-          "state": "filled"
-        },
-        {
-          "value": "s s",
-          "state": "filled"
+          "value": "",
+          "state": "blank"
         }
       ]
     },
@@ -99,19 +76,19 @@
       "required_votes": 2,
       "candidates": [
         {
-          "value": "a s d a s d s d a s",
+          "value": "a s d a s d a s d",
           "state": "filled"
         },
         {
           "value": "a s d a s d s d a s",
-          "state": "filled"
-        },
-        {
-          "value": "asdsdasd",
           "state": "filled"
         },
         {
           "value": "a s d s d a s d",
+          "state": "filled"
+        },
+        {
+          "value": "a s d a s d s d a s",
           "state": "filled"
         }
       ]
@@ -130,12 +107,12 @@
           "state": "filled"
         },
         {
-          "value": "asdsdas",
+          "value": "a s d a s d s d a s",
           "state": "filled"
         },
         {
-          "value": "a s d a s d s d a s",
-          "state": "filled"
+          "value": "",
+          "state": "blank"
         }
       ]
     },
@@ -149,6 +126,7 @@
     }
   ],
   "field_states": {
+    "form_type": "filled",
     "name_english": "filled",
     "name_chinese": "blank",
     "identity_document_number": "filled",
@@ -178,6 +156,8 @@
   "original_image": "figs/Hassan.png",
   "model": "Qwen/Qwen3-VL-8B-Instruct",
   "profile": "maximum",
+  "form_type": "td320",
+  "form_name": "TD320 driving licence particulars",
   "preprocessing": {
     "original_size": [
       1057,
@@ -190,6 +170,33 @@
       "otsu",
       "adaptive"
     ],
+    "layout_detection": {
+      "method": "orb_homography",
+      "selected": "td320",
+      "score_margin": 39.2975,
+      "candidates": [
+        {
+          "form_id": "td320",
+          "accepted": true,
+          "matches": 576,
+          "inliers": 461,
+          "inlier_ratio": 0.8003,
+          "score": 368.9601,
+          "reason": "matched"
+        },
+        {
+          "form_id": "td555",
+          "accepted": true,
+          "matches": 162,
+          "inliers": 39,
+          "inlier_ratio": 0.2407,
+          "score": 9.3889,
+          "reason": "matched"
+        }
+      ]
+    },
+    "form_id": "td320",
+    "form_name": "TD320 driving licence particulars",
     "template_alignment": {
       "aligned": true,
       "matches": 576,
@@ -201,9 +208,9 @@
         "task": "identity",
         "box": [
           0.025,
-          0.17,
+          0.175,
           0.975,
-          0.305
+          0.3
         ]
       },
       "residential": {
@@ -233,7 +240,11 @@
           0.985
         ]
       }
+    },
+    "effective_preprocessing": {
+      "crop_margin": 0.008,
+      "crop_upscale": 1.5
     }
   },
-  "elapsed_seconds": 128.49
+  "elapsed_seconds": 130.84
 }
