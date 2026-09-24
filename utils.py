@@ -505,8 +505,20 @@ DECLARATION_FIELDS = ("agent_name", "agent_identity_document_number", "date")
 VALID_STATES = {"filled", "blank", "uncertain"}
 VALID_REGIONS = {
     "hong kong": "Hong Kong",
+    "香港": "Hong Kong",
+    "香港 hong kong": "Hong Kong",
+    "hong kong 香港": "Hong Kong",
+
     "kowloon": "Kowloon",
+    "九龍": "Kowloon",
+    "九龙": "Kowloon",
+    "九龍 kowloon": "Kowloon",
+    "kowloon 九龍": "Kowloon",
+
     "new territories": "New Territories",
+    "新界": "New Territories",
+    "新界 new territories": "New Territories",
+    "new territories 新界": "New Territories",
 }
 
 # Used only to detect the common row-shift error where a district/locality is
@@ -566,12 +578,29 @@ and hyphens but must not absorb the vertical writing guides.
  "identity_document_number":{"value":"","state":"filled|blank|uncertain"}}
 """,
     "identity_with_birth": BASE_RULES
-    + """
++ """
 Extract the English name, Chinese name, identity-document number and date of
-birth from this crop. Do not read the printed honorifics as part of a name.
-Read the identity number character by character, including its leading letter
-and any check digit printed in parentheses. Read date-of-birth boxes in the
-printed D D / M M / Y Y Y Y order and return the result as DD/MM/YYYY.
+birth from this crop.
+
+Field locations:
+1. English name is written in the long upper row.
+2. Chinese name is written in the row directly below the English name.
+3. Date of birth is written in the lower-left boxes.
+4. Identity-document number is written in the lower-right field.
+
+For the identity-document number:
+- Carefully distinguish A from R.
+- Include the check digit in parentheses when visible.
+- Do not insert spaces before the parentheses.
+- Do not infer a character from the expected identity-number format.
+
+For date of birth:
+- Read day, month and year separately from their physical boxes.
+- Carefully distinguish 1 from 7 and 2 from 7.
+- Return the format DD/MM/YYYY when all components are visible.
+
+Do not read printed honorifics as part of a name.
+
 {"name_english":{"value":"","state":"filled|blank|uncertain"},
  "name_chinese":{"value":"","state":"filled|blank|uncertain"},
  "identity_document_number":{"value":"","state":"filled|blank|uncertain"},
@@ -585,17 +614,30 @@ the bilingual instructions as a value.
 {"e_contact":{"value":"","state":"filled|blank|uncertain"}}
 """,
     "residential": BASE_RULES
-    + """
-Extract only the Residential Address. The printed label for each long entry
-line is immediately BELOW that line. Map rows by their physical order:
-1. building = the first long line, immediately above "Name of Building/Estate";
-2. street = the next long line, immediately above
-   "Number and Name of Street (or Village)";
-3. district = the final shorter line, immediately above "District";
-4. region = the visibly selected checkbox to the right of the district row.
-Never move a district/locality such as POK FU LAM into street. Never move a
-street such as CYBERPORT 1 into building. For region, return exactly Hong Kong,
-Kowloon, New Territories, or an empty value--English only.
++ """
+Extract only the Residential Address.
+
+Associate each value using its physical row:
+
+1. The three small fields near the top are:
+   Flat/Room, Floor, and Block/Tower, from left to right.
+2. The first long handwriting row is Building/Estate.
+3. The second long handwriting row is Number and Name of Street or Village.
+4. The short lower-left handwriting row is District.
+5. The checkboxes on the right indicate Region.
+
+Never move a handwritten value from one physical row to another.
+In particular:
+- A value on the Street row must be returned as street.
+- A value on the District row must be returned as district.
+- Do not use a district value to fill a missing street.
+- Printed labels such as District and Street are not values.
+
+For region, inspect only the selected checkbox. Return exactly one of:
+Hong Kong, Kowloon, New Territories, or an empty value.
+
+Return the region in English only.
+
 {"flat":{"value":"","state":"filled|blank|uncertain"},
  "floor":{"value":"","state":"filled|blank|uncertain"},
  "block":{"value":"","state":"filled|blank|uncertain"},
@@ -632,6 +674,75 @@ crop. Do not treat signature strokes as an agent name.
 """,
 }
 
+
+FIELD_RETRY_PROMPTS = {
+    "identity_with_birth.identity_document_number": BASE_RULES
+    + """
+The supplied images are different preprocessing views of the same form section.
+
+Read only the handwritten Identity Document Number field in the lower-right
+part of the section. Compare character shapes across all supplied images.
+
+Pay particular attention to:
+- A versus R;
+- 1 versus 7;
+- the check digit in parentheses.
+
+Remove spaces before the parenthesized check digit.
+Do not infer a character from expected identity-number conventions.
+
+{"identity_document_number":
+ {"value":"","state":"filled|blank|uncertain"}}
+""",
+
+    "identity_with_birth.date_of_birth": BASE_RULES
+    + """
+The supplied images are different preprocessing views of the same form section.
+
+Read only the handwritten Date of Birth in the lower-left boxes.
+Read day, month and year separately and return DD/MM/YYYY.
+Carefully distinguish 1 from 7.
+
+{"date_of_birth":
+ {"value":"","state":"filled|blank|uncertain"}}
+""",
+
+    "residential.floor": BASE_RULES
+    + """
+The supplied images are different preprocessing views of the same Residential
+Address section.
+
+Read only the handwritten Floor field. It is the small field between
+Flat/Room and Block/Tower. Ignore the nearby printed word "Floor".
+Carefully distinguish 1 from 7.
+
+{"floor":{"value":"","state":"filled|blank|uncertain"}}
+""",
+
+    "residential.street": BASE_RULES
+    + """
+The supplied images are different preprocessing views of the same Residential
+Address section.
+
+Read only the handwriting on the row labelled:
+Number and Name of Street (or Village).
+
+Do not return handwriting from the Building/Estate row or District row.
+
+{"street":{"value":"","state":"filled|blank|uncertain"}}
+""",
+
+    "residential.district": BASE_RULES
+    + """
+The supplied images are different preprocessing views of the same Residential
+Address section.
+
+Read only the handwriting on the short row labelled District.
+Do not return handwriting from the Street row.
+
+{"district":{"value":"","state":"filled|blank|uncertain"}}
+""",
+}
 
 TASK_FIELDS = {
     "identity": IDENTITY_FIELDS,
@@ -864,10 +975,45 @@ def validate_and_combine(
     declaration = dict(task_results.get("declaration", {}))
     has_declaration = "declaration" in task_results
 
+    # A model response may omit one or more fields. Initialize all expected
+    # keys before normalization and validation access them.
     for field in IDENTITY_FIELDS:
         identity.setdefault(field, {"value": "", "state": "uncertain"})
     if "identity_with_birth" in task_results:
         identity.setdefault("date_of_birth", {"value": "", "state": "uncertain"})
+
+    # setdefault keeps this safe even if IDENTITY_FIELDS changes later.
+    identity_number = identity.setdefault(
+        "identity_document_number",
+        {"value": "", "state": "uncertain"},
+    )
+
+    if _is_filled(identity_number):
+        value = unicodedata.normalize(
+            "NFKC",
+            identity_number["value"],
+        ).upper()
+
+        # Remove spaces and common separators.
+        value = re.sub(r"[\s.-]+", "", value)
+
+        # Add parentheses when the model returned the check digit without them.
+        match = re.fullmatch(r"([A-Z]{1,2}\d{6})([0-9A])", value)
+        if match:
+            value = f"{match.group(1)}({match.group(2)})"
+
+        identity_number["value"] = value
+
+        if not re.fullmatch(r"[A-Z]{1,2}\d{6}\([0-9A]\)", value):
+            review.append(
+                {
+                    "field": "identity_document_number",
+                    "severity": "review",
+                    "issue": "Unexpected identity-document number format",
+                    "value": value,
+                }
+            )
+
     for field in ADDRESS_FIELDS:
         residential.setdefault(field, {"value": "", "state": "uncertain"})
         correspondence.setdefault(field, {"value": "", "state": "uncertain"})

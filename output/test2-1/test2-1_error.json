@@ -1,0 +1,6 @@
+{
+  "image": "test2-1.png",
+  "status": "error",
+  "error": "'identity_document_number'",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/hnksm/ocr_td320_adaptive/main.py\", line 198, in run_batch\n    result = self.process_image(image_path)\n  File \"/home/hnksm/ocr_td320_adaptive/main.py\", line 161, in process_image\n    data, audit = validate_and_combine(\n                  ~~~~~~~~~~~~~~~~~~~~^\n        consensus_results,\n        ^^^^^^^^^^^^^^^^^^\n        consensus_audit,\n        ^^^^^^^^^^^^^^^^\n        form_id=preprocessed.layout.form_id,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/hnksm/ocr_td320_adaptive/utils.py\", line 974, in validate_and_combine\n    identity_number = identity[\"identity_document_number\"]\n                      ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nKeyError: 'identity_document_number'\n"
+}

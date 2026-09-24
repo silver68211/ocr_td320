@@ -3,11 +3,11 @@
   "review_items": [
     {
       "field": "residential.street",
-      "issue": "View disagreement or insufficient agreement",
+      "issue": "Resolved by focused multi-view retry",
       "required_votes": 2,
       "candidates": [
         {
-          "value": "1 WAN HANG ROAD, PO LAM",
+          "value": "i WAN HANG ROAD, PO LAM",
           "state": "filled"
         },
         {
@@ -22,7 +22,16 @@
           "value": "1 WAN HANG ROAD, PO LAM",
           "state": "filled"
         }
-      ]
+      ],
+      "severity": "warning",
+      "initial_result": {
+        "value": "",
+        "state": "uncertain"
+      },
+      "retry_result": {
+        "value": "TSEUNG KWAN O",
+        "state": "filled"
+      }
     },
     {
       "field": "correspondence.building",
@@ -173,5 +182,5 @@
       "crop_upscale": 1.5
     }
   },
-  "elapsed_seconds": 168.36
+  "elapsed_seconds": 155.05
 }

@@ -2,62 +2,44 @@
   "status": "needs_review",
   "review_items": [
     {
-      "field": "identity_with_birth.name_english",
-      "issue": "View disagreement or insufficient agreement",
-      "required_votes": 2,
-      "candidates": [
-        {
-          "value": "CHOW TAK PING",
-          "state": "filled"
-        },
-        {
-          "value": "CHOW TAK PING",
-          "state": "filled"
-        },
-        {
-          "value": "CHOW TAK PING",
-          "state": "filled"
-        },
-        {
-          "value": "CHOW TAK PENG",
-          "state": "filled"
-        }
-      ]
-    },
-    {
       "field": "identity_with_birth.identity_document_number",
-      "issue": "View disagreement or insufficient agreement",
+      "issue": "Resolved by focused multi-view retry",
       "required_votes": 2,
       "candidates": [
         {
-          "value": "A827943 (1)",
-          "state": "filled"
-        },
-        {
-          "value": "A827943 (1)",
-          "state": "filled"
-        },
-        {
-          "value": "A827943 (1)",
+          "value": "R827943(1)",
           "state": "filled"
         },
         {
           "value": "R827943 (1)",
           "state": "filled"
-        }
-      ]
-    },
-    {
-      "field": "identity_with_birth.date_of_birth",
-      "issue": "View disagreement or insufficient agreement",
-      "required_votes": 2,
-      "candidates": [
+        },
         {
-          "value": "28/06/1972",
+          "value": "R821943 (1)",
           "state": "filled"
         },
         {
-          "value": "28/06/1972",
+          "value": "R821943 (1)",
+          "state": "filled"
+        }
+      ],
+      "severity": "warning",
+      "initial_result": {
+        "value": "R821943 (1)",
+        "state": "filled"
+      },
+      "retry_result": {
+        "value": "R827943(1)",
+        "state": "filled"
+      }
+    },
+    {
+      "field": "identity_with_birth.date_of_birth",
+      "issue": "Resolved by focused multi-view retry",
+      "required_votes": 2,
+      "candidates": [
+        {
+          "value": "28/06/1912",
           "state": "filled"
         },
         {
@@ -67,39 +49,29 @@
         {
           "value": "28/06/1912",
           "state": "filled"
-        }
-      ]
-    },
-    {
-      "field": "e_contact.e_contact",
-      "issue": "View disagreement or insufficient agreement",
-      "required_votes": 2,
-      "candidates": [
-        {
-          "value": "682145",
-          "state": "filled"
         },
         {
-          "value": "6821453",
-          "state": "filled"
-        },
-        {
-          "value": "661145",
-          "state": "filled"
-        },
-        {
-          "value": "85267145",
+          "value": "28/06/1942",
           "state": "filled"
         }
-      ]
+      ],
+      "severity": "warning",
+      "initial_result": {
+        "value": "28/06/1912",
+        "state": "filled"
+      },
+      "retry_result": {
+        "value": "28/06/1912",
+        "state": "filled"
+      }
     },
     {
       "field": "residential.floor",
-      "issue": "View disagreement or insufficient agreement",
+      "issue": "Resolved by focused multi-view retry",
       "required_votes": 2,
       "candidates": [
         {
-          "value": "1",
+          "value": "14",
           "state": "filled"
         },
         {
@@ -107,14 +79,23 @@
           "state": "filled"
         },
         {
-          "value": "1",
+          "value": "14",
           "state": "filled"
         },
         {
-          "value": "1",
+          "value": "11",
           "state": "filled"
         }
-      ]
+      ],
+      "severity": "warning",
+      "initial_result": {
+        "value": "14",
+        "state": "filled"
+      },
+      "retry_result": {
+        "value": "1",
+        "state": "filled"
+      }
     },
     {
       "field": "residential.block",
@@ -140,52 +121,6 @@
       ]
     },
     {
-      "field": "residential.street",
-      "issue": "View disagreement or insufficient agreement",
-      "required_votes": 2,
-      "candidates": [
-        {
-          "value": "POK FU LAM",
-          "state": "filled"
-        },
-        {
-          "value": "CYBERPORT 1",
-          "state": "filled"
-        },
-        {
-          "value": "CYBERPORT 1",
-          "state": "filled"
-        },
-        {
-          "value": "POK FU LAM",
-          "state": "filled"
-        }
-      ]
-    },
-    {
-      "field": "residential.district",
-      "issue": "View disagreement or insufficient agreement",
-      "required_votes": 2,
-      "candidates": [
-        {
-          "value": "",
-          "state": "blank"
-        },
-        {
-          "value": "POK FU LAM",
-          "state": "filled"
-        },
-        {
-          "value": "POK FU LAM",
-          "state": "filled"
-        },
-        {
-          "value": "",
-          "state": "blank"
-        }
-      ]
-    },
-    {
       "field": "correspondence.street",
       "issue": "View disagreement or insufficient agreement",
       "required_votes": 2,
@@ -199,14 +134,18 @@
           "state": "filled"
         },
         {
-          "value": "326-448 CHOW TAIK STREET",
+          "value": "336-448 CHOW TAIK STREET",
           "state": "filled"
         },
         {
-          "value": "726-448 CITOU TAIK STREET",
+          "value": "226-448 CITOU TAKIC STREET",
           "state": "filled"
         }
       ]
+    },
+    {
+      "field": "residential_address.street",
+      "issue": "A known district/locality was returned as Street. It was moved to District; Street requires review."
     }
   ],
   "field_states": {
@@ -221,7 +160,7 @@
       "block": "filled",
       "building": "filled",
       "street": "uncertain",
-      "district": "uncertain",
+      "district": "filled",
       "region": "filled"
     },
     "correspondence_address": {
@@ -295,15 +234,6 @@
           0.36
         ]
       },
-      "e_contact": {
-        "task": "e_contact",
-        "box": [
-          0.02,
-          0.35,
-          0.985,
-          0.435
-        ]
-      },
       "residential": {
         "task": "residential",
         "box": [
@@ -325,8 +255,8 @@
     },
     "effective_preprocessing": {
       "crop_margin": 0.006,
-      "crop_upscale": 1.6
+      "crop_upscale": 2.5
     }
   },
-  "elapsed_seconds": 222.0
+  "elapsed_seconds": 150.3
 }

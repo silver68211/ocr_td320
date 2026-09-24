@@ -47,20 +47,37 @@ def td320_regions() -> dict[str, RegionConfig]:
     }
 
 
+# def td555_regions() -> dict[str, RegionConfig]:
+#     """Regions for TD555 (Rev. 11/2024), page 1."""
+
+#     return {
+#         "identity": RegionConfig(
+#             "identity_with_birth", (0.020, 0.205, 0.980, 0.360)
+#         ),
+#         "e_contact": RegionConfig("e_contact", (0.020, 0.350, 0.985, 0.435)),
+#         "residential": RegionConfig("residential", (0.020, 0.420, 0.985, 0.635)),
+#         "correspondence": RegionConfig(
+#             "correspondence", (0.020, 0.625, 0.985, 0.875)
+#         ),
+#     }
+
 def td555_regions() -> dict[str, RegionConfig]:
     """Regions for TD555 (Rev. 11/2024), page 1."""
 
     return {
         "identity": RegionConfig(
-            "identity_with_birth", (0.020, 0.205, 0.980, 0.360)
+            "identity_with_birth",
+            (0.020, 0.205, 0.980, 0.360),
         ),
-        "e_contact": RegionConfig("e_contact", (0.020, 0.350, 0.985, 0.435)),
-        "residential": RegionConfig("residential", (0.020, 0.420, 0.985, 0.635)),
+        "residential": RegionConfig(
+            "residential",
+            (0.020, 0.420, 0.985, 0.635),
+        ),
         "correspondence": RegionConfig(
-            "correspondence", (0.020, 0.625, 0.985, 0.875)
+            "correspondence",
+            (0.020, 0.625, 0.985, 0.875),
         ),
     }
-
 
 def default_layouts(root: Path) -> dict[str, LayoutConfig]:
     """Return all layouts known by the detector."""
@@ -81,7 +98,7 @@ def default_layouts(root: Path) -> dict[str, LayoutConfig]:
             template=figures / "td555_blank.png",
             regions=td555_regions(),
             crop_margin=0.006,
-            crop_upscale=1.6,
+            crop_upscale=2.5,
         ),
     }
 

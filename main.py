@@ -14,7 +14,9 @@ from metrics import evaluate_files
 from model import VisionOCRModel
 from preprocessing import PreprocessResult, preprocess_image
 from utils import (
+    FIELD_RETRY_PROMPTS,
     PROMPTS,
+    clean_candidate,
     consensus_for_task,
     list_images,
     parse_json_object,
@@ -84,11 +86,70 @@ class FormOCRPipeline:
 
             if not parsed_responses:
                 raise RuntimeError(f"All OCR views failed for task: {task}")
+
             fields, task_audit = consensus_for_task(
                 task,
                 parsed_responses,
                 self.config.inference.minimum_agreement,
             )
+
+            # Retry important fields when preprocessing views disagree. This
+            # block belongs to the current region; moving it outside this loop
+            # would retain only the final task (normally correspondence).
+            for audit_item in task_audit:
+                field_path = str(audit_item.get("field", ""))
+                retry_prompt = FIELD_RETRY_PROMPTS.get(field_path)
+                if retry_prompt is None or "." not in field_path:
+                    continue
+
+                field_name = field_path.split(".", maxsplit=1)[1]
+                if field_name not in fields:
+                    continue
+
+                # Original and CLAHE preserve grayscale strokes; adaptive can
+                # reveal thin characters such as the diagonal leg of an R.
+                preferred_views = ("original", "clahe", "adaptive")
+                retry_paths = [
+                    preprocessed.crops[region_name][view_name]
+                    for view_name in preferred_views
+                    if view_name in preprocessed.crops[region_name]
+                ]
+                if not retry_paths:
+                    continue
+
+                try:
+                    retry_response = model.generate(retry_paths, retry_prompt)
+                    retry_parsed = parse_json_object(retry_response)
+                    retry_candidate = clean_candidate(
+                        retry_parsed.get(field_name)
+                    )
+
+                    raw[task].setdefault("retries", {})
+                    raw[task]["retries"][field_name] = {
+                        "crops": [str(path) for path in retry_paths],
+                        "response": retry_response,
+                        "parsed": retry_parsed,
+                    }
+
+                    # Never let an uncertain retry erase an accepted value.
+                    if retry_candidate["state"] == "filled":
+                        initial_candidate = fields[field_name]
+                        fields[field_name] = retry_candidate
+                        audit_item["severity"] = "warning"
+                        audit_item["issue"] = (
+                            "Resolved by focused multi-view retry"
+                        )
+                        audit_item["initial_result"] = initial_candidate
+                        audit_item["retry_result"] = retry_candidate
+
+                except Exception as error:  # noqa: BLE001
+                    raw[task].setdefault("retries", {})
+                    raw[task]["retries"][field_name] = {
+                        "crops": [str(path) for path in retry_paths],
+                        "error": str(error),
+                    }
+
+            # Save every task before advancing to the next form region.
             consensus_results[task] = fields
             consensus_audit.extend(task_audit)
 
