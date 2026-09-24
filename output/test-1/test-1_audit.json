@@ -48,29 +48,6 @@
       ]
     },
     {
-      "field": "correspondence.region",
-      "issue": "View disagreement or insufficient agreement",
-      "required_votes": 2,
-      "candidates": [
-        {
-          "value": "九龍 Kowloon",
-          "state": "filled"
-        },
-        {
-          "value": "九龍 Kowloon",
-          "state": "filled"
-        },
-        {
-          "value": "Kowloon",
-          "state": "filled"
-        },
-        {
-          "value": "Kowloon",
-          "state": "filled"
-        }
-      ]
-    },
-    {
       "field": "date",
       "issue": "Invalid date"
     }
@@ -96,14 +73,14 @@
       "building": "filled",
       "street": "filled",
       "district": "filled",
-      "region": "uncertain"
+      "region": "filled"
     },
     "telephone": "filled",
     "agent_name": "blank",
     "agent_identity_document_number": "blank",
     "date": "filled"
   },
-  "original_image": "figs/text-1.png",
+  "original_image": "figs/test-1.png",
   "model": "Qwen/Qwen3-VL-8B-Instruct",
   "profile": "maximum",
   "form_type": "td320",
@@ -196,5 +173,5 @@
       "crop_upscale": 1.5
     }
   },
-  "elapsed_seconds": 130.41
+  "elapsed_seconds": 168.36
 }

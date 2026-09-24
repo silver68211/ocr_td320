@@ -15,11 +15,57 @@
           "state": "filled"
         },
         {
-          "value": "Hassan NOGHRERI",
+          "value": "Hassan NOGHR E I",
           "state": "filled"
         },
         {
           "value": "Hassan NOGHEREI",
+          "state": "filled"
+        }
+      ]
+    },
+    {
+      "field": "residential.building",
+      "issue": "View disagreement or insufficient agreement",
+      "required_votes": 2,
+      "candidates": [
+        {
+          "value": "a n d a s j d j a s d b a s j b d j a s j d a",
+          "state": "filled"
+        },
+        {
+          "value": "a n d a s j d j a s d b a s j b d j a s j d a",
+          "state": "filled"
+        },
+        {
+          "value": "and as jdja sdbasjbdja sjda",
+          "state": "filled"
+        },
+        {
+          "value": "a n d a s j d j a s d b a s j b d j a s j d a",
+          "state": "filled"
+        }
+      ]
+    },
+    {
+      "field": "residential.street",
+      "issue": "View disagreement or insufficient agreement",
+      "required_votes": 2,
+      "candidates": [
+        {
+          "value": "a s a s s d a s",
+          "state": "filled"
+        },
+        {
+          "value": "a s a s s d a s",
+          "state": "filled"
+        },
+        {
+          "value": "asassdas",
+          "state": "filled"
+        },
+        {
+          "value": "a s a s s d a s",
           "state": "filled"
         }
       ]
@@ -65,8 +111,31 @@
           "state": "filled"
         },
         {
-          "value": "",
-          "state": "blank"
+          "value": "a s d s d a s d",
+          "state": "filled"
+        }
+      ]
+    },
+    {
+      "field": "correspondence.block",
+      "issue": "View disagreement or insufficient agreement",
+      "required_votes": 2,
+      "candidates": [
+        {
+          "value": "s s",
+          "state": "filled"
+        },
+        {
+          "value": "s s",
+          "state": "filled"
+        },
+        {
+          "value": "s s",
+          "state": "filled"
+        },
+        {
+          "value": "a s d s d a s d",
+          "state": "filled"
         }
       ]
     },
@@ -90,29 +159,6 @@
         {
           "value": "a s d a s d s d a s",
           "state": "filled"
-        }
-      ]
-    },
-    {
-      "field": "correspondence.street",
-      "issue": "View disagreement or insufficient agreement",
-      "required_votes": 2,
-      "candidates": [
-        {
-          "value": "a s d a s d s d a s",
-          "state": "filled"
-        },
-        {
-          "value": "a s d a s d s d a s",
-          "state": "filled"
-        },
-        {
-          "value": "a s d a s d s d a s",
-          "state": "filled"
-        },
-        {
-          "value": "",
-          "state": "blank"
         }
       ]
     },
@@ -246,5 +292,5 @@
       "crop_upscale": 1.5
     }
   },
-  "elapsed_seconds": 130.84
+  "elapsed_seconds": 117.88
 }

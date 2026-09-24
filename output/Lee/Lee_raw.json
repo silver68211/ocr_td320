@@ -76,7 +76,7 @@
   "residential": {
     "original": {
       "crop": "preprocessed/Lee/residential/original.png",
-      "response": "{\n  \"flat\": {\n    \"value\": \"5\",\n    \"state\": \"filled\"\n  },\n  \"floor\": {\n    \"value\": \"5\",\n    \"state\": \"filled\"\n  },\n  \"block\": {\n    \"value\": \"\",\n    \"state\": \"blank\"\n  },\n  \"building\": {\n    \"value\": \"SUNNY COURT\",\n    \"state\": \"filled\"\n  },\n  \"street\": {\n    \"value\": \"36 EXAMPLE LANE\",\n    \"state\": \"filled\"\n  },\n  \"district\": {\n    \"value\": \"NORTH POINT\",\n    \"state\": \"filled\"\n  },\n  \"region\": {\n    \"value\": \"Hong Kong\",\n    \"state\": \"filled\"\n  }\n}",
+      "response": "{\n  \"flat\": {\"value\": \"5\", \"state\": \"filled\"},\n  \"floor\": {\"value\": \"5\", \"state\": \"filled\"},\n  \"block\": {\"value\": \"\", \"state\": \"blank\"},\n  \"building\": {\"value\": \"SUNNY COURT\", \"state\": \"filled\"},\n  \"street\": {\"value\": \"36 EXAMPLE LANE\", \"state\": \"filled\"},\n  \"district\": {\"value\": \"NORTH POINT\", \"state\": \"filled\"},\n  \"region\": {\"value\": \"Hong Kong\", \"state\": \"filled\"}\n}",
       "parsed": {
         "flat": {
           "value": "5",

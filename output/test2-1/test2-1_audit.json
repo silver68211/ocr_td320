@@ -30,19 +30,42 @@
       "required_votes": 2,
       "candidates": [
         {
-          "value": "A827943",
+          "value": "A827943 (1)",
           "state": "filled"
         },
         {
-          "value": "A821943",
+          "value": "A827943 (1)",
           "state": "filled"
         },
         {
-          "value": "A827943",
+          "value": "A827943 (1)",
           "state": "filled"
         },
         {
-          "value": "R827943",
+          "value": "R827943 (1)",
+          "state": "filled"
+        }
+      ]
+    },
+    {
+      "field": "identity_with_birth.date_of_birth",
+      "issue": "View disagreement or insufficient agreement",
+      "required_votes": 2,
+      "candidates": [
+        {
+          "value": "28/06/1972",
+          "state": "filled"
+        },
+        {
+          "value": "28/06/1972",
+          "state": "filled"
+        },
+        {
+          "value": "28/06/1972",
+          "state": "filled"
+        },
+        {
+          "value": "28/06/1912",
           "state": "filled"
         }
       ]
@@ -57,7 +80,7 @@
           "state": "filled"
         },
         {
-          "value": "682145",
+          "value": "6821453",
           "state": "filled"
         },
         {
@@ -65,30 +88,7 @@
           "state": "filled"
         },
         {
-          "value": "662145",
-          "state": "filled"
-        }
-      ]
-    },
-    {
-      "field": "residential.flat",
-      "issue": "View disagreement or insufficient agreement",
-      "required_votes": 2,
-      "candidates": [
-        {
-          "value": "C",
-          "state": "filled"
-        },
-        {
-          "value": "C",
-          "state": "filled"
-        },
-        {
-          "value": "C",
-          "state": "filled"
-        },
-        {
-          "value": "100",
+          "value": "85267145",
           "state": "filled"
         }
       ]
@@ -99,19 +99,19 @@
       "required_votes": 2,
       "candidates": [
         {
-          "value": "14",
+          "value": "1",
           "state": "filled"
         },
         {
-          "value": "14",
+          "value": "11A",
           "state": "filled"
         },
         {
-          "value": "14",
+          "value": "1",
           "state": "filled"
         },
         {
-          "value": "10",
+          "value": "1",
           "state": "filled"
         }
       ]
@@ -140,25 +140,48 @@
       ]
     },
     {
-      "field": "residential.building",
+      "field": "residential.street",
       "issue": "View disagreement or insufficient agreement",
       "required_votes": 2,
       "candidates": [
         {
-          "value": "CYBERPORT 100",
+          "value": "POK FU LAM",
           "state": "filled"
         },
         {
-          "value": "CYBERPORT 100",
+          "value": "CYBERPORT 1",
           "state": "filled"
         },
         {
-          "value": "CYBERPORT 100",
+          "value": "CYBERPORT 1",
           "state": "filled"
         },
         {
-          "value": "CYBERPORT",
+          "value": "POK FU LAM",
           "state": "filled"
+        }
+      ]
+    },
+    {
+      "field": "residential.district",
+      "issue": "View disagreement or insufficient agreement",
+      "required_votes": 2,
+      "candidates": [
+        {
+          "value": "",
+          "state": "blank"
+        },
+        {
+          "value": "POK FU LAM",
+          "state": "filled"
+        },
+        {
+          "value": "POK FU LAM",
+          "state": "filled"
+        },
+        {
+          "value": "",
+          "state": "blank"
         }
       ]
     },
@@ -184,37 +207,6 @@
           "state": "filled"
         }
       ]
-    },
-    {
-      "field": "correspondence.region",
-      "issue": "View disagreement or insufficient agreement",
-      "required_votes": 2,
-      "candidates": [
-        {
-          "value": "九龍 Kowloon",
-          "state": "filled"
-        },
-        {
-          "value": "九龍",
-          "state": "filled"
-        },
-        {
-          "value": "九龍 Kowloon",
-          "state": "filled"
-        },
-        {
-          "value": "九龍 Kowloon",
-          "state": "filled"
-        }
-      ]
-    },
-    {
-      "field": "e_contact",
-      "issue": "Expected an email address or eight-digit phone number"
-    },
-    {
-      "field": "correspondence_address.region",
-      "issue": "Invalid region"
     }
   ],
   "field_states": {
@@ -228,8 +220,8 @@
       "floor": "filled",
       "block": "filled",
       "building": "filled",
-      "street": "filled",
-      "district": "blank",
+      "street": "uncertain",
+      "district": "uncertain",
       "region": "filled"
     },
     "correspondence_address": {
@@ -241,8 +233,7 @@
       "district": "filled",
       "region": "filled"
     },
-    "telephone": "filled",
-    "e_contact": "filled"
+    "telephone": "filled"
   },
   "original_image": "figs/test2-1.png",
   "model": "Qwen/Qwen3-VL-8B-Instruct",
@@ -337,5 +328,5 @@
       "crop_upscale": 1.6
     }
   },
-  "elapsed_seconds": 120.52
+  "elapsed_seconds": 222.0
 }

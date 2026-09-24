@@ -1,0 +1,28 @@
+{
+  "form_type": "td320",
+  "name_english": "CHAN TAI MAN, PETER",
+  "name_chinese": "陳大文",
+  "identity_document_number": "H376528(3)",
+  "residential_address": {
+    "flat": "C",
+    "floor": "17",
+    "block": "B",
+    "building": "METRO CITY",
+    "street": "1 WAN HANG ROAD, PO LAM",
+    "district": "TSEUNG KWAN O",
+    "region": "New Territories"
+  },
+  "correspondence_address": {
+    "flat": "2",
+    "floor": "15",
+    "block": "",
+    "building": "LEMMI CETRE",
+    "street": "50 HOI YUEN ROAD",
+    "district": "KWUN TONG",
+    "region": "Kowloon"
+  },
+  "telephone": "63632828",
+  "agent_name": "",
+  "agent_identity_document_number": "",
+  "date": "Sep 17, 2026"
+}
